@@ -1077,6 +1077,33 @@
 	}
 }
 
+"MVM_BostonBasher.Impact"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		")weapons\eviction_notice_01.wav"
+		"wave"		")weapons\eviction_notice_02.wav"
+		"wave"		")weapons\eviction_notice_03.wav"
+		"wave"		")weapons\eviction_notice_04.wav"
+	}
+}
+
+"MVM_BostonBasher.ImpactCrit"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		")weapons\eviction_notice_01_crit.wav"
+		"wave"		")weapons\eviction_notice_02_crit.wav"
+		"wave"		")weapons\eviction_notice_03_crit.wav"
+		"wave"		")weapons\eviction_notice_04_crit.wav"
+	}
+}
 
 "MVM_Weapon_MetalGloves.HitFlesh"
 {

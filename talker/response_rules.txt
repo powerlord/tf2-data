@@ -374,6 +374,7 @@ criterion "WeaponIsBuild" "playerweapon" "tf_weapon_builder" "required"
 criterion "WeaponIsWrench" "playerweapon" "tf_weapon_wrench" "required"
 criterion "WeaponIsScattergun" "playerweapon" "tf_weapon_scattergun" "required"
 criterion "WeaponIsScattergunDouble" "item_name" "The Force-a-Nature" "required" weight 10
+criterion "WeaponIsScattergunDoubleFestive" "item_name" "Festive Force-a-Nature" "required" weight 10
 criterion "WeaponIsPistolScout" "playerweapon" "tf_weapon_pistol_scout" "required"
 criterion "WeaponIsBat" "playerweapon" "tf_weapon_bat" "required"
 criterion "WeaponIsWoodBat" "playerweapon" "tf_weapon_bat_wood" "required"

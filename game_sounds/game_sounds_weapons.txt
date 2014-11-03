@@ -114,6 +114,151 @@
 }
 
 // ------------------------------------------------------------------------------------ //
+// BUMPER CAR
+// ------------------------------------------------------------------------------------ //
+"BumperCar.Bump"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel"  	"SNDLVL_76dB"
+	"pitch"		"90, 110"
+
+	"rndwave"
+	{
+		"wave"	"weapons/bumper_car_hit1.wav"
+		"wave"	"weapons/bumper_car_hit2.wav"
+		"wave"	"weapons/bumper_car_hit3.wav"
+		"wave"	"weapons/bumper_car_hit4.wav"
+		"wave"	"weapons/bumper_car_hit5.wav"
+		"wave"	"weapons/bumper_car_hit6.wav"
+		"wave"	"weapons/bumper_car_hit7.wav"
+		"wave"	"weapons/bumper_car_hit8.wav"
+
+	}
+}
+
+"BumperCar.Accelerate"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".5"
+	"wave"		")weapons/bumper_car_accelerate.wav"
+}
+
+"BumperCar.GoLoop"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".5"
+	"wave"		")weapons/bumper_car_go_loop.wav"
+}
+
+"BumperCar.Decelerate"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".5"
+	"wave"		")weapons/bumper_car_decelerate.wav"
+}
+
+"BumperCar.DecelerateQuick"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".5"
+	"wave"		")weapons/bumper_car_decelerate_quick.wav"
+}
+
+"BumperCar.Spawn"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".25"
+	"wave"		")weapons/bumper_car_spawn.wav"
+}
+
+"BumperCar.SpawnFromLava"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".25"
+	"wave"		")weapons/bumper_car_spawn_from_lava.wav"
+}
+
+"BumperCar.SpeedBoostStart"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".75"
+	"wave"		")weapons/bumper_car_speed_boost_start.wav"
+}
+
+"BumperCar.SpeedBoostStop"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".75"
+	"wave"		")weapons/bumper_car_speed_boost_stop.wav"
+}
+
+"BumperCar.Screech"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".5"
+	"wave"		")weapons/bumper_car_screech.wav"
+}
+
+"BumperCar.BumpIntoAir"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"1"
+	"wave"		")weapons/bumper_car_hit_into_air.wav"
+}
+
+"BumperCar.BumpHard"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"1"
+	"wave"		")weapons/bumper_car_hit_hard.wav"
+}
+
+"BumperCar.Jump"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".35"
+	"wave"		")weapons/bumper_car_jump.wav"
+}
+
+"BumperCar.JumpLand"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".25"
+	"wave"		")weapons/bumper_car_jump_land.wav"
+}
+
+"BumperCar.HitBall"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_120dB"
+	"volume"	"1"
+	"wave"		")weapons/bumper_car_hit_ball.wav"
+}
+
+"BumperCar.HitGhost"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	"1"
+	"wave"		")weapons/bumper_car_hit_ghost.wav"
+}
+
+
+// ------------------------------------------------------------------------------------ //
 //WEAPON CHARGED
 // ------------------------------------------------------------------------------------ //
 "TFPlayer.CritBoostOn"
@@ -5142,6 +5287,64 @@
 }
 
 "EvictionNotice.Swing"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		")weapons\boxing_gloves_swing1.wav"
+		"wave"		")weapons\boxing_gloves_swing2.wav"
+		"wave"		")weapons\boxing_gloves_swing4.wav"
+		"wave"		")weapons\boxing_gloves_swing5.wav"
+	}
+}
+
+// ------------------------------------------------------------------------------------ //
+// BOSTON BASHER
+// ------------------------------------------------------------------------------------ //
+
+"BostonBasher.Impact"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		")weapons\eviction_notice_01.wav"
+		"wave"		")weapons\eviction_notice_02.wav"
+		"wave"		")weapons\eviction_notice_03.wav"
+		"wave"		")weapons\eviction_notice_04.wav"
+	}
+}
+
+"BostonBasher.ImpactCrit"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		")weapons\eviction_notice_01_crit.wav"
+		"wave"		")weapons\eviction_notice_02_crit.wav"
+		"wave"		")weapons\eviction_notice_03_crit.wav"
+		"wave"		")weapons\eviction_notice_04_crit.wav"
+	}
+}
+
+"BostonBasher.HitWorld"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_NORM"
+	"volume"	"1.0"
+	"rndwave"
+	{
+		"wave"		")weapons\demo_sword_hit_world1.wav"
+		"wave"		")weapons\demo_sword_hit_world2.wav"
+	}
+}
+
+"BostonBasher.Swing"
 {
 	"channel"	"CHAN_ITEM"
 	"soundlevel"	"SNDLVL_NORM"

@@ -1855,7 +1855,7 @@
 }
 "eng_taunt_flip_random_flipkneeClap"
 {
-	"channel" 			"CHAN_VOICE"
+	"channel" 			"CHAN_STATIC"
 	"volume" 			"VOL_NORM"
 	"pitch" 			"PITCH_NORM"
 	"soundlevel" 		"SNDLVL_75dB"
@@ -3396,7 +3396,7 @@
 }
 "taunt_demo_nuke_1_grenade_get"
 {
-	"channel" 			"CHAN_VOICE"
+	"channel" 			"CHAN_STATIC"
 	"volume" 			"VOL_NORM"
 	"pitch" 			"PITCH_NORM"
 	"soundlevel" 		"SNDLVL_95dB"
@@ -3407,7 +3407,7 @@
 }
 "taunt_demo_nuke_2_grenade_open"
 {
-	"channel" 			"CHAN_VOICE"
+	"channel" 			"CHAN_STATIC"
 	"volume" 			"VOL_NORM"
 	"pitch" 			"PITCH_NORM"
 	"soundlevel" 		"SNDLVL_95dB"
@@ -3429,7 +3429,7 @@
 }
 "taunt_demo_nuke_4_pour"
 {
-	"channel" 			"CHAN_VOICE"
+	"channel" 			"CHAN_STATIC"
 	"volume" 			"VOL_NORM"
 	"pitch" 			"PITCH_NORM"
 	"soundlevel" 		"SNDLVL_95dB"
@@ -3440,7 +3440,7 @@
 }
 "taunt_demo_nuke_5_grenade_drop"
 {
-	"channel" 			"CHAN_VOICE"
+	"channel" 			"CHAN_STATIC"
 	"volume" 			"VOL_NORM"
 	"pitch" 			"PITCH_NORM"
 	"soundlevel" 		"SNDLVL_95dB"
@@ -3451,7 +3451,7 @@
 }
 "taunt_demo_nuke_6_bottle_drop"
 {
-	"channel" 			"CHAN_VOICE"
+	"channel" 			"CHAN_STATIC"
 	"volume" 			"VOL_NORM"
 	"pitch" 			"PITCH_NORM"
 	"soundlevel" 		"SNDLVL_95dB"
@@ -3473,7 +3473,7 @@
 }
 "taunt_demo_nuke_8_explosion"
 {
-	"channel" 			"CHAN_VOICE"
+	"channel" 			"CHAN_STATIC"
 	"volume" 			"VOL_NORM"
 	"pitch" 			"PITCH_NORM"
 	"soundlevel" 		"SNDLVL_95dB"
@@ -3601,7 +3601,7 @@
 }
 "pyro_taunt_partytrick_5_clap"
 {
-	"channel" 			"CHAN_VOICE"
+	"channel" 			"CHAN_STATIC"
 	"volume" 			"VOL_NORM"
 	"pitch" 			"PITCH_NORM"
 	"soundlevel" 		"SNDLVL_95dB"
@@ -3612,7 +3612,7 @@
 }
 "pyro_taunt_partytrick_6_clap"
 {
-	"channel" 			"CHAN_VOICE"
+	"channel" 			"CHAN_STATIC"
 	"volume" 			"VOL_NORM"
 	"pitch" 			"PITCH_NORM"
 	"soundlevel" 		"SNDLVL_95dB"
@@ -3624,7 +3624,7 @@
 }
 "pyro_taunt_partytrick_7_clap"
 {
-	"channel" 			"CHAN_VOICE"
+	"channel" 			"CHAN_STATIC"
 	"volume" 			"VOL_NORM"
 	"pitch" 			"PITCH_NORM"
 	"soundlevel" 		"SNDLVL_95dB"
@@ -3636,7 +3636,7 @@
 }
 "pyro_taunt_partytrick_8_clap"
 {
-	"channel" 			"CHAN_VOICE"
+	"channel" 			"CHAN_STATIC"
 	"volume" 			"VOL_NORM"
 	"pitch" 			"PITCH_NORM"
 	"soundlevel" 		"SNDLVL_95dB"
@@ -7519,3 +7519,11 @@
 	"wave"			"vo/taunts/demo/taunt_demo_burp_03.wav"
 }
 
+"heavy_taunt_flip_fail_17"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"wave"			"vo/taunts/heavy/heavy_taunt_flip_fail_17.wav"
+}

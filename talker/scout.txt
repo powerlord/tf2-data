@@ -667,6 +667,11 @@ Rule PlayerDoubleJumpScout
 	criteria ConceptFireWeapon IsScout IsDoubleJumping WeaponIsScattergunDouble 20PercentChance
 	Response PlayerDoubleJumpScout
 }
+Rule PlayerDoubleJumpScoutFestive
+{
+	criteria ConceptFireWeapon IsScout IsDoubleJumping WeaponIsScattergunDoubleFestive 20PercentChance
+	Response PlayerDoubleJumpScout
+}
 
 // Double jump response
 Response DoubleJumpScout

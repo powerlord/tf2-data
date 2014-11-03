@@ -888,6 +888,11 @@
 		criteria ConceptPlayerTaunt IsScout WeaponIsScattergunDouble
 		response ScoutTauntPrimaryDouble
 	}
+	rule ScoutTauntScattergunDoubleFestive
+	{
+		criteria ConceptPlayerTaunt IsScout WeaponIsScattergunDoubleFestive
+		response ScoutTauntPrimaryDouble
+	}
 	rule ScoutTauntSodaPopper
 	{
 		criteria ConceptPlayerTaunt IsScout WeaponIsSodaPopper

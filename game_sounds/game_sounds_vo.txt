@@ -45074,3 +45074,976 @@
 //-----------------------------------------------------------------------------
 //end of spy batch 52
 //-----------------------------------------------------------------------------
+ 
+//-----------------------------------------------------------------------------
+//Begin of Merasmus added for Halloween 2014
+//-----------------------------------------------------------------------------
+//
+"Announcer.SD_Event_OurTeamHasFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_09.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_10.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_17.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_18.wav"
+	}
+}
+// 
+"Announcer.SD_Event_OurTeamDroppedFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_11.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_12.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_13.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_19.wav"
+			
+	}
+}
+// 
+"Announcer.SD_Event_TheirTeamHasFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_15.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_20.wav"
+	}
+}
+// 
+"Announcer.SD_Event_TheirTeamDroppedFlag"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_08.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_14.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_possession_16.wav"
+
+	}
+}
+// 
+"Announcer.SD_Event_MurderedToStalemate"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_round_start_stalemate_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_stalemate_01.wav"		
+	}
+}
+// 
+"Announcer.SD_Event_CappedRed"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_09.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_10.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_15.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_19.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_20.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_21.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_22.wav"		
+	}
+}
+// 
+"Announcer.SD_Event_CappedBlu"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_08.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_11.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_17.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_22.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_13.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_strongman_end_14.wav"
+	}
+}
+//
+"Announcer.SD_Event_FlagReturned"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_drop_site_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_drop_site_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_drop_site_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_drop_site_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_drop_site_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_drop_site_06.wav"
+	}
+}
+// 
+"Announcer.SD_Event_FlagNags"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_misc_nags_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_misc_nags_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_misc_nags_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_misc_nags_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_misc_nags_05.wav"
+	}
+}
+// 
+"Announcer.SD_Event_TheirFlagOnElevator"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_08.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_09.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_14.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_18.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_20.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_08.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_09.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_14.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_18.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_20.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_08.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_09.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_14.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_18.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_20.wav"							
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_21.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_22.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_23.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_24.wav"			
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_41.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_42.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_41.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_42.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_41.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_42.wav"				
+	}
+}
+//
+"Announcer.SD_Event_OurFlagOnElevator"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_25.wav"		
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_26.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_27.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_28.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_29.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_32.wav"	
+  	"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_35.wav"		
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_36.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_25.wav"		
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_26.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_27.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_28.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_29.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_32.wav"	
+  	"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_35.wav"		
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_36.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_25.wav"		
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_26.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_27.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_28.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_29.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_32.wav"	
+  	"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_35.wav"		
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_36.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_31.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_40.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_44.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_45.wav"			
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_44.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_45.wav"			
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_44.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_warnings_45.wav"					
+	}
+}
+//
+"Announcer.SD_Event_FlagAvailableIn3"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_tickets_available_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_tickets_available_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_tickets_available_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_tickets_available_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_tickets_available_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_tickets_available_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_tickets_available_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_tickets_available_08.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_tickets_available_09.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_tickets_available_10.wav"
+	}
+}
+//
+"Merasmus.RoundBegins1Seconds"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"vo/halloween_merasmus/sf14_merasmus_begins_01sec.wav"
+}
+//
+"Merasmus.RoundBegins2Seconds"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+ 	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"vo/halloween_merasmus/sf14_merasmus_begins_02sec.wav"
+}
+//
+"Merasmus.RoundBegins3Seconds"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"vo/halloween_merasmus/sf14_merasmus_begins_03sec.wav"
+}
+//
+"Merasmus.RoundBegins4Seconds"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"vo/halloween_merasmus/sf14_merasmus_begins_04sec.wav"
+}
+//
+"Merasmus.RoundBegins5Seconds"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"wave"			"vo/halloween_merasmus/sf14_merasmus_begins_05sec.wav"
+}
+//
+"Announcer.SD_Event_BigHeadCurse"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_rare_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_rare_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_rare_04.wav"	
+  	"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_rare_06.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_bighead_rare_07.wav"	
+	}
+}
+//
+"Announcer.SD_Event_NoGunsCurse"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_noguns_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_noguns_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_noguns_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_noguns_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_noguns_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_noguns_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_noguns_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_noguns_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_noguns_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_noguns_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_noguns_rare_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_noguns_rare_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_noguns_rare_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_noguns_rare_04.wav"	
+	}
+}
+//
+"Announcer.SD_Event_SwimmingCurse"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_swimming_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_swimming_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_swimming_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_swimming_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_swimming_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_swimming_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_swimming_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_swimming_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_swimming_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_swimming_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_swimming_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_swimming_06.wav"		
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_swimming_rare_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_swimming_rare_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_swimming_rare_04.wav"
+	}
+}
+//
+"Announcer.SD_Event_NecroMasherCrushing"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_03.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_04.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_05.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_06.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_07.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_08.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_09.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_11.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_12.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_13.wav"				
+	}
+}
+//
+"Announcer.SD_Event_NecroMashMiss"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_miss_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_miss_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_miss_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_miss_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_miss_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_miss_08.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_miss_09.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_miss_10.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_miss_11.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_miss_12.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_miss_13.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_necromasher_miss_14.wav"		
+	}
+}
+//
+"Announcer.SD_Event_CurseIncoming"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_incoming_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_incoming_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_incoming_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_incoming_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_effect_incoming_05.wav"
+	}
+}
+// PLATFORM MINIGAME
+// 
+"sf14.Merasmus.FP.Intro"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_08.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_09.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_start_12.wav"
+	}
+}
+"sf14.Merasmus.FP.Reveal"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+ 	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_reveal01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_reveal02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_reveal03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_reveal04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_reveal05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_reveal06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_reveal07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_reveal08.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_fp_reveal09.wav"
+	}
+}
+"sf14.Merasmus.FP.HorseMan"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+ 	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_FP_hhh_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_FP_hhh_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_FP_hhh_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_FP_hhh_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_FP_hhh_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_FP_hhh_07.wav"
+	}
+}
+"sf14.Merasmus.FP.WinRed"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_redwin_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_redwin_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_redwin_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_redwin_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_03.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_04.wav"						
+	}
+}
+"sf14.Merasmus.FP.WinBlue"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_bluwin_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_bluwin_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_bluwin_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_03.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_04.wav"		
+	}
+}
+// SOCCER MINIGAME
+// 
+"sf14.Merasmus.Soccer.Intro"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+ 	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_08.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_start_08.wav"		
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_08.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_09.wav"			
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_10.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_11.wav"
+	}
+}
+"sf14.Merasmus.Soccer.GoalRed"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_goal_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_goal_04.wav"			
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_goal_05.wav"		
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_goal_06.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_goal_08.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_goal_throwup_01.wav"		
+	}
+}
+"sf14.Merasmus.Soccer.GoalBlue"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_goal_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_goal_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_goal_07.wav"		
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_goal_09.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_goal_10.wav"			
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_goal_throwup_02.wav"							
+	}
+}
+"sf14.Merasmus.Soccer.WinAllDead"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_07.wav"		
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_03.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_otherteamdead_04.wav"								
+	}
+}
+"sf14.Merasmus.Soccer.WinRed"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_redwin_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_redwin_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_redwin_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_redwin_04.wav"		
+	}
+}
+"sf14.Merasmus.Soccer.WinBlue"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_bluwin_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_bluwin_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_bluwin_04.wav"
+	}
+}
+"sf14.Merasmus.Soccer.TakeTooLong"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_FP_hhh_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_FP_hhh_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_FP_hhh_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_FP_hhh_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_FP_hhh_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_FP_hhh_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_hhh_01.wav"				
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_hhh_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_hhh_05.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_hhh_06.wav"			
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_hhh_07.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_hhh_08.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_hhh_09.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_hhh_10.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_hhh_11.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_soccer_hhh_12.wav"
+	}
+}
+//  MINIGAME DUCKHUNT
+// 
+"sf14.Merasmus.DuckHunt.Intro"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_03.wav"		
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_03.wav"		
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_start_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_12.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_13.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_14.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_15.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_16.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_17.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_18.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_19.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_start_20.wav"		
+	}
+}
+"sf14.Merasmus.DuckHunt.BonusDucks"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+ 	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_bonusducks_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_bonusducks_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_bonusducks_03.wav"		
+	}
+}
+"sf14.Merasmus.DuckHunt.DucksHaveMoved"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+ 	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_duckmove_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_duckmove_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_duckmove_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_duckmove_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_duckmove_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_duckmove_06.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_duckmove_07.wav"	
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_duckmove_08.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_duckmove_09.wav"	
+	}
+}
+"sf14.Merasmus.DuckHunt.WinRed"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_redwin_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_redwin_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_redwin_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_redwin_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_redwin_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_redwin_04.wav"		
+	}
+}
+"sf14.Merasmus.DuckHunt.WinBlue"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_duckhunt_bluwin_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_bluwin_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_bluwin_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_bluwin_04.wav"
+	}
+}
+"sf14.Merasmus.MinigameLose"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_lose_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_lose_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_lose_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_lose_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_all_lose_05.wav"
+	}
+}
+"sf14.Merasmus.MinigameOvertime"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_overtime_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_overtime_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_overtime_03.wav"		
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_overtime_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_minigame_overtime_05.wav"						
+	}
+}
+//
+//
+"sf14.Merasmus.Start.FirstRound"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_round_start_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_round_start_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_round_start_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_round_start_04.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_round_start_05.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_round_start_06.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_03.wav"		
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_07.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_08.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_09.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_10.wav"
+	}
+}
+"sf14.Merasmus.Start.FirstRoundRare"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_round_start_rare_01.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_round_start_rare_02.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_round_start_rare_03.wav"
+		"wave"	"vo/halloween_merasmus/sf14_merasmus_round_start_rare_04.wav"
+	}
+}
+"sf14.Merasmus.Start.SecondRound"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_01.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_02.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_04.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_05.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_06.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_07.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_11.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_12.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_13.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_01.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_02.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_03.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_04.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_05.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_06.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_07.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_08.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_09.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_10.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_11.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_12.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_13.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_14.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_15.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_16.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_18.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_20.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_21.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_22.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_23.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_24.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_25.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_26.wav"
+	}
+}
+"sf14.Merasmus.Start.ThirdRoundAndBeyond"
+{
+	"channel"	"CHAN_VOICE2"
+	"volume"	"1"
+	"soundlevel"	"SNDLVL_NONE"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_01.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_02.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_04.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_06.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_08.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_11.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_12.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_start_short_13.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_01.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_02.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_03.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_04.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_05.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_06.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_07.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_08.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_09.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_10.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_11.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_12.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_13.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_14.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_15.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_16.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_18.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_20.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_21.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_22.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_23.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_24.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_25.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_return_26.wav"		
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_second_return_01.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_second_return_02.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_second_return_03.wav"
+		"wave" "vo/halloween_merasmus/sf14_merasmus_round_second_return_04.wav"
+	}
+}
+//-----------------------------------------------------------------------------
+//End of Merasmus added for Halloween 2014
+//-----------------------------------------------------------------------------

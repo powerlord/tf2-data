@@ -120,10 +120,10 @@
 "RD.EnemyStealingPoints"
 {
 	"channel"		"CHAN_STATIC"
-	"volume"		"0.7"
+	"volume"		"0.35"
 	"soundlevel"  	"SNDLVL_85dB"
 	"pitch"			"PITCH_NORM"
-	"wave"			"ui\rd_2base_alarm.wav"
+	"wave"			"ambient\alarms\klaxon1.wav"
 }
 
 "RD.EnemyCaptured"
@@ -239,4 +239,38 @@
 	"soundlevel"  	"SNDLVL_85dB"
 	"pitch"			"PITCH_NORM"
 	"wave"			"misc\outer_space_transition_01.wav"
+}
+
+"RD.BotDeathExplosion"
+{
+	"channel"		"CHAN_WEAPON"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_94dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc\rd_robot_explosion01.wav"
+}
+
+"RD.FinaleBeep"
+{
+	"channel"	"CHAN_ITEM"
+	"volume"	"1.0"
+	"soundlevel"	"SNDLVL_74dB"
+	"wave"		"misc/rd_finale_beep01.wav"
+}
+
+"RD.FlagReturn"
+{
+	"channel"		"CHAN_ITEM"
+	"volume"		"1.0"
+	"soundlevel"	"SNDLVL_74dB"
+	"wave"			"misc/rd_points_return01.wav"
+}
+
+"RD.FinaleMusic"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"0.4"
+	"soundlevel"  	"SNDLVL_85dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"music\rd_finale.wav"
 }

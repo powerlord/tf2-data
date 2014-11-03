@@ -1594,6 +1594,14 @@
 	"pitch"			"PITCH_NORM"
 	"wave"			"misc/halloween/hwn_wheel_of_fate.wav"
 }
+"Halloween.WheelofFateQuiet"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_40dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			"misc/halloween/hwn_wheel_of_fate.wav"
+}
 
 "Halloween.Merasmus_Spell"
 {
@@ -2201,3 +2209,181 @@
 	"wave"			")items/para_close.wav"
 }
 
+// ------------------------------------------------------------------------------------ //
+// Halloween 2014
+// ------------------------------------------------------------------------------------ //
+
+"Halloween.CarCheer"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	")ambient/bumper_car_cheer1.wav"
+		"wave"	")ambient/bumper_car_cheer2.wav"
+		"wave"	")ambient/bumper_car_cheer3.wav"
+	}
+}
+
+"Halloween.CarBoo"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_NONE"
+	"rndwave"
+	{
+		"wave"	")ambient/bumper_car_boo1.wav"
+		"wave"	")ambient/bumper_car_boo2.wav"
+		"wave"	")ambient/bumper_car_boo3.wav"
+	}
+}
+
+"Halloween.Quack"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1"
+	"pitch"		"90, 110"
+	"rndwave"
+	{
+		"wave"	")ambient/bumper_car_quack1.wav"
+		"wave"	")ambient/bumper_car_quack2.wav"
+		"wave"	")ambient/bumper_car_quack3.wav"
+		"wave"	")ambient/bumper_car_quack4.wav"
+		"wave"	")ambient/bumper_car_quack5.wav"
+		"wave"	")ambient/bumper_car_quack9.wav"
+		"wave"	")ambient/bumper_car_quack10.wav"
+		"wave"	")ambient/bumper_car_quack11.wav"
+		"wave"	")ambient/bumper_car_quack12.wav"
+	}
+}
+
+"Halloween.FloorBreak"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_110dB"
+	"volume"	"1"
+	"wave"	")ambient/bumper_car_floor_break.wav"
+}
+"Halloween.FloorBreakReverse"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_110dB"
+	"volume"	"1"
+	"wave"	")ambient/bumper_car_floor_break_reverse.wav"
+}
+
+"Halloween.HammerGearCrankSlow"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"ambient/puthammerhere.wav"
+}
+
+"Halloween.HammerGearCrankFast"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"ambient/puthammerhere.wav"
+}
+
+"Halloween.HammerImpactLarge"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"ambient/puthammerhere.wav"
+}
+
+"Halloween.HammerImpactSmall"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"ambient/puthammerhere.wav"
+}
+
+"Halloween.HammerImpactSmall2"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"ambient/puthammerhere.wav"
+}
+
+"Halloween.HammerImpactBloodyBoneCrunch"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"ambient/puthammerhere.wav"
+}
+
+"Halloween.PlatformAlarm"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"ambient/alarms/klaxon1.wav"
+}
+
+"Halloween.BellRing.Scout"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"mvm/melee_impacts/metal_gloves_hit_robo02.wav"
+}
+
+"Halloween.BellRing.Heman"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"mvm/melee_impacts/metal_gloves_hit_robo02.wav"
+}
+
+"Halloween.BellRing.PushOver"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"mvm/melee_impacts/metal_gloves_hit_robo02.wav"
+}
+
+"Halloween.BellRing.Wizard"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"mvm/melee_impacts/metal_gloves_hit_robo02.wav"
+}
+
+"Halloween.BellRing.WoodImpact"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"mvm/melee_impacts/metal_gloves_hit_robo02.wav"
+}
+
+"Halloween.DuckPickup.Pos"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"misc/halloween/duck_pickup_pos_01.wav"
+}
+
+"Halloween.DuckPickup.Neg"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_148dB"
+	"volume"	"1"
+	"wave"	"misc/halloween/duck_pickup_neg_01.wav"
+}
