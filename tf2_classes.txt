@@ -1,4 +1,4 @@
-// Dump of all classes for "tf" as at 23/12/2014
+// Dump of all classes for "tf" as at 09/02/2015
 //
 
 CFireSmoke - _firesmoke
@@ -278,9 +278,10 @@ CCurrencyPack - item_currencypack_small
 CBaseAnimating - item_healthkit_full
 CBaseAnimating - item_healthkit_medium
 CBaseAnimating - item_healthkit_small
+CBaseAnimating - item_powerup_crit
 CBaseAnimating - item_powerup_rune
 CBaseAnimating - item_powerup_rune_temp
-CBaseAnimating - item_powerup_temp
+CBaseAnimating - item_powerup_uber
 CBaseAnimating - item_sodacan
 CCaptureFlag - item_teamflag
 CCaptureFlagReturnIcon - item_teamflag_return_icon
