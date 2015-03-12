@@ -1,4 +1,4 @@
-// Dump of all classes for "tf" as at 09/02/2015
+// Dump of all classes for "tf" as at 12/03/2015
 //
 
 CFireSmoke - _firesmoke
@@ -180,6 +180,7 @@ CPhysBox - func_physbox
 CPhysBoxMultiplayer - func_physbox_multiplayer
 CBaseEntity - func_plat
 CBaseEntity - func_platrot
+CBaseEntity - func_powerupvolume
 CPrecipitation - func_precipitation
 CBaseEntity - func_proprrespawnzone
 CBaseEntity - func_pushable
