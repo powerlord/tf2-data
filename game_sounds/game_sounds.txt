@@ -53,7 +53,7 @@
 	"volume"		"VOL_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
-	"wave"			"vo/null.wav"
+	"wave"			"vo/null.mp3"
 }
 
 // ------------------------------------------------------------------------------------ //
@@ -209,7 +209,7 @@
 	"soundlevel"  "SNDLVL_NONE"
 	"pitch"	"PITCH_NORM"
 
-	"wave"	"vo/null.wav"
+	"wave"	"vo/null.mp3"
 }
 
 "Hud.Hint"
@@ -2255,9 +2255,7 @@
 		"wave"	")ambient/bumper_car_quack4.wav"
 		"wave"	")ambient/bumper_car_quack5.wav"
 		"wave"	")ambient/bumper_car_quack9.wav"
-		"wave"	")ambient/bumper_car_quack10.wav"
 		"wave"	")ambient/bumper_car_quack11.wav"
-		"wave"	")ambient/bumper_car_quack12.wav"
 	}
 }
 
@@ -2387,3 +2385,182 @@
 	"volume"	"1"
 	"wave"	"misc/halloween/duck_pickup_neg_01.wav"
 }
+"Halloween.HammerImpact"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_150dB"
+	"volume"	"1"
+	"wave"	"misc/halloween/strongman_fast_impact_01.wav"
+}
+
+"Duck.Quack"
+{
+	"channel"	"CHAN_STATIC"
+	"soundlevel"	"SNDLVL_75dB"
+	"volume"	"0.75"
+	"pitch"		"85, 105"
+	"rndwave"
+	{
+		"wave"	")ambient/bumper_car_quack1.wav"
+		"wave"	")ambient/bumper_car_quack2.wav"
+		"wave"	")ambient/bumper_car_quack3.wav"
+		"wave"	")ambient/bumper_car_quack4.wav"
+		"wave"	")ambient/bumper_car_quack5.wav"
+		"wave"	")ambient/bumper_car_quack9.wav"
+		"wave"	")ambient/bumper_car_quack11.wav"
+	}
+}
+
+// ------------------------------------------------------------------------------------ //
+// Powerups
+// ------------------------------------------------------------------------------------ //
+
+"Powerup.PickUpTemp.Crit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"			")items/powerup_pickup_crits.wav"
+}
+
+"Powerup.PickUpTemp.Uber"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"			")items/powerup_pickup_uber.wav"
+}
+
+"Powerup.Warlock.Reflect"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_90dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")items/powerup_pickup_warlock_reflect_damage.wav"
+}
+
+"Powerup.PickUpKnockout"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"			")items/powerup_pickup_knockout.wav"
+}
+
+"Powerup.Knockout_Melee_Hit"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"  	"SNDLVL_100dB"
+	"wave"			")items/powerup_pickup_knockout_melee_hit.wav"
+}
+
+"Powerup.Volume.Use"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"			")items/powerup_pickup_team_revenge.wav"
+}
+
+"Powerup.PickUpBase"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"			")items/powerup_pickup_base.wav"
+}
+
+"Powerup.PickUpAgility"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"			")items/powerup_pickup_agility.wav"
+}
+
+"Powerup.PickUpHaste"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"			")items/powerup_pickup_haste.wav"
+}
+
+"Powerup.PickUpPrecision"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"			")items/powerup_pickup_precision.wav"
+}
+
+"Powerup.PickUpRegeneration"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"			")items/powerup_pickup_regeneration.wav"
+}
+
+"Powerup.PickUpResistance"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"			")items/powerup_pickup_resistance.wav"
+}
+
+"Powerup.PickUpStrength"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"			")items/powerup_pickup_strength.wav"
+}
+
+"Powerup.PickUpVampire"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"			")items/powerup_pickup_vampire.wav"
+}
+
+"Powerup.PickUpWarlock"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"			")items/powerup_pickup_warlock.wav"
+}
+
+

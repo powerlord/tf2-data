@@ -415,7 +415,8 @@ criterion "WeaponIsFestiveUbersaw" "item_name" "Festive Ubersaw" "required" weig
 criterion "WeaponIsFrontierJustice" "item_name" "The Frontier Justice" "required" weight 10
 criterion "WeaponIsFestiveFrontierJustice" "item_name" "Festive Frontier Justice" "required" weight 10
 criterion "WeaponIsRobotArm" "item_name" "The Gunslinger" "required" weight 10
-criterion "ItemIsGoldenWrench" "item_name" "Golden Wrench" "required" weight 10
+criterion "WeaponIsGoldenWrench" "item_name" "Golden Wrench" "required" weight 10
+criterion "WeaponIsGoldenFryingPan" "item_name" "Gold Frying Pan" "required" weight 10
 criterion "WeaponIsShortstop" "item_name" "The Shortstop" "required" weight 10
 criterion "WeaponIsMadMilk" "item_name" "Mad Milk" "required" weight 10
 criterion "WeaponIsSDCleaver" "item_name" "The Flying Guillotine" "required" weight 10

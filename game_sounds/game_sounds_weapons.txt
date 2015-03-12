@@ -468,8 +468,8 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hit1.wav"
-		"wave"		"weapons/cbar_hit2.wav"
+		"wave"		")weapons/cbar_hit1.wav"
+		"wave"		")weapons/cbar_hit2.wav"
 	}
 }
 
@@ -614,9 +614,9 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hitbod1.wav"
-		"wave"		"weapons/cbar_hitbod2.wav"
-		"wave"		"weapons/cbar_hitbod3.wav"
+		"wave"		")weapons/cbar_hitbod1.wav"
+		"wave"		")weapons/cbar_hitbod2.wav"
+		"wave"		")weapons/cbar_hitbod3.wav"
 	}
 }
 
@@ -627,8 +627,8 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hit1.wav"
-		"wave"		"weapons/cbar_hit2.wav"
+		"wave"		")weapons/cbar_hit1.wav"
+		"wave"		")weapons/cbar_hit2.wav"
 	}
 }
 
@@ -671,9 +671,9 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hitbod1.wav"
-		"wave"		"weapons/cbar_hitbod2.wav"
-		"wave"		"weapons/cbar_hitbod3.wav"
+		"wave"		")weapons/cbar_hitbod1.wav"
+		"wave"		")weapons/cbar_hitbod2.wav"
+		"wave"		")weapons/cbar_hitbod3.wav"
 	}
 }
 
@@ -923,9 +923,9 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/axe_hit_flesh1.wav"
-		"wave"		"weapons/axe_hit_flesh2.wav"
-		"wave"		"weapons/axe_hit_flesh3.wav"
+		"wave"		")weapons/axe_hit_flesh1.wav"
+		"wave"		")weapons/axe_hit_flesh2.wav"
+		"wave"		")weapons/axe_hit_flesh3.wav"
 	}
 }
 
@@ -936,8 +936,8 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hit1.wav"
-		"wave"		"weapons/cbar_hit2.wav"
+		"wave"		")weapons/cbar_hit1.wav"
+		"wave"		")weapons/cbar_hit2.wav"
 	}
 }
 
@@ -999,8 +999,8 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hit1.wav"
-		"wave"		"weapons/cbar_hit2.wav"
+		"wave"		")weapons/cbar_hit1.wav"
+		"wave"		")weapons/cbar_hit2.wav"
 	}
 }
 
@@ -1031,9 +1031,9 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hitbod1.wav"
-		"wave"		"weapons/cbar_hitbod2.wav"
-		"wave"		"weapons/cbar_hitbod3.wav"
+		"wave"		")weapons/cbar_hitbod1.wav"
+		"wave"		")weapons/cbar_hitbod2.wav"
+		"wave"		")weapons/cbar_hitbod3.wav"
 	}
 }
 
@@ -1044,8 +1044,8 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hit1.wav"
-		"wave"		"weapons/cbar_hit2.wav"
+		"wave"		")weapons/cbar_hit1.wav"
+		"wave"		")weapons/cbar_hit2.wav"
 	}
 }
 
@@ -1076,9 +1076,9 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hitbod1.wav"
-		"wave"		"weapons/cbar_hitbod2.wav"
-		"wave"		"weapons/cbar_hitbod3.wav"
+		"wave"		")weapons/cbar_hitbod1.wav"
+		"wave"		")weapons/cbar_hitbod2.wav"
+		"wave"		")weapons/cbar_hitbod3.wav"
 	}
 }
 
@@ -1089,8 +1089,8 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hit1.wav"
-		"wave"		"weapons/cbar_hit2.wav"
+		"wave"		")weapons/cbar_hit1.wav"
+		"wave"		")weapons/cbar_hit2.wav"
 	}
 }
 
@@ -1113,9 +1113,9 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hitbod1.wav"
-		"wave"		"weapons/cbar_hitbod2.wav"
-		"wave"		"weapons/cbar_hitbod3.wav"
+		"wave"		")weapons/cbar_hitbod1.wav"
+		"wave"		")weapons/cbar_hitbod2.wav"
+		"wave"		")weapons/cbar_hitbod3.wav"
 	}
 }
 
@@ -1126,8 +1126,8 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hit1.wav"
-		"wave"		"weapons/cbar_hit2.wav"
+		"wave"		")weapons/cbar_hit1.wav"
+		"wave"		")weapons/cbar_hit2.wav"
 	}
 }
 
@@ -1164,9 +1164,9 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hitbod1.wav"
-		"wave"		"weapons/cbar_hitbod2.wav"
-		"wave"		"weapons/cbar_hitbod3.wav"
+		"wave"		")weapons/cbar_hitbod1.wav"
+		"wave"		")weapons/cbar_hitbod2.wav"
+		"wave"		")weapons/cbar_hitbod3.wav"
 	}
 }
 
@@ -1676,6 +1676,72 @@
 }
 
 // ------------------------------------------------------------------------------------ //
+// TACKY GRENADIER
+// ------------------------------------------------------------------------------------ //
+"Weapon_TackyGrenadier.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/tacky_grenadier_shoot.wav"
+}
+
+"Weapon_TackyGrenadier.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/tacky_grenadier_shoot_crit.wav"
+}
+
+"Weapon_TackyGrendadier.Explode"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_95dB"
+	"volume"	"1.0"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		")weapons/tacky_grenadier_explode1.wav"
+		"wave"		")weapons/tacky_grenadier_explode2.wav"
+		"wave"		")weapons/tacky_grenadier_explode3.wav"
+	}
+}
+
+// ------------------------------------------------------------------------------------ //
+// AIR BURSTER
+// ------------------------------------------------------------------------------------ //
+"Weapon_AirBurster.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/air_burster_shoot.wav"
+}
+
+"Weapon_AirBurster.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/air_burster_shoot_crit.wav"
+}
+
+"Weapon_AirBurster.Explode"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_95dB"
+	"volume"	"1.0"
+	"pitch"		"PITCH_NORM"
+	"rndwave"
+	{
+		"wave"		")weapons/air_burster_explode1.wav"
+		"wave"		")weapons/air_burster_explode2.wav"
+		"wave"		")weapons/air_burster_explode3.wav"
+	}
+}
+
+// ------------------------------------------------------------------------------------ //
 // KNIFE
 // ------------------------------------------------------------------------------------ //
 
@@ -1702,9 +1768,9 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/blade_hit1.wav"
-		"wave"		"weapons/blade_hit2.wav"
-		"wave"		"weapons/blade_hit3.wav"
+		"wave"		")weapons/blade_hit1.wav"
+		"wave"		")weapons/blade_hit2.wav"
+		"wave"		")weapons/blade_hit3.wav"
 	}
 }
 
@@ -1713,7 +1779,7 @@
 	"channel"	"CHAN_ITEM"
 	"soundlevel"	"SNDLVL_NORM"
 	"volume"	"1.0"
-	"wave"		"weapons/blade_hitworld.wav"
+	"wave"		")weapons/blade_hitworld.wav"
 
 }
 
@@ -1843,9 +1909,9 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hitbod1.wav"
-		"wave"		"weapons/cbar_hitbod2.wav"
-		"wave"		"weapons/cbar_hitbod3.wav"
+		"wave"		")weapons/cbar_hitbod1.wav"
+		"wave"		")weapons/cbar_hitbod2.wav"
+		"wave"		")weapons/cbar_hitbod3.wav"
 	}
 }
 
@@ -1856,8 +1922,8 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hit1.wav"
-		"wave"		"weapons/cbar_hit2.wav"
+		"wave"		")weapons/cbar_hit1.wav"
+		"wave"		")weapons/cbar_hit2.wav"
 	}
 }
 
@@ -2218,9 +2284,9 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hitbod1.wav"
-		"wave"		"weapons/cbar_hitbod2.wav"
-		"wave"		"weapons/cbar_hitbod3.wav"
+		"wave"		")weapons/cbar_hitbod1.wav"
+		"wave"		")weapons/cbar_hitbod2.wav"
+		"wave"		")weapons/cbar_hitbod3.wav"
 	}
 }
 
@@ -2231,8 +2297,8 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hit1.wav"
-		"wave"		"weapons/cbar_hit2.wav"
+		"wave"		")weapons/cbar_hit1.wav"
+		"wave"		")weapons/cbar_hit2.wav"
 	}
 }
 
@@ -2547,6 +2613,25 @@
 	"wave"		"weapons/scatter_gun_double_tube_close.wav"
 }
 
+// ------------------------------------------------------------------------------------ //
+// BackShot Shotty
+// ------------------------------------------------------------------------------------ //
+
+"Weapon_BackShot_Shotty.Single"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/tf2_backshot_shotty.wav"
+}
+
+"Weapon_BackShot_Shotty.SingleCrit"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1.0"
+	"wave"		")weapons/tf2_backshot_shotty_crit.wav"
+}
 
 // ------------------------------------------------------------------------------------ //
 // Back Scatter
@@ -2738,9 +2823,9 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/axe_hit_flesh1.wav"
-		"wave"		"weapons/axe_hit_flesh2.wav"
-		"wave"		"weapons/axe_hit_flesh3.wav"
+		"wave"		")weapons/axe_hit_flesh1.wav"
+		"wave"		")weapons/axe_hit_flesh2.wav"
+		"wave"		")weapons/axe_hit_flesh3.wav"
 	}
 }
 
@@ -2751,8 +2836,8 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hit1.wav"
-		"wave"		"weapons/cbar_hit2.wav"
+		"wave"		")weapons/cbar_hit1.wav"
+		"wave"		")weapons/cbar_hit2.wav"
 	}
 }
 
@@ -3109,9 +3194,9 @@
 	"volume"	"1.0"
 	"rndwave"
 	{
-		"wave"		"weapons/cbar_hitbod1.wav"
-		"wave"		"weapons/cbar_hitbod2.wav"
-		"wave"		"weapons/cbar_hitbod3.wav"
+		"wave"		")weapons/cbar_hitbod1.wav"
+		"wave"		")weapons/cbar_hitbod2.wav"
+		"wave"		")weapons/cbar_hitbod3.wav"
 	}
 }
 
@@ -4379,6 +4464,7 @@
 	"volume"	"1.0"
 	"wave"		")weapons/sentry_shoot_mini.wav"
 }
+
 
 
 // ------------------------------------------------------------------------------------ //
@@ -5791,7 +5877,7 @@
 	"channel"	"CHAN_ITEM"
 	"soundlevel"	"SNDLVL_NORM"
 	"volume"	"1.0"
-	"wave"		"weapons/blade_hitworld.wav"
+	"wave"		")weapons/blade_hitworld.wav"
 }
 
 "Weapon_Assassin_Knife.Backstab"
@@ -6922,4 +7008,31 @@
 			"wave"	"weapons/breadmonster/throwable/bm_throwable_attack_09.wav"
 			"wave"	"weapons/breadmonster/throwable/bm_throwable_attack_10.wav"
 	}
+}
+
+// ------------------------------------------------------------------------------------ //
+// -GRAPPLING HOOK
+// ------------------------------------------------------------------------------------ //
+"WeaponGrapplingHook.Shoot"
+{
+	"channel"	"CHAN_WEAPON"
+	"soundlevel"	"SNDLVL_84dB"
+	"volume"	"1"
+	"wave"		")weapons\grappling_hook_shoot.wav"
+}
+
+"WeaponGrapplingHook.ReelStart"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_84dB"
+	"volume"	"1"
+	"wave"		")weapons\grappling_hook_reel_start.wav"
+}
+
+"WeaponGrapplingHook.ReelStop"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_84dB"
+	"volume"	"1"
+	"wave"		")weapons\grappling_hook_reel_stop.wav"
 }

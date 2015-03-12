@@ -513,8 +513,8 @@
 
 	"rndwave"
 	{
-		"wave"		"vo/medic1.wav"
-		"wave"		"vo/medic2.wav"
+		"wave"		"vo/medic1.mp3"
+		"wave"		"vo/medic2.mp3"
 	}
 }
 
@@ -1247,7 +1247,7 @@
 	"channel"	"CHAN_VOICE"
 	"volume"	"1.0"
 	"soundlevel"  	"SNDLVL_NORM"		
-	"wave"	"vo/soldier_DirectHitTaunt02.wav"
+	"wave"	"vo/soldier_DirectHitTaunt02.mp3"
 }
 
 "Taunt.SoldierChestThump"
@@ -2084,9 +2084,9 @@
 
 	"rndwave"
 	{
-		"wave"	"vo/demoman_Go01.wav"
-		"wave"	"vo/demoman_Go02.wav"
-		"wave"	"vo/demoman_Go03.wav"
+		"wave"	"vo/demoman_Go01.mp3"
+		"wave"	"vo/demoman_Go02.mp3"
+		"wave"	"vo/demoman_Go03.mp3"
 	}
 }
 
@@ -2099,10 +2099,10 @@
 
 	"rndwave"
 	{
-		"wave"	"vo/engineer_mvm_ask_ready01.wav"
-		"wave"	"vo/engineer_mvm_ask_ready02.wav"
-		"wave"	"vo/engineer_mvm_say_ready01.wav"
-		"wave"	"vo/engineer_mvm_say_ready02.wav"
+		"wave"	"vo/engineer_mvm_ask_ready01.mp3"
+		"wave"	"vo/engineer_mvm_ask_ready02.mp3"
+		"wave"	"vo/engineer_mvm_say_ready01.mp3"
+		"wave"	"vo/engineer_mvm_say_ready02.mp3"
 	}
 }
 
@@ -2115,15 +2115,15 @@
 
 	"rndwave"
 	{
-		"wave"	"vo/heavy_mvm_ask_ready01.wav"
-		"wave"	"vo/heavy_mvm_ask_ready02.wav"
-		"wave"	"vo/heavy_mvm_ask_ready03.wav"
-		"wave"	"vo/heavy_mvm_ask_ready04.wav"
-		"wave"	"vo/heavy_mvm_say_ready01.wav"
-		"wave"	"vo/heavy_mvm_say_ready02.wav"
-		"wave"	"vo/heavy_mvm_say_ready03.wav"
-		"wave"	"vo/heavy_mvm_say_ready04.wav"
-		"wave"	"vo/heavy_mvm_say_ready05.wav"
+		"wave"	"vo/heavy_mvm_ask_ready01.mp3"
+		"wave"	"vo/heavy_mvm_ask_ready02.mp3"
+		"wave"	"vo/heavy_mvm_ask_ready03.mp3"
+		"wave"	"vo/heavy_mvm_ask_ready04.mp3"
+		"wave"	"vo/heavy_mvm_say_ready01.mp3"
+		"wave"	"vo/heavy_mvm_say_ready02.mp3"
+		"wave"	"vo/heavy_mvm_say_ready03.mp3"
+		"wave"	"vo/heavy_mvm_say_ready04.mp3"
+		"wave"	"vo/heavy_mvm_say_ready05.mp3"
 	}
 }
 
@@ -2136,9 +2136,9 @@
 
 	"rndwave"
 	{
-		"wave"	"vo/medic_mvm_ask_ready01.wav"
-		"wave"	"vo/medic_mvm_say_ready01.wav"
-		"wave"	"vo/medic_mvm_say_ready02.wav"
+		"wave"	"vo/medic_mvm_ask_ready01.mp3"
+		"wave"	"vo/medic_mvm_say_ready01.mp3"
+		"wave"	"vo/medic_mvm_say_ready02.mp3"
 	}
 }
 
@@ -2149,7 +2149,7 @@
 	"pitch"		"PITCH_NORM"
 	"soundlevel"	"SNDLVL_95dB"
 
-	"wave"			"vo/pyro_Go01.wav"
+	"wave"			"vo/pyro_Go01.mp3"
 }
 
 "Scout.Ready"
@@ -2161,9 +2161,9 @@
 
 	"rndwave"
 	{
-		"wave"	"vo/scout_Go01.wav"
-		"wave"	"vo/scout_Go02.wav"
-		"wave"	"vo/scout_Go03.wav"
+		"wave"	"vo/scout_Go01.mp3"
+		"wave"	"vo/scout_Go02.mp3"
+		"wave"	"vo/scout_Go03.mp3"
 	}
 }
 
@@ -2176,9 +2176,9 @@
 
 	"rndwave"
 	{
-		"wave"	"vo/sniper_Go01.wav"
-		"wave"	"vo/sniper_Go02.wav"
-		"wave"	"vo/sniper_Go03.wav"
+		"wave"	"vo/sniper_Go01.mp3"
+		"wave"	"vo/sniper_Go02.mp3"
+		"wave"	"vo/sniper_Go03.mp3"
 	}
 }
 
@@ -2191,11 +2191,11 @@
 
 	"rndwave"
 	{
-		"wave"	"vo/soldier_mvm_ask_ready01.wav"
-		"wave"	"vo/soldier_mvm_ask_ready02.wav"
-		"wave"	"vo/soldier_mvm_ask_ready03.wav"
-		"wave"	"vo/soldier_mvm_say_ready01.wav"
-		"wave"	"vo/soldier_mvm_say_ready02.wav"
+		"wave"	"vo/soldier_mvm_ask_ready01.mp3"
+		"wave"	"vo/soldier_mvm_ask_ready02.mp3"
+		"wave"	"vo/soldier_mvm_ask_ready03.mp3"
+		"wave"	"vo/soldier_mvm_say_ready01.mp3"
+		"wave"	"vo/soldier_mvm_say_ready02.mp3"
 	}
 }
 
@@ -2208,9 +2208,9 @@
 
 	"rndwave"
 	{
-		"wave"	"vo/spy_Go01.wav"
-		"wave"	"vo/spy_Go02.wav"
-		"wave"	"vo/spy_Go03.wav"
+		"wave"	"vo/spy_Go01.mp3"
+		"wave"	"vo/spy_Go02.mp3"
+		"wave"	"vo/spy_Go03.mp3"
 	}
 }
 
@@ -2292,4 +2292,12 @@
 	"volume"		"0.8"
 	"pitch"			"PITCH_NORM"
 	"wave"			"player/sniper_taunt_hawk.wav"
+}
+
+"Mannpower.InvulnerableOn"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"soundlevel"  	"SNDLVL_NONE"
+	"wave"		"player/mannpower_invulnerable.wav"
 }

@@ -268,13 +268,19 @@ Response EngineerGoldenWrench
 }
 Rule EngineerGoldenWrench
 {
-	criteria ConceptKilledPlayer IsEngineer ItemIsGoldenWrench WeaponIsWrench WeaponIsNotSentry EngineerNotKillSpeechMelee
+	criteria ConceptKilledPlayer IsEngineer WeaponIsGoldenWrench WeaponIsWrench WeaponIsNotSentry EngineerNotKillSpeechMelee
 	ApplyContext "EngineerKillSpeechMelee:1:10"
 	Response EngineerGoldenWrench
 }
 Rule EngineerSaxxy
 {
 	criteria ConceptKilledPlayer IsEngineer WeaponIsSaxxy WeaponIsNotSentry EngineerNotKillSpeechMelee
+	ApplyContext "EngineerKillSpeechMelee:1:10"
+	Response EngineerGoldenWrench
+}
+Rule EngineerGoldenFryingPan
+{
+	criteria ConceptKilledPlayer IsEngineer WeaponIsGoldenFryingPan WeaponIsNotSentry EngineerNotKillSpeechMelee
 	ApplyContext "EngineerKillSpeechMelee:1:10"
 	Response EngineerGoldenWrench
 }

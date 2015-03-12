@@ -8,9 +8,9 @@
 
 	"rndwave"
 	{
-		"wave"		"vo/bot_worker/tinybot_crosspaths_03.wav"	
-		"wave"		"vo/bot_worker/tinybot_crosspaths_05.wav"	
-		"wave"		"vo/bot_worker/tinybot_crosspaths_06.wav"	
+		"wave"		"vo/bot_worker/tinybot_crosspaths_03.mp3"	
+		"wave"		"vo/bot_worker/tinybot_crosspaths_05.mp3"	
+		"wave"		"vo/bot_worker/tinybot_crosspaths_06.mp3"	
 	}
 }
 
@@ -24,8 +24,8 @@
 
 	"rndwave"
 	{
-		"wave"		"vo/bot_worker/tinybot_incidental_01.wav"	
-		"wave"		"vo/bot_worker/tinybot_incidental_02.wav"
+		"wave"		"vo/bot_worker/tinybot_incidental_01.mp3"	
+		"wave"		"vo/bot_worker/tinybot_incidental_02.mp3"
 	}
 }
 
@@ -39,8 +39,8 @@
 
 	"rndwave"
 	{
-		"wave"		"vo/bot_worker/tinybot_takedamage_01.wav"	
-		"wave"		"vo/bot_worker/tinybot_takedamage_09.wav"
+		"wave"		"vo/bot_worker/tinybot_takedamage_01.mp3"	
+		"wave"		"vo/bot_worker/tinybot_takedamage_09.mp3"
 	}
 }
 
@@ -54,8 +54,8 @@
 
 	"rndwave"
 	{
-		"wave"		"vo/bot_worker/tinybot_death_01.wav"	
-		"wave"		"vo/bot_worker/tinybot_death_02.wav"		
+		"wave"		"vo/bot_worker/tinybot_death_01.mp3"	
+		"wave"		"vo/bot_worker/tinybot_death_02.mp3"		
 	}
 }
 
@@ -132,7 +132,7 @@
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NONE"
-	"wave"	"vo/announcer_captureflag_enemycaptured_01.wav"
+	"wave"	"vo/announcer_captureflag_enemycaptured_01.mp3"
 
 }
 
@@ -144,8 +144,8 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"rndwave"
 	{
-		"wave"		"vo/announcer_captureflag_enemydropped_01.wav"	
-		"wave"		"vo/announcer_captureflag_enemydropped_02.wav"	
+		"wave"		"vo/announcer_captureflag_enemydropped_01.mp3"	
+		"wave"		"vo/announcer_captureflag_enemydropped_02.mp3"	
 	}
 }
 
@@ -157,10 +157,10 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"rndwave"
 	{
-		"wave"		"vo/announcer_captureflag_enemyreturned_01.wav"	
-		"wave"		"vo/announcer_captureflag_enemyreturned_02.wav"	
-		"wave"		"vo/announcer_captureflag_enemyreturned_03.wav"	
-		"wave"		"vo/announcer_captureflag_enemyreturned_04.wav"	
+		"wave"		"vo/announcer_captureflag_enemyreturned_01.mp3"	
+		"wave"		"vo/announcer_captureflag_enemyreturned_02.mp3"	
+		"wave"		"vo/announcer_captureflag_enemyreturned_03.mp3"	
+		"wave"		"vo/announcer_captureflag_enemyreturned_04.mp3"	
 	}
 }
 
@@ -172,8 +172,8 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"rndwave"
 	{
-		"wave"		"vo/announcer_captureflag_enemystolen_01.wav"	
-		"wave"		"vo/announcer_captureflag_enemystolen_02.wav"	
+		"wave"		"vo/announcer_captureflag_enemystolen_01.mp3"	
+		"wave"		"vo/announcer_captureflag_enemystolen_02.mp3"	
 	}
 }
 
@@ -185,8 +185,8 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"rndwave"
 	{
-		"wave"		"vo/announcer_captureflag_teamcaptured_01.wav"	
-		"wave"		"vo/announcer_captureflag_teamcaptured_02.wav"	
+		"wave"		"vo/announcer_captureflag_teamcaptured_01.mp3"	
+		"wave"		"vo/announcer_captureflag_teamcaptured_02.mp3"	
 	}
 }
 
@@ -198,10 +198,10 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"rndwave"
 	{
-		"wave"		"vo/announcer_captureflag_teamdropped_01.wav"	
-		"wave"		"vo/announcer_captureflag_teamdropped_04.wav"	
-		"wave"		"vo/announcer_captureflag_teamdropped_07.wav"	
-		"wave"		"vo/announcer_captureflag_teamdropped_08.wav"	
+		"wave"		"vo/announcer_captureflag_teamdropped_01.mp3"	
+		"wave"		"vo/announcer_captureflag_teamdropped_04.mp3"	
+		"wave"		"vo/announcer_captureflag_teamdropped_07.mp3"	
+		"wave"		"vo/announcer_captureflag_teamdropped_08.mp3"	
 	}
 }
 
@@ -213,8 +213,8 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"rndwave"
 	{
-		"wave"		"vo/announcer_captureflag_teamreturned_01.wav"	
-		"wave"		"vo/announcer_captureflag_teamreturned_02.wav"	
+		"wave"		"vo/announcer_captureflag_teamreturned_01.mp3"	
+		"wave"		"vo/announcer_captureflag_teamreturned_02.mp3"	
 	}
 }
 
@@ -226,9 +226,9 @@
 	"soundlevel"	"SNDLVL_NONE"
 	"rndwave"
 	{
-		"wave"		"vo/announcer_captureflag_teamstolen_01.wav"	
-		"wave"		"vo/announcer_captureflag_teamstolen_02.wav"	
-		"wave"		"vo/announcer_captureflag_teamstolen_03.wav"	
+		"wave"		"vo/announcer_captureflag_teamstolen_01.mp3"	
+		"wave"		"vo/announcer_captureflag_teamstolen_02.mp3"	
+		"wave"		"vo/announcer_captureflag_teamstolen_03.mp3"	
 	}
 }
 
