@@ -3161,9 +3161,9 @@
 	"volume"	".25"
 	"rndwave"
 	{
-		"wave"		"vo/engineer_negativevocalization07.wav"
-		"wave"		"vo/engineer_negativevocalization08.wav"
-		"wave"		"vo/engineer_negativevocalization09.wav"
+		"wave"		"vo/engineer_negativevocalization07.mp3"
+		"wave"		"vo/engineer_negativevocalization08.mp3"
+		"wave"		"vo/engineer_negativevocalization09.mp3"
 	}
 }
 

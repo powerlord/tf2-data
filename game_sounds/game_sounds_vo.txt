@@ -28388,7 +28388,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"    "1.000"
 	"soundlevel"		"SNDLVL_85dB"
-	"wave"		")vo/wolf_howl_01.wav"
+	"wave"		")vo/wolf_howl_01.mp3"
 }
 
 "halloween.wolf_02"
@@ -28396,7 +28396,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.000"
 	"soundlevel"		"SNDLVL_85dB"
-	"wave"		")vo/wolf_howl_02.wav"
+	"wave"		")vo/wolf_howl_02.mp3"
 }
 
 "halloween.wolf_03"
@@ -28404,7 +28404,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1.000"
 	"soundlevel"		"SNDLVL_85dB"
-	"wave"		")vo/wolf_howl_03.wav"
+	"wave"		")vo/wolf_howl_03.mp3"
 }
 
 //-----------------------------------------------------------------------------
@@ -46071,7 +46071,7 @@
 
 	"rndwave"
 	{
-		"wave"	"vo/killstreak/announcer_ks_19.wav"
-		"wave"	"vo/killstreak/announcer_ks_26.wav"
+		"wave"	"vo/killstreak/announcer_ks_19.mp3"
+		"wave"	"vo/killstreak/announcer_ks_26.mp3"
 	}
 }

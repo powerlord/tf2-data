@@ -25296,11 +25296,11 @@
 
 	"rndwave"
 	{
-		"wave"	"vo/announcer_mvm_eng_tele_activated01.wav"
-		"wave"	"vo/announcer_mvm_eng_tele_activated02.wav"
-		"wave"	"vo/announcer_mvm_eng_tele_activated03.wav"
-		"wave"	"vo/announcer_mvm_eng_tele_activated04.wav"
-		"wave"	"vo/announcer_mvm_eng_tele_activated05.wav"
+		"wave"	"vo/announcer_mvm_eng_tele_activated01.mp3"
+		"wave"	"vo/announcer_mvm_eng_tele_activated02.mp3"
+		"wave"	"vo/announcer_mvm_eng_tele_activated03.mp3"
+		"wave"	"vo/announcer_mvm_eng_tele_activated04.mp3"
+		"wave"	"vo/announcer_mvm_eng_tele_activated05.mp3"
 	}
 }
 
@@ -25314,8 +25314,8 @@
 
 	"rndwave"
 	{
-		"wave"	"vo/announcer_mvm_engbot_another01.wav"
-		"wave"	"vo/announcer_mvm_engbot_another02.wav"
+		"wave"	"vo/announcer_mvm_engbot_another01.mp3"
+		"wave"	"vo/announcer_mvm_engbot_another02.mp3"
 	}
 }
 
@@ -25329,9 +25329,9 @@
 
 	"rndwave"
 	{
-		"wave"	"vo/announcer_mvm_engbot_arrive01.wav"
-		"wave"	"vo/announcer_mvm_engbot_arrive02.wav"
-		"wave"	"vo/announcer_mvm_engbot_arrive03.wav"
+		"wave"	"vo/announcer_mvm_engbot_arrive01.mp3"
+		"wave"	"vo/announcer_mvm_engbot_arrive02.mp3"
+		"wave"	"vo/announcer_mvm_engbot_arrive03.mp3"
 	}
 }
 
@@ -25345,9 +25345,9 @@
 
 	"rndwave"
 	{
-		"wave"	"vo/announcer_mvm_engbot_dead_notele01.wav"
-		"wave"	"vo/announcer_mvm_engbot_dead_notele02.wav"
-		"wave"	"vo/announcer_mvm_engbot_dead_notele03.wav"
+		"wave"	"vo/announcer_mvm_engbot_dead_notele01.mp3"
+		"wave"	"vo/announcer_mvm_engbot_dead_notele02.mp3"
+		"wave"	"vo/announcer_mvm_engbot_dead_notele03.mp3"
 	}
 }
 
@@ -25361,7 +25361,7 @@
 
 	"rndwave"
 	{
-		"wave"	"vo/announcer_mvm_engbot_dead_tele01.wav"
-		"wave"	"vo/announcer_mvm_engbot_dead_tele02.wav"
+		"wave"	"vo/announcer_mvm_engbot_dead_tele01.mp3"
+		"wave"	"vo/announcer_mvm_engbot_dead_tele02.mp3"
 	}
 }

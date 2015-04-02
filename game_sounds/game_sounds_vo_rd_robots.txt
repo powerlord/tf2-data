@@ -68,10 +68,10 @@
 
 	"rndwave"
 	{
-		"wave"			"vo\announcer_map.enemyclosetowinning_01.wav"
-		"wave"			"vo\announcer_map.enemyclosetowinning_02.wav"
-		"wave"			"vo\announcer_map.enemyclosetowinning_03.wav"
-		"wave"			"vo\announcer_map.enemyclosetowinning_05.wav"
+		"wave"			"vo\announcer_map.enemyclosetowinning_01.mp3"
+		"wave"			"vo\announcer_map.enemyclosetowinning_02.mp3"
+		"wave"			"vo\announcer_map.enemyclosetowinning_03.mp3"
+		"wave"			"vo\announcer_map.enemyclosetowinning_05.mp3"
 	}
 }
 
@@ -84,9 +84,9 @@
 
 	"rndwave"
 	{
-		"wave"			"vo\announcer_map.teamclosetowinning_01.wav"
-		"wave"			"vo\announcer_map.teamclosetowinning_02.wav"
-		"wave"			"vo\announcer_map.teamclosetowinning_03.wav"
+		"wave"			"vo\announcer_map.teamclosetowinning_01.mp3"
+		"wave"			"vo\announcer_map.teamclosetowinning_02.mp3"
+		"wave"			"vo\announcer_map.teamclosetowinning_03.mp3"
 	}
 }
 
@@ -96,7 +96,7 @@
 	"volume"		"VOL_NORM"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_NORM"
-	"wave"			"vo\announcer_map_intro_02.wav"
+	"wave"			"vo\announcer_map_intro_02.mp3"
 }
 
 "RD.TeamScoreCore"
@@ -123,7 +123,7 @@
 	"volume"		"0.35"
 	"soundlevel"  	"SNDLVL_85dB"
 	"pitch"			"PITCH_NORM"
-	"wave"			"ambient\alarms\klaxon1.wav"
+	"wave"			"ambient_mp3\alarms\klaxon1.mp3"
 }
 
 "RD.EnemyCaptured"

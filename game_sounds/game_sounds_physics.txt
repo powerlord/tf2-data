@@ -625,9 +625,9 @@
 
 	"rndwave"
 	{
-		"wave"	"ambient/water/water_splash1.wav"
-		"wave"	"ambient/water/water_splash2.wav"
-		"wave"	"ambient/water/water_splash3.wav"
+		"wave"	"ambient_mp3/water/water_splash1.mp3"
+		"wave"	"ambient_mp3/water/water_splash2.mp3"
+		"wave"	"ambient_mp3/water/water_splash3.mp3"
 	}
 }
 
@@ -2065,8 +2065,8 @@
 
 	"rndwave"
 	{
-		"wave"	"ambient/energy/spark5.wav"
-		"wave"	"ambient/energy/spark6.wav"
+		"wave"	"ambient_mp3/energy/spark5.mp3"
+		"wave"	"ambient_mp3/energy/spark6.mp3"
 	}
 }
 
@@ -2190,8 +2190,8 @@
 
 	"rndwave"
 	{
-		"wave"	"ambient/energy/spark5.wav"
-		"wave"	"ambient/energy/spark6.wav"
+		"wave"	"ambient_mp3/energy/spark5.mp3"
+		"wave"	"ambient_mp3/energy/spark6.mp3"
 	}
 }
 
@@ -3794,9 +3794,9 @@
 
 	"rndwave"
 	{
-		"wave"	"ambient/water/water_splash1.wav"
-		"wave"	"ambient/water/water_splash2.wav"
-		"wave"	"ambient/water/water_splash3.wav"
+		"wave"	"ambient_mp3/water/water_splash1.mp3"
+		"wave"	"ambient_mp3/water/water_splash2.mp3"
+		"wave"	"ambient_mp3/water/water_splash3.mp3"
 	}
 }
 

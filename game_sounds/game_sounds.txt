@@ -164,7 +164,7 @@
 
 	"soundlevel"	"SNDLVL_NORM"
 
-	"wave"		 "ambient/fire/fire_small_loop2.wav" 
+	"wave"		 "ambient_mp3/fire/fire_small_loop2.mp3" 
 }
 
 "General.StopBurning"
@@ -415,7 +415,7 @@
 	"volume"	"1.0"
 	"pitch"		"95,105"
 	"soundlevel"	"SNDLVL_90db"
-	"wave"		"ambient/fire/gascan_ignite1.wav"
+	"wave"		"ambient_mp3/fire/gascan_ignite1.mp3"
 }
 
 "NPC_CombineS.ElectrocuteScream"
@@ -555,7 +555,7 @@
 	"volume"	"1"
 	"pitch"		"100"
 	"soundlevel"  	"SNDLVL_95dB"
-	"wave"		")ambient/train_approach_and_pass.wav"
+	"wave"		")ambient_mp3/train_approach_and_pass.mp3"
 }
 
 
@@ -593,7 +593,7 @@
 	"volume"	"1"
 	"pitch"		"100"
 	"soundlevel"  	"SNDLVL_150dB"
-	"wave"		")ambient/slow_train_lead_in.wav"
+	"wave"		")ambient_mp3/slow_train_lead_in.mp3"
 }
 
 "Ambient.LightHum"
@@ -620,7 +620,7 @@
 	"volume"		"VOL_NORM"
 	"soundlevel"	"SNDLVL_NONE"
 	"pitch"			"PITCH_NORM"
-	"wave"			"ambient/siren.wav"
+	"wave"			"ambient_mp3/siren.mp3"
 }
 
 "Ambient.Cliff"
@@ -662,10 +662,10 @@
 	"pitch"		"PITCH_NORM"
 	"rndwave"
 	{
-		"wave"	"vo/announcer_overtime.wav"
-		"wave"	"vo/announcer_overtime2.wav"
-		"wave"	"vo/announcer_overtime3.wav"
-		"wave"	"vo/announcer_overtime4.wav"
+		"wave"	"vo/announcer_overtime.mp3"
+		"wave"	"vo/announcer_overtime2.mp3"
+		"wave"	"vo/announcer_overtime3.mp3"
+		"wave"	"vo/announcer_overtime4.mp3"
 	}
 }
 
@@ -1040,8 +1040,8 @@
 	"pitch"		"95,105"
 	"rndwave"
 	{
-		"wave"	")ambient/sawblade_impact1.wav"
-		"wave"	")ambient/sawblade_impact2.wav"
+		"wave"	")ambient_mp3/sawblade_impact1.mp3"
+		"wave"	")ambient_mp3/sawblade_impact2.mp3"
 	}
 }
 
@@ -1072,7 +1072,7 @@
 	"soundlevel"  	"SNDLVL_150dB"
 	"pitch"		"PITCH_NORM"
 
-	"wave"		")ambient/walkway_move.wav"
+	"wave"		")ambient_mp3/walkway_move.mp3"
 }
 
 "Nucleus.ChamberOpen"
@@ -1092,7 +1092,7 @@
 	"soundlevel"  	"SNDLVL_NONE"
 	"pitch"		"PITCH_NORM"
 
-	"wave"		"ambient/medieval_dooropen.wav"
+	"wave"		"ambient_mp3/medieval_dooropen.mp3"
 }
 
 "Medieval.DoorClose"
@@ -1102,7 +1102,7 @@
 	"soundlevel"  	"SNDLVL_NONE"
 	"pitch"		"PITCH_NORM"
 
-	"wave"		"ambient/medieval_doorclose.wav"
+	"wave"		"ambient_mp3/medieval_doorclose.mp3"
 }
 
 "Medieval.DoorOpenRaise"
@@ -1112,7 +1112,7 @@
 	"soundlevel"  	"SNDLVL_NONE"
 	"pitch"		"PITCH_NORM"
 
-	"wave"		"ambient/medieval_dooropenraise.wav"
+	"wave"		"ambient_mp3/medieval_dooropenraise.mp3"
 }
 
 "Medieval.DoorOpenLower"
@@ -1122,7 +1122,7 @@
 	"soundlevel"  	"SNDLVL_NONE"
 	"pitch"		"PITCH_NORM"
 
-	"wave"		"ambient/medieval_dooropenlower.wav"
+	"wave"		"ambient_mp3/medieval_dooropenlower.mp3"
 }
 
 "Medieval.Flag"
@@ -1152,7 +1152,7 @@
 	"soundlevel"  	"SNDLVL_NORM"
 	"pitch"		"PITCH_NORM"
 
-	"wave"		")ambient/arrowlight.wav"
+	"wave"		")ambient_mp3/arrowlight.mp3"
 }
 
 // ------------------------------------------------------------------------------------ //
@@ -1212,7 +1212,7 @@
 	"soundlevel"  	"SNDLVL_85dB"
 	"pitch"		"PITCH_NORM"
 
-	"wave"		")ambient/lightson.wav"
+	"wave"		")ambient_mp3/lightson.mp3"
 }
 
 "Halloween.LightsOff"
@@ -1222,7 +1222,7 @@
 	"soundlevel"  	"SNDLVL_85dB"
 	"pitch"		"PITCH_NORM"
 
-	"wave"		")ambient/lightsoff.wav"
+	"wave"		")ambient_mp3/lightsoff.mp3"
 }
 
 "Halloween.MerasmusLoop"
@@ -1351,11 +1351,11 @@
     	"soundlevel"  	"SNDLVL_80dB"
 		"rndwave"
 		{
-			"wave"		"ambient\cp_harbor\furnace_1_shot_01.wav"
-			"wave"		"ambient\cp_harbor\furnace_1_shot_02.wav"
-			"wave"		"ambient\cp_harbor\furnace_1_shot_03.wav"
-			"wave"		"ambient\cp_harbor\furnace_1_shot_04.wav"
-			"wave"		"ambient\cp_harbor\furnace_1_shot_05.wav"
+			"wave"		"ambient_mp3\cp_harbor\furnace_1_shot_01.mp3"
+			"wave"		"ambient_mp3\cp_harbor\furnace_1_shot_02.mp3"
+			"wave"		"ambient_mp3\cp_harbor\furnace_1_shot_03.mp3"
+			"wave"		"ambient_mp3\cp_harbor\furnace_1_shot_04.mp3"
+			"wave"		"ambient_mp3\cp_harbor\furnace_1_shot_05.mp3"
 		}
 }
 
@@ -1365,7 +1365,7 @@
 	"volume"		"1"
 	"pitch"		"100"
 	"soundlevel"  	"SNDLVL_80dB"
-	"wave"		"ambient\cp_harbor\cauldron_lp_main.wav"
+	"wave"		"ambient_mp3\cp_harbor\cauldron_lp_main.mp3"
 }
 
 "harbor.blue_whistle"
@@ -1408,7 +1408,7 @@
 	"soundlevel"  	"SNDLVL_NONE"
 	"pitch"		"PITCH_NORM"
 	
-	"wave"		")ambient\alarms\doomsday_lift_alarm.wav"
+	"wave"		")ambient_mp3\alarms\doomsday_lift_alarm.mp3"
 }
 
 "doomsday.lift_start"
@@ -2035,8 +2035,8 @@
 	"soundlevel"  	"SNDLVL_85dB"
 	"rndwave"
 	{
-		"wave"	"ambient/metrotrain_passby_01.wav"
-		"wave"	"ambient/metrotrain_passby_02.wav"
+		"wave"	"ambient_mp3/metrotrain_passby_01.mp3"
+		"wave"	"ambient_mp3/metrotrain_passby_02.mp3"
 	}
 }
 
@@ -2059,7 +2059,7 @@
 	"volume"		"1"
 	"pitch"			"100"
 	"soundlevel"  	"SNDLVL_140dB"
-	"wave"			")ambient/rottenburg/tunneldoor_open.wav"
+	"wave"			")ambient_mp3/rottenburg/tunneldoor_open.mp3"
 }
 
 "Hugedoor.opencomplete"
@@ -2068,7 +2068,7 @@
 	"volume"		"0.8"
 	"pitch"			"100"
 	"soundlevel"  	"SNDLVL_100dB"
-	"wave"			")ambient/rottenburg/tunneldoor_open_complete.wav"
+	"wave"			")ambient_mp3/rottenburg/tunneldoor_open_complete.mp3"
 }
 
 "Hugedoor.closedloud"
@@ -2077,7 +2077,7 @@
 	"volume"		"1"
 	"pitch"			"100"
 	"soundlevel"  	"SNDLVL_140dB"
-	"wave"			")ambient/rottenburg/tunneldoor_closed_loud.wav"
+	"wave"			")ambient_mp3/rottenburg/tunneldoor_closed_loud.mp3"
 }
 
 "Hugedoor.closedsoft"
@@ -2086,7 +2086,7 @@
 	"volume"		"0.8"
 	"pitch"			"100"
 	"soundlevel"  	"SNDLVL_100dB"
-	"wave"			")ambient/rottenburg/tunneldoor_closed_quiet.wav"
+	"wave"			")ambient_mp3/rottenburg/tunneldoor_closed_quiet.mp3"
 }
 
 // Rottenburg map - Portcullis over upgrades shop
@@ -2097,7 +2097,7 @@
 	"volume"		"0.7"
 	"pitch"			"100"
 	"soundlevel"  	"SNDLVL_85dB"
-	"wave"			")ambient/rottenburg/portcullis_down.wav"
+	"wave"			")ambient_mp3/rottenburg/portcullis_down.mp3"
 }
 
 "Portcullis.down_slam"
@@ -2106,7 +2106,7 @@
 	"volume"		"0.8"
 	"pitch"			"100"
 	"soundlevel"  	"SNDLVL_85dB"
-	"wave"			")ambient/rottenburg/portcullis_slam.wav"
+	"wave"			")ambient_mp3/rottenburg/portcullis_slam.mp3"
 }
 
 "Portcullis.up_start"
@@ -2115,7 +2115,7 @@
 	"volume"		"0.8"
 	"pitch"			"100"
 	"soundlevel"  	"SNDLVL_85dB"
-	"wave"			")ambient/rottenburg/portcullis_up.wav"
+	"wave"			")ambient_mp3/rottenburg/portcullis_up.mp3"
 }
 
 // Rottenburg map - Bomb carrier pushed into pit under bell tower
@@ -2126,7 +2126,7 @@
 	"volume"		"1"
 	"pitch"			"100"
 	"soundlevel"  	"SNDLVL_NONE"
-	"wave"			")ambient/rottenburg/rottenburg_belltower.wav"
+	"wave"			")ambient_mp3/rottenburg/rottenburg_belltower.mp3"
 }
 
 // Rottenburg map - Palisade barrier smash
@@ -2137,7 +2137,7 @@
 	"volume"		"1"
 	"pitch"			"100"
 	"soundlevel"  	"SNDLVL_NONE"
-	"wave"			")ambient/rottenburg/barrier_smash.wav"
+	"wave"			")ambient_mp3/rottenburg/barrier_smash.mp3"
 }
 
 // New item drop crates
@@ -2221,9 +2221,9 @@
 	"soundlevel"  	"SNDLVL_NONE"
 	"rndwave"
 	{
-		"wave"	")ambient/bumper_car_cheer1.wav"
-		"wave"	")ambient/bumper_car_cheer2.wav"
-		"wave"	")ambient/bumper_car_cheer3.wav"
+		"wave"	")ambient_mp3/bumper_car_cheer1.mp3"
+		"wave"	")ambient_mp3/bumper_car_cheer2.mp3"
+		"wave"	")ambient_mp3/bumper_car_cheer3.mp3"
 	}
 }
 
@@ -2235,9 +2235,9 @@
 	"soundlevel"  	"SNDLVL_NONE"
 	"rndwave"
 	{
-		"wave"	")ambient/bumper_car_boo1.wav"
-		"wave"	")ambient/bumper_car_boo2.wav"
-		"wave"	")ambient/bumper_car_boo3.wav"
+		"wave"	")ambient_mp3/bumper_car_boo1.mp3"
+		"wave"	")ambient_mp3/bumper_car_boo2.mp3"
+		"wave"	")ambient_mp3/bumper_car_boo3.mp3"
 	}
 }
 
@@ -2249,13 +2249,13 @@
 	"pitch"		"90, 110"
 	"rndwave"
 	{
-		"wave"	")ambient/bumper_car_quack1.wav"
-		"wave"	")ambient/bumper_car_quack2.wav"
-		"wave"	")ambient/bumper_car_quack3.wav"
-		"wave"	")ambient/bumper_car_quack4.wav"
-		"wave"	")ambient/bumper_car_quack5.wav"
-		"wave"	")ambient/bumper_car_quack9.wav"
-		"wave"	")ambient/bumper_car_quack11.wav"
+		"wave"	")ambient_mp3/bumper_car_quack1.mp3"
+		"wave"	")ambient_mp3/bumper_car_quack2.mp3"
+		"wave"	")ambient_mp3/bumper_car_quack3.mp3"
+		"wave"	")ambient_mp3/bumper_car_quack4.mp3"
+		"wave"	")ambient_mp3/bumper_car_quack5.mp3"
+		"wave"	")ambient_mp3/bumper_car_quack9.mp3"
+		"wave"	")ambient_mp3/bumper_car_quack11.mp3"
 	}
 }
 
@@ -2264,14 +2264,14 @@
 	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_110dB"
 	"volume"	"1"
-	"wave"	")ambient/bumper_car_floor_break.wav"
+	"wave"	")ambient_mp3/bumper_car_floor_break.mp3"
 }
 "Halloween.FloorBreakReverse"
 {
 	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_110dB"
 	"volume"	"1"
-	"wave"	")ambient/bumper_car_floor_break_reverse.wav"
+	"wave"	")ambient_mp3/bumper_car_floor_break_reverse.mp3"
 }
 
 "Halloween.HammerGearCrankSlow"
@@ -2279,7 +2279,7 @@
 	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_148dB"
 	"volume"	"1"
-	"wave"	"ambient/puthammerhere.wav"
+	"wave"	"ambient_mp3/puthammerhere.mp3"
 }
 
 "Halloween.HammerGearCrankFast"
@@ -2287,7 +2287,7 @@
 	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_148dB"
 	"volume"	"1"
-	"wave"	"ambient/puthammerhere.wav"
+	"wave"	"ambient_mp3/puthammerhere.mp3"
 }
 
 "Halloween.HammerImpactLarge"
@@ -2295,7 +2295,7 @@
 	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_148dB"
 	"volume"	"1"
-	"wave"	"ambient/puthammerhere.wav"
+	"wave"	"ambient_mp3/puthammerhere.mp3"
 }
 
 "Halloween.HammerImpactSmall"
@@ -2303,7 +2303,7 @@
 	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_148dB"
 	"volume"	"1"
-	"wave"	"ambient/puthammerhere.wav"
+	"wave"	"ambient_mp3/puthammerhere.mp3"
 }
 
 "Halloween.HammerImpactSmall2"
@@ -2311,7 +2311,7 @@
 	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_148dB"
 	"volume"	"1"
-	"wave"	"ambient/puthammerhere.wav"
+	"wave"	"ambient_mp3/puthammerhere.mp3"
 }
 
 "Halloween.HammerImpactBloodyBoneCrunch"
@@ -2319,7 +2319,7 @@
 	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_148dB"
 	"volume"	"1"
-	"wave"	"ambient/puthammerhere.wav"
+	"wave"	"ambient_mp3/puthammerhere.mp3"
 }
 
 "Halloween.PlatformAlarm"
@@ -2327,7 +2327,7 @@
 	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_148dB"
 	"volume"	"1"
-	"wave"	"ambient/alarms/klaxon1.wav"
+	"wave"	"ambient_mp3/alarms/klaxon1.mp3"
 }
 
 "Halloween.BellRing.Scout"
@@ -2401,13 +2401,13 @@
 	"pitch"		"85, 105"
 	"rndwave"
 	{
-		"wave"	")ambient/bumper_car_quack1.wav"
-		"wave"	")ambient/bumper_car_quack2.wav"
-		"wave"	")ambient/bumper_car_quack3.wav"
-		"wave"	")ambient/bumper_car_quack4.wav"
-		"wave"	")ambient/bumper_car_quack5.wav"
-		"wave"	")ambient/bumper_car_quack9.wav"
-		"wave"	")ambient/bumper_car_quack11.wav"
+		"wave"	")ambient_mp3/bumper_car_quack1.mp3"
+		"wave"	")ambient_mp3/bumper_car_quack2.mp3"
+		"wave"	")ambient_mp3/bumper_car_quack3.mp3"
+		"wave"	")ambient_mp3/bumper_car_quack4.mp3"
+		"wave"	")ambient_mp3/bumper_car_quack5.mp3"
+		"wave"	")ambient_mp3/bumper_car_quack9.mp3"
+		"wave"	")ambient_mp3/bumper_car_quack11.mp3"
 	}
 }
 
@@ -2420,7 +2420,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_100dB"
+	"soundlevel"	"SNDLVL_120dB"
 
 	"wave"			")items/powerup_pickup_crits.wav"
 }
@@ -2430,18 +2430,9 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_100dB"
+	"soundlevel"	"SNDLVL_120dB"
 
 	"wave"			")items/powerup_pickup_uber.wav"
-}
-
-"Powerup.Warlock.Reflect"
-{
-	"channel"		"CHAN_STATIC"
-	"volume"		"1"
-	"soundlevel"  	"SNDLVL_90dB"
-	"pitch"			"PITCH_NORM"
-	"wave"			")items/powerup_pickup_warlock_reflect_damage.wav"
 }
 
 "Powerup.PickUpKnockout"
@@ -2449,7 +2440,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_100dB"
+	"soundlevel"	"SNDLVL_120dB"
 
 	"wave"			")items/powerup_pickup_knockout.wav"
 }
@@ -2459,7 +2450,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
-	"soundlevel"  	"SNDLVL_100dB"
+	"soundlevel"  	"SNDLVL_120dB"
 	"wave"			")items/powerup_pickup_knockout_melee_hit.wav"
 }
 
@@ -2468,7 +2459,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_100dB"
+	"soundlevel"	"SNDLVL_120dB"
 
 	"wave"			")items/powerup_pickup_team_revenge.wav"
 }
@@ -2478,7 +2469,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_100dB"
+	"soundlevel"	"SNDLVL_120dB"
 
 	"wave"			")items/powerup_pickup_base.wav"
 }
@@ -2488,7 +2479,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_100dB"
+	"soundlevel"	"SNDLVL_120dB"
 
 	"wave"			")items/powerup_pickup_agility.wav"
 }
@@ -2498,7 +2489,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_100dB"
+	"soundlevel"	"SNDLVL_120dB"
 
 	"wave"			")items/powerup_pickup_haste.wav"
 }
@@ -2508,7 +2499,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_100dB"
+	"soundlevel"	"SNDLVL_120dB"
 
 	"wave"			")items/powerup_pickup_precision.wav"
 }
@@ -2518,7 +2509,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_100dB"
+	"soundlevel"	"SNDLVL_120dB"
 
 	"wave"			")items/powerup_pickup_regeneration.wav"
 }
@@ -2528,7 +2519,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_100dB"
+	"soundlevel"	"SNDLVL_120dB"
 
 	"wave"			")items/powerup_pickup_resistance.wav"
 }
@@ -2538,7 +2529,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_100dB"
+	"soundlevel"	"SNDLVL_120dB"
 
 	"wave"			")items/powerup_pickup_strength.wav"
 }
@@ -2548,7 +2539,7 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_100dB"
+	"soundlevel"	"SNDLVL_120dB"
 
 	"wave"			")items/powerup_pickup_vampire.wav"
 }
@@ -2558,9 +2549,17 @@
 	"channel"		"CHAN_STATIC"
 	"volume"		"1"
 	"pitch"			"PITCH_NORM"
-	"soundlevel"	"SNDLVL_100dB"
+	"soundlevel"	"SNDLVL_120dB"
 
 	"wave"			")items/powerup_pickup_warlock.wav"
 }
 
+"Powerup.Warlock.Reflect"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_105dB"
+	"pitch"			"PITCH_NORM"
+	"wave"			")items/powerup_pickup_warlock_reflect_damage.wav"
+}
 

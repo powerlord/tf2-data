@@ -1797,8 +1797,8 @@
 	"pitch"			"PITCH_NORM"
 	"rndwave"
 	{
-		"wave"	")ambient/grinder/grinderhuman_01.wav"
-		"wave"	")ambient/grinder/grinderhuman_02.wav"
+		"wave"	")ambient_mp3/grinder/grinderhuman_01.mp3"
+		"wave"	")ambient_mp3/grinder/grinderhuman_02.mp3"
 	}
 }
 
@@ -1810,9 +1810,9 @@
 	"pitch"			"PITCH_NORM"
 	"rndwave"
 	{
-		"wave"	")ambient/grinder/grinderbot_01.wav"
-		"wave"	")ambient/grinder/grinderbot_02.wav"
-		"wave"	")ambient/grinder/grinderbot_03.wav"
+		"wave"	")ambient_mp3/grinder/grinderbot_01.mp3"
+		"wave"	")ambient_mp3/grinder/grinderbot_02.mp3"
+		"wave"	")ambient_mp3/grinder/grinderbot_03.mp3"
 	}
 }
 
