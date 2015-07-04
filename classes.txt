@@ -1,4 +1,4 @@
-// Dump of all classes for "tf" as at 01/04/2015
+// Dump of all classes for "tf" as at 03/07/2015
 //
 
 CFireSmoke - _firesmoke
@@ -444,6 +444,7 @@ CTFAmmoPack - tf_ammo_pack
 CTFMiniGame - tf_base_minigame
 CBonusDuckPickup - tf_bonus_duck_pickup
 CTFPlayer - tf_bot
+CTFDroppedWeapon - tf_dropped_weapon
 CBaseEntity - tf_flame
 CTFGameRulesProxy - tf_gamerules
 CTFHalloweenMinigame - tf_halloween_minigame
@@ -510,6 +511,7 @@ CTFRobotDestruction_RobotGroup - tf_robot_destruction_spawn_group
 CBaseEntity - tf_spawner
 CBaseEntity - tf_spell_meteorshowerspawner
 CBaseAnimating - tf_spell_pickup
+CBaseAnimating - tf_target_dummy
 CTFTauntProp - tf_taunt_prop
 CTFTeam - tf_team
 CBaseEntity - tf_teleport_location
