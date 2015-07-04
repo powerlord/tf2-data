@@ -5786,17 +5786,17 @@
 "Weapon_BarretsArm.Shot"
 {
 	"channel"	"CHAN_STATIC"
-	"soundlevel"	"SNDLVL_70dB"
-	"volume"	"0.2"
+	"soundlevel"	"SNDLVL_94dB"
+	"volume"	"1"
 	"wave"		")weapons\barret_arm_shot.wav"
 }
 
 "Weapon_BarretsArm.Draw"
 {
-	"channel"	"CHAN_AUTO"
+	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_74dB"
-	"volume"	".5"
-	"wave"		")weapons\barret_arm_draw.wav"
+	"volume"	"0"
+	"wave"		"weapons\barret_arm_draw.wav"
 }
 
 "Weapon_BarretsArm.Fizzle"
@@ -5810,7 +5810,7 @@
 "Weapon_BarretsArm.Zap"
 {
 	"channel"	"CHAN_ITEM"
-	"soundlevel"	"SNDLVL_82dB"
+	"soundlevel"	"SNDLVL_94dB"
 	"volume"	"1.0"
 	"wave"		")weapons\barret_arm_zap.wav"
 }
@@ -6660,7 +6660,7 @@
 {
 	"channel"	"CHAN_STATIC"
 	"volume"	"1"
-	"soundlevel"  	"SNDLVL_86dB"
+	"soundlevel"  	"SNDLVL_70dB"
 	"wave"		")player\invuln_on_vaccinator.wav"
 }
 
@@ -7011,7 +7011,9 @@
 }
 
 // ------------------------------------------------------------------------------------ //
-// -GRAPPLING HOOK
+
+// ------------------------------------------------------------------------------------ //
+// GRAPPLING HOOK
 // ------------------------------------------------------------------------------------ //
 "WeaponGrapplingHook.Shoot"
 {
@@ -7035,4 +7037,40 @@
 	"soundlevel"	"SNDLVL_84dB"
 	"volume"	"1"
 	"wave"		")weapons\grappling_hook_reel_stop.wav"
+}
+
+// ------------------------------------------------------------------------------------ //
+// WEAPON INSPECT
+// ------------------------------------------------------------------------------------ //
+
+"WeaponInspect.Movement1"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".2"
+	"wave"		")weapons\weapon_inspect_movement1.wav"
+}
+
+"WeaponInspect.Movement2"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".2"
+	"wave"		")weapons\weapon_inspect_movement2.wav"
+}
+
+"WeaponInspect.Movement3"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".2"
+	"wave"		")weapons\weapon_inspect_movement3.wav"
+}
+
+"WeaponInspect.Movement4"
+{
+	"channel"	"CHAN_ITEM"
+	"soundlevel"	"SNDLVL_74dB"
+	"volume"	".2"
+	"wave"		")weapons\weapon_inspect_movement4.wav"
 }

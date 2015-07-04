@@ -285,7 +285,7 @@
 "music.conga_loop"
 {
 	 "channel" 			"CHAN_STATIC"
-	 "soundlevel" 			"SNDLVL_90dB"
+	 "soundlevel" 			"SNDLVL_75dB"
 	 "volume"		    "1.0"
 	 "wave" 			  ")*music/conga_sketch_167bpm_01-04.wav"
 }
@@ -317,4 +317,11 @@
 	 "soundlevel" 			"SNDLVL_NONE"
 	 "volume"		    "1.0"
 	 "wave" 			  "#*music/bump_in_the_night.wav"
+}
+"music.russian"
+{
+	 "channel" 			"CHAN_STATIC"
+	 "soundlevel" 			"SNDLVL_70dB"
+	 "volume"		    "1.0"
+	 "wave" 			  ")*music/cossack_sandvich.wav"
 }

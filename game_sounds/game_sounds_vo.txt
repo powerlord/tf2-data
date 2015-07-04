@@ -914,6 +914,21 @@
 	}
 }
 
+"Announcer.ControlPointContested_Neutral"
+{
+	"channel"		"CHAN_VOICE2"
+	"volume"		"VOL_NORM"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"rndwave"
+	{
+		"wave"	"vo/announcer_control_point_warning2.mp3"
+		"wave"	"vo/announcer_control_point_warning3.mp3"
+	}
+}
+
 "Announcer.DefendControlPoints"
 {
 	"channel"		"CHAN_VOICE2"

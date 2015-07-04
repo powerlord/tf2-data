@@ -2065,8 +2065,8 @@
 
 	"rndwave"
 	{
-		"wave"	"ambient_mp3/energy/spark5.mp3"
-		"wave"	"ambient_mp3/energy/spark6.mp3"
+		"wave"	"ambient/energy/spark5.wav"
+		"wave"	"ambient/energy/spark6.wav"
 	}
 }
 
@@ -2190,8 +2190,8 @@
 
 	"rndwave"
 	{
-		"wave"	"ambient_mp3/energy/spark5.mp3"
-		"wave"	"ambient_mp3/energy/spark6.mp3"
+		"wave"	"ambient/energy/spark5.wav"
+		"wave"	"ambient/energy/spark6.wav"
 	}
 }
 

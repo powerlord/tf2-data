@@ -4647,3 +4647,323 @@
 	"soundlevel" 		"SNDLVL_95dB"
 	"wave"			"vo/taunts/heavy/heavy_taunt_flip_fail_17.mp3"
 }
+
+//*****************************************************************************************
+// RUSSIAN
+"soldier_taunt_russian_rand"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/soldier/soldier_taunt_cong_fun_28.mp3"
+		"wave"			"vo/taunts/soldier/soldier_taunt_cong_int_02.mp3"
+		"wave"			"vo/taunts/soldier/soldier_taunt_cong_int_11.mp3"
+		"wave"			"vo/taunts/soldier/soldier_taunt_dosi_fun_06.mp3"
+	}
+}
+
+"medic_taunt_russian_rand"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/medic/medic_trade_02.mp3"
+		"wave"			"vo/taunts/medic/medic_trade_03.mp3"
+		"wave"			"vo/taunts/medic/medic_trade_04.mp3"
+		"wave"       "misc/null.wav"
+	}
+}
+
+"medic_taunt_russian_rand02"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+	  "wave"      "vo/taunts/medic/medic_taunt_rps_win_05.mp3"
+		"wave"      "vo/taunts/medic/medic_taunt_rps_win_09.mp3"
+		"wave"			"vo/taunts/medic/medic_taunt_admire_03.mp3"
+		"wave"			"vo/taunts/medic/medic_taunt_admire_20.mp3"
+	}
+}
+
+
+
+"soldier_taunt_russian_rand02"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/soldier/soldier_laughhappy01.mp3"
+		"wave"			"vo/taunts/soldier/soldier_laughhappy02.mp3"
+		"wave"			"vo/taunts/soldier/soldier_laughhappy03.mp3"
+		"wave"			"vo/taunts/soldier/soldier_laughshort04.mp3"
+	}
+}
+
+"spy_taunt_russian_rand"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/spy/spy_tnt_dosido_init04.mp3"
+    "wave"			"vo/taunts/spy/spy_tnt_nutkick_kick04.mp3"
+	}
+}
+
+"spy_taunt_russian_rand2"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+	  "wave"			"vo/taunts/spy/spy_tnt_nutkick_kick03.mp3"
+    "wave"			"vo/taunts/spy/spy_laughhappy02.mp3"
+	}
+}
+"pyro_taunt_russian_rand"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/pyro/pyro_taunt_flip_fun_10.mp3"
+		"wave"			"vo/taunts/pyro/pyro_taunt_flip_admire_05.mp3"
+	}
+}
+
+"sniper_taunt_russian_rand_intro"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/sniper/sniper_taunt_int_05.mp3"
+		
+	}
+}
+
+"sniper_taunt_russian_rand_rand02"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/sniper/sniper_laughhappy01.mp3"
+		"wave"			"vo/taunts/sniper/sniper_taunt_rps_win_02.mp3"
+	}
+}
+		
+"sniper_taunt_russian_rand01"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/sniper/sniper_taunt_dosi_fun_02.mp3"
+		"wave"			"vo/sniper_laughshort01.mp3"
+	}
+}	
+
+
+"scout_taunt_russian_rand_intro"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/scout/scout_taunt_int_03.mp3"
+		"wave"			"vo/taunts/scout/scout_taunt_int_05.mp3"
+		"wave"			"vo/taunts/scout/scout_taunt_int_08.mp3"
+		"wave"			"vo/taunts/scout/scout_taunt_misc_10.mp3"
+		"wave"			"vo/taunts/scout/scout_taunt_misc_14.mp3"
+	}
+}
+		
+"scout_taunt_russian_rand01"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/scout_award01.mp3"
+		"wave"			"vo/taunts/scout/scout_taunt_conga_fun_04.mp3"
+		"wave"			"vo/taunts/scout/scout_taunt_conga_fun_08.mp3"
+		"wave"			"vo/taunts/scout/scout_taunt_conga_fun_11.mp3"
+		"wave"			"vo/taunts/scout/scout_taunt_dosi_fun_15.mp3"
+		"wave"			"vo/taunts/scout/scout_taunt_flip_fun_04.mp3"
+		"wave"			"vo/taunts/scout/scout_taunt_misc_04.mp3"
+		"wave"			"vo/taunts/scout/scout_trade_07.mp3"
+	}
+}	
+
+
+"demo_taunt_russian_rand_intro"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/demo/taunt_demo_int_01.mp3"
+		"wave"			"vo/taunts/demo/taunt_demo_int_15.mp3"
+		"wave"      "misc/null.wav"
+	}
+}	
+
+"demo_taunt_russian_rand"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/demo/taunt_demo_flip_fun_01.mp3"
+		"wave"			"vo/taunts/demo/taunt_demo_rps_win_25.mp3"
+		"wave"			"vo/taunts/demo/demoman_laughhappy02.mp3"
+	}	
+}	
+
+"demo_taunt_russian_randend"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/demo/taunt_demo_rps_win_05.mp3"
+		"wave"			"vo/taunts/demo/taunt_demo_rps_win_28.mp3"
+		"wave"      "misc/null.wav"
+		"wave"      "misc/null.wav"
+		}
+}	
+
+"engy_taunt_russian_rand"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/engy/eng_taunt_flip_admire_15.mp3"
+		"wave"			"vo/taunts/engy/eng_taunt_flip_fun_07.mp3"
+		"wave"			"vo/taunts/engy/engineer_laughhappy03.mp3"
+		
+	}
+}	
+
+"heavy_taunt_russian_rand_02"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/heavy/heavy_taunt_cong_fun_19.mp3"
+		"wave"			"vo/taunts/heavy/heavy_laughhappy02.mp3"
+		"wave"			"vo/taunts/heavy/heavy_taunt_exert_13.mp3"
+		"wave"			"vo/taunts/heavy/heavy_taunt_dosi_end_03.mp3"
+		"wave"			"vo/taunts/heavy/heavy_taunt_rps_win_04.mp3"
+	}
+}
+
+"heavy_taunt_russian_rand_01"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/heavy/heavy_taunt_dosi_fun_10.mp3"
+		
+		"wave"			"vo/taunts/heavy/heavy_taunt_kill_02.mp3"
+		"wave"			"vo/taunts/heavy/heavy_taunt_flip_end_03.mp3"
+		"wave"			"vo/taunts/heavy/heavy_taunt_rps_win_02.mp3"
+	}
+}
+
+//HEAVY SOVIET SHOWOFF
+
+"HEAVY_soviet_showoff_01"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/taunts/heavy/heavy_taunt_exert_01.mp3"	
+		"wave"			"vo/taunts/heavy/heavy_taunt_head_int_01.mp3"	
+		"wave"			"vo/taunts/heavy/heavy_taunt_exert_11.mp3"	
+		"wave"			"vo/taunts/heavy/heavy_taunt_rps_win_02.mp3"	
+		"wave"			"vo/taunts/heavy/heavy_taunt_exert_09.mp3"	
+		"wave"			"vo/taunts/heavy/heavy_taunt_exert_12.mp3"	
+	}
+}	
+
+"HEAVY_soviet_showoff_02"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{		
+		"wave"			"vo/taunts/heavy/heavy_taunt_exert_13.mp3"		
+		"wave"			"vo/heavy_meleeing01.mp3"
+		"wave"			"vo/heavy_meleeing02.mp3"	
+		"wave"			"vo/heavy_laughshort02.mp3"		
+		"wave"			"vo/heavy_laughshort01.mp3"		
+		"wave"			"vo/heavy_cheers01.mp3"		
+		"wave"			"vo/heavy_award05.mp3"				
+	}
+}
+
+	
+"HEAVY_soviet_showoff_03"
+{
+	"channel" 			"CHAN_VOICE"
+	"volume" 			"VOL_NORM"
+	"pitch" 			"PITCH_NORM"
+	"soundlevel" 		"SNDLVL_95dB"
+	"rndwave"
+	{
+		"wave"			"vo/heavy_battlecry03.mp3"
+		"wave"			"vo/heavy_battlecry05.mp3"	
+		"wave"			"vo/heavy_cheers02.mp3"			
+	}
+}

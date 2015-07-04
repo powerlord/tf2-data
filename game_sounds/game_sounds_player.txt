@@ -237,7 +237,7 @@
 	"volume"	"0.22"
 	"soundlevel"  "SNDLVL_75dB"
 
-	"wave"	"ambient_mp3/water/underwater.mp3"
+	"wave"	"ambient/water/underwater.wav"
 }
 
 "Player.PickupWeapon"
@@ -272,8 +272,8 @@
 
 	"rndwave"
 	{
-		"wave"	"ambient_mp3/fire/fire_small_loop1.mp3"
-		"wave"	"ambient_mp3/fire/fire_small_loop2.mp3"
+		"wave"	"ambient/fire/fire_small_loop1.wav"
+		"wave"	"ambient/fire/fire_small_loop2.wav"
 	}
 }
 

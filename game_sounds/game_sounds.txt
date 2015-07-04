@@ -164,7 +164,7 @@
 
 	"soundlevel"	"SNDLVL_NORM"
 
-	"wave"		 "ambient_mp3/fire/fire_small_loop2.mp3" 
+	"wave"		 "ambient/fire/fire_small_loop2.wav" 
 }
 
 "General.StopBurning"
@@ -415,7 +415,7 @@
 	"volume"	"1.0"
 	"pitch"		"95,105"
 	"soundlevel"	"SNDLVL_90db"
-	"wave"		"ambient_mp3/fire/gascan_ignite1.mp3"
+	"wave"		"ambient/fire/gascan_ignite1.wav"
 }
 
 "NPC_CombineS.ElectrocuteScream"
@@ -1365,7 +1365,7 @@
 	"volume"		"1"
 	"pitch"		"100"
 	"soundlevel"  	"SNDLVL_80dB"
-	"wave"		"ambient_mp3\cp_harbor\cauldron_lp_main.mp3"
+	"wave"		"ambient\cp_harbor\cauldron_lp_main.wav"
 }
 
 "harbor.blue_whistle"
@@ -2327,7 +2327,7 @@
 	"channel"	"CHAN_STATIC"
 	"soundlevel"	"SNDLVL_148dB"
 	"volume"	"1"
-	"wave"	"ambient_mp3/alarms/klaxon1.mp3"
+	"wave"	"ambient/alarms/klaxon1.wav"
 }
 
 "Halloween.BellRing.Scout"
@@ -2563,3 +2563,125 @@
 	"wave"			")items/powerup_pickup_warlock_reflect_damage.wav"
 }
 
+
+// ------------------------------------------------------------------------------------ //
+// Quests
+// ------------------------------------------------------------------------------------ //
+
+"Quest.Alert"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/quest_alert.wav"
+}
+
+"Quest.StatusTick"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/quest_status_tick.wav"
+}
+
+"Quest.StatusTickBonus"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/quest_status_tick_bonus.wav"
+}
+
+"Quest.StatusTickComplete"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/quest_status_tick_complete.wav"
+}
+
+"Quest.StatusTickBonusComplete"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/quest_status_tick_bonus_complete.wav"
+} 
+
+"Quest.StatusComplete"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/quest_status_complete.wav"
+}
+
+"Quest.Decode"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/quest_decode.wav"
+}
+
+"Quest.FolderOpen"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/quest_folder_open.wav"
+}
+
+"Quest.FolderClose"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/quest_folder_close.wav"
+}
+
+"Quest.TurnInDecode"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/quest_turn_in_decode.wav"
+}
+
+
+"Quest.TurnInAccepted"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/quest_turn_in_accepted.wav"
+}
+
+"Quest.OperationPassUse"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/quest_operation_pass_use.wav"
+}
+
+"Quest.OperationPassBuy"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1"
+	"soundlevel"  	"SNDLVL_NORM"
+	"pitch"			"PITCH_NORM"
+	"wave"			"ui/quest_operation_pass_buy.wav"
+}
