@@ -300,7 +300,7 @@ flush                                    : cmd      :                  : Flush u
 flush_locked                             : cmd      :                  : Flush unlocked and locked cache memory.
 fog_enable_water_fog                     : 1        : , "cheat"        : 
 fov                                      : cmd      :                  : Change players FOV
-fps_max                                  : 0        :                  : Frame rate limiter, cannot be set while connected to a server.
+fps_max                                  : 300      :                  : Frame rate limiter, cannot be set while connected to a server.
 free_pass_peek_debug                     : 0        : , "sv"           : 
 fs_monitor_read_from_pack                : 0        :                  : 0:Off, 1:Any, 2:Sync only
 fs_printopenfiles                        : cmd      :                  : Show all files currently opened by the engine.
@@ -549,7 +549,7 @@ mp_friendlyfire                          : 0        : , "sv", "nf", "rep" : Allo
 mp_highlander                            : 0        : , "sv", "nf", "rep" : Allow only 1 of each player class type.
 mp_holiday_nogifts                       : 0        : , "sv", "nf"     : Set to 1 to prevent holiday gifts from spawning when players are killed.
 mp_humans_must_join_team                 : 0        : , "sv", "rep"    : Restricts human players to a single team {any, blue, red, spectator}
-mp_idledealmethod                        : 0        : , "sv"           : Deals with Idle Players. 1 = Sends them into Spectator mode then kicks them if they're still idle, 2 = Kicks them out of the ga
+mp_idledealmethod                        : 1        : , "sv"           : Deals with Idle Players. 1 = Sends them into Spectator mode then kicks them if they're still idle, 2 = Kicks them out of the ga
 mp_idlemaxtime                           : 3        : , "sv"           : Maximum time a player is allowed to be idle (in minutes)
 mp_mapcycle_empty_timeout_seconds        : 0        : , "sv", "rep"    : If nonzero, server will cycle to the next map if it has been empty on the current map for N seconds
 mp_match_end_at_timelimit                : 0        : , "sv", "nf"     : Allow the match to end when mp_timelimit hits instead of waiting for the end of the current round.
@@ -561,20 +561,20 @@ mp_restartround                          : 0        : , "sv"           : If non-
 mp_scrambleteams                         : cmd      :                  : Scramble the teams and restart the game
 mp_scrambleteams_auto                    : 1        : , "sv", "nf"     : Server will automatically scramble the teams if criteria met.  Only works on dedicated servers.
 mp_scrambleteams_auto_windifference      : 2        : , "sv", "nf"     : Number of round wins a team must lead by in order to trigger an auto scramble.
-mp_show_voice_icons                      : 0        : , "sv", "rep"    : Show overhead player voice icons when players are speaking. 
+mp_show_voice_icons                      : 1        : , "sv", "rep"    : Show overhead player voice icons when players are speaking. 
 mp_showrespawntimes                      : cmd      :                  : Show the min respawn times for the teams
 mp_simulatemultiplecappers               : 1        : , "sv", "cheat"  : 
 mp_spectators_restricted                 : 0        : , "sv"           : Prevent players on game teams from joining team spectator if it would unbalance the teams.
-mp_stalemate_enable                      : 1        : , "sv", "nf"     : Enable/Disable stalemate mode.
+mp_stalemate_enable                      : 0        : , "sv", "nf"     : Enable/Disable stalemate mode.
 mp_stalemate_meleeonly                   : 0        : , "sv", "nf", "rep" : Restrict everyone to melee weapons only while in Sudden Death.
 mp_stalemate_timelimit                   : 240      : , "sv", "rep"    : Timelimit (in seconds) of the stalemate round.
 mp_switchteams                           : cmd      :                  : Switch teams and restart the game
 mp_teamlist                              : 0        : , "sv", "nf"     : 
 mp_teamoverride                          : 1        : , "sv"           : 
 mp_teamplay                              : 0        : , "sv", "nf"     : 
-mp_teams_unbalance_limit                 : 0        : , "sv", "rep"    : Teams are unbalanced when one team has this many more players than the other team. (0 disables check)
+mp_teams_unbalance_limit                 : 1        : , "sv", "rep"    : Teams are unbalanced when one team has this many more players than the other team. (0 disables check)
 mp_time_between_capscoring               : 30       : , "sv"           : Delay between scoring of owned capture points.
-mp_timelimit                             : 20       : , "sv", "nf", "rep" : game time per map in minutes
+mp_timelimit                             : 0        : , "sv", "nf", "rep" : game time per map in minutes
 mp_tournament                            : 0        : , "sv", "nf", "rep" : 
 mp_tournament_allow_non_admin_restart    : 1        : , "sv"           : Allow mp_tournament_restart command to be issued by players other than admin.
 mp_tournament_readymode                  : 0        : , "sv", "nf", "rep" : Enable per-player ready status for tournament mode.
@@ -794,7 +794,7 @@ net_fakejitter                           : 0        : , "cheat"        : Jitter 
 net_fakelag                              : 0        : , "cheat"        : Lag all incoming network data (including loopback) by this many milliseconds.
 net_fakeloss                             : 0        : , "cheat"        : Simulate packet loss as a percentage (negative means drop 1/n packets)
 net_maxcleartime                         : 4        :                  : Max # of seconds we can wait for next packets to be sent based on rate setting (0 == no limit).
-net_maxfilesize                          : 64       :                  : Maximum allowed file size for uploading in MB
+net_maxfilesize                          : 16       :                  : Maximum allowed file size for uploading in MB
 net_maxfragments                         : 1260     :                  : Max fragment bytes per packet
 net_maxpacketdrop                        : 5000     :                  : Ignore any packets with the sequence number more than this ahead (0 == no limit)
 net_maxroutable                          : 1260     : , "a", "user"    : Requested max packet size before packets are 'split'.
@@ -809,7 +809,7 @@ net_showsplits                           : 0        :                  : Show in
 net_showtcp                              : 0        :                  : Dump TCP stream summary to console
 net_showudp                              : 0        :                  : Dump UDP packets summary to console
 net_showudp_wire                         : 0        :                  : Show incoming packet information
-net_splitpacket_maxrate                  : 100000   :                  : Max bytes per second when queueing splitpacket chunks
+net_splitpacket_maxrate                  : 80000    :                  : Max bytes per second when queueing splitpacket chunks
 net_splitrate                            : 1        :                  : Number of fragments for a splitpacket that can be sent per frame
 net_start                                : cmd      :                  : Inits multiplayer network sockets
 net_status                               : cmd      :                  : Shows current network status
@@ -1117,7 +1117,7 @@ sv_allow_votes                           : 1        : , "sv"           : Allow v
 sv_allow_wait_command                    : 1        : , "rep"          : Allow or disallow the wait command on clients connected to this server.
 sv_allowdownload                         : 1        :                  : Allow clients to download files
 sv_allowupload                           : 1        :                  : Allow clients to upload customizations files
-sv_alltalk                               : 1        : , "sv", "nf", "rep" : Players can hear all other players, no team restrictions
+sv_alltalk                               : 0        : , "sv", "nf", "rep" : Players can hear all other players, no team restrictions
 sv_alternateticks                        : 0        : , "sp"           : If set, server only simulates entities on even numbered ticks. 
 sv_autosave                              : 1        : , "sv"           : Set to 1 to autosave game on level transition. Does not affect autosave triggers.
 sv_benchmark_autovprofrecord             : 0        : , "sv"           : If running a benchmark and this is set, it will record a vprof file over the duration of the benchmark with filename benchmark.
@@ -1163,7 +1163,7 @@ sv_logfilename_format                    : 0        : , "a"            : Log fil
 sv_logflush                              : 0        : , "a"            : Flush the log file to disk on each write (slow).
 sv_logsdir                               : 0        : , "a"            : Folder in the game directory where server logs will be stored.
 sv_logsecret                             : 0        :                  : If set then include this secret when doing UDP logging (will use 0x53 as packet type, not usual 0x52)
-sv_lowedict_action                       : 4        :                  : 0 - no action, 1 - warn to log file, 2 - attempt to restart the game, if applicable, 3 - restart the map, 4 - go to the next ma
+sv_lowedict_action                       : 0        :                  : 0 - no action, 1 - warn to log file, 2 - attempt to restart the game, if applicable, 3 - restart the map, 4 - go to the next ma
 sv_lowedict_threshold                    : 8        :                  : When only this many edicts are free, take the action specified by sv_lowedict_action.
 sv_massreport                            : 0        : , "sv"           : 
 sv_master_share_game_socket              : 1        :                  : Use the game's socket to communicate to the master server. If this is 0, then it will create a socket on -steamport + 1 to comm
@@ -1171,19 +1171,19 @@ sv_max_connects_sec                      : 2        :                  : Maximum
 sv_max_connects_sec_global               : 0        :                  : Maximum connections per second to respond to from anywhere.
 sv_max_connects_window                   : 4        :                  : Window over which to average connections per second averages.
 sv_max_queries_sec                       : 3        :                  : Maximum queries per second to respond to from a single IP address.
-sv_max_queries_sec_global                : 100000   :                  : Maximum queries per second to respond to from anywhere.
+sv_max_queries_sec_global                : 3000     :                  : Maximum queries per second to respond to from anywhere.
 sv_max_queries_window                    : 30       :                  : Window over which to average queries per second averages.
 sv_maxcmdrate                            : 66       : , "rep"          : (If sv_mincmdrate is > 0), this sets the maximum value for cl_cmdrate.
 sv_maxrate                               : 0        : , "rep"          : Max bandwidth rate allowed on server, 0 == unlimited
 sv_maxreplay                             : 0        :                  : Maximum replay time in seconds
 sv_maxroutable                           : 1260     :                  : Server upper bound on net_maxroutable that a client can use.
-sv_maxupdaterate                         : 120      : , "rep"          : Maximum updates per second that the server will allow
+sv_maxupdaterate                         : 66       : , "rep"          : Maximum updates per second that the server will allow
 sv_maxuptimelimit                        : 0        :                  : If set, whenever a game ends, if the server uptime exceeds this number of hours, the server will exit.
 sv_maxusrcmdprocessticks                 : 24       : , "sv", "nf"     : Maximum number of client-issued usrcmd ticks that can be replayed in packet loss conditions, 0 to allow no restrictions
 sv_maxusrcmdprocessticks_warning         : -1       : , "sv"           : Print a warning when user commands get dropped due to insufficient usrcmd ticks allocated, number of seconds to throttle, negat
 sv_memlimit                              : 0        :                  : If set, whenever a game ends, if the total memory used by the server is greater than this # of megabytes, the server will exit.
 sv_mincmdrate                            : 10       : , "rep"          : This sets the minimum value for cl_cmdrate. 0 == unlimited.
-sv_minrate                               : 30000    : , "rep"          : Min bandwidth rate allowed on server, 0 == unlimited
+sv_minrate                               : 3500     : , "rep"          : Min bandwidth rate allowed on server, 0 == unlimited
 sv_minupdaterate                         : 10       : , "rep"          : Minimum updates per second that the server will allow
 sv_minuptimelimit                        : 0        :                  : If set, whenever a game ends, if the server uptime is less than this number of hours, the server will continue running regardle
 sv_motd_unload_on_dismissal              : 0        : , "sv"           : If enabled, the MOTD contents will be unloaded when the player closes the MOTD.
@@ -1196,7 +1196,7 @@ sv_noclipaccelerate                      : 5        : , "a", "sv", "nf", "rep" :
 sv_noclipduringpause                     : 0        : , "sv", "cheat", "rep" : If cheats are enabled, then you can noclip with the game paused (for doing screenshots, etc.).
 sv_noclipspeed                           : 5        : , "a", "sv", "nf", "rep" : 
 sv_npc_talker_maxdist                    : 1024     : , "sv"           : NPCs over this distance from the player won't attempt to speak.
-sv_parallel_packentities                 : 0        :                  : 
+sv_parallel_packentities                 : 1        :                  : 
 sv_parallel_sendsnapshot                 : 0        :                  : 
 sv_password                              : 0        : , "nf", "prot", "norecord" : Server password for entry into multiplayer games
 sv_pausable                              : 0        : , "nf"           : Is the server pausable.
@@ -1218,20 +1218,20 @@ sv_rcon_maxpacketsize                    : 1024     :                  : The max
 sv_rcon_minfailures                      : 5        :                  : Number of times a user can fail rcon authentication in sv_rcon_minfailuretime before being banned
 sv_rcon_minfailuretime                   : 30       :                  : Number of seconds to track failed rcon authentications
 sv_rcon_whitelist_address                : 0        :                  : When set, rcon failed authentications will never ban this address, e.g. '127.0.0.1'
-sv_region                                : 0        :                  : The region of the world to report this server in.
+sv_region                                : 255      :                  : The region of the world to report this server in.
 sv_restrict_aspect_ratio_fov             : 1        : , "rep"          : This can be used to limit the effective FOV of users using wide-screen resolutions with aspect ratios wider than 1.85:1 (slight
 sv_runcmds                               : 1        : , "sv"           : 
 sv_setsteamaccount                       : cmd      :                  : token Set game server account token to use for logging in to a persistent game server account
 sv_showladders                           : 0        : , "sv"           : Show bbox and dismount points for all ladders (must be set before level load.) 
 sv_showlagcompensation                   : 0        : , "sv", "cheat"  : Show lag compensated hitboxes whenever a player is lag compensated.
 sv_shutdown                              : cmd      :                  : Sets the server to shutdown next time it's empty
-sv_shutdown_timeout_minutes              : 15       : , "rep"          : If sv_shutdown is pending, wait at most N minutes for server to drain before forcing shutdown.
+sv_shutdown_timeout_minutes              : 360      : , "rep"          : If sv_shutdown is pending, wait at most N minutes for server to drain before forcing shutdown.
 sv_skyname                               : 0        : , "a", "sv", "rep" : Current name of the skybox texture
 sv_soundemitter_trace                    : 0        : , "sv", "rep"    : Show all EmitSound calls including their symbolic name and the actual wave file they resolved to 
 sv_specaccelerate                        : 5        : , "a", "sv", "nf", "rep" : 
 sv_specnoclip                            : 1        : , "a", "sv", "nf", "rep" : 
 sv_specspeed                             : 3        : , "a", "sv", "nf", "rep" : 
-sv_stats                                 : 0        :                  : Collect CPU usage stats
+sv_stats                                 : 1        :                  : Collect CPU usage stats
 sv_steamblockingcheck                    : 0        :                  : Check each new player for Steam blocking compatibility, 1 = message only, 2 >= drop if any member of owning clan blocks,3 >= dr
 sv_steamgroup                            : 0        : , "nf"           : The ID of the steam group that this server belongs to. You can find your group's ID on the admin profile page in the steam comm
 sv_strict_notarget                       : 0        : , "sv"           : If set, notarget will cause entities to never think they are in the pvs
@@ -1239,33 +1239,33 @@ sv_tags                                  : 0        : , "nf"           : Server 
 sv_test_scripted_sequences               : 0        : , "sv"           : Tests for scripted sequences that are embedded in the world. Run through your map with this set to check for NPCs falling throu
 sv_teststepsimulation                    : 1        : , "sv"           : 
 sv_thinktimecheck                        : 0        : , "sv"           : Check for thinktimes all on same timestamp.
-sv_timeout                               : 240      :                  : After this many seconds without a message from a client, the client is dropped
+sv_timeout                               : 65       :                  : After this many seconds without a message from a client, the client is dropped
 sv_turbophysics                          : 1        : , "sv", "rep"    : Turns on turbo physics
 sv_unlockedchapters                      : 99       : , "a", "sv"      : 
 sv_use_steam_voice                       : 1        : , "rep"          : Enable/disable using Steam Voice instead of the old voice codec (if enabled, voice_inputfromfile will no longer function).
 sv_vehicle_autoaim_scale                 : 8        : , "sv"           : 
 sv_visiblemaxplayers                     : -1       :                  : Overrides the max players reported to prospective clients
 sv_voiceenable                           : 1        : , "a", "nf"      : 
-sv_vote_allow_spectators                 : 1        : , "sv"           : Allow spectators to vote?
+sv_vote_allow_spectators                 : 0        : , "sv"           : Allow spectators to vote?
 sv_vote_creation_timer                   : 150      : , "sv"           : How long before a player can attempt to call another vote (in seconds).
 sv_vote_failure_timer                    : 300      : , "sv"           : A vote that fails cannot be re-submitted for this long
-sv_vote_failure_timer_mvm                : 300      : , "sv"           : A vote that fails in MvM cannot be re-submitted for this long
+sv_vote_failure_timer_mvm                : 120      : , "sv"           : A vote that fails in MvM cannot be re-submitted for this long
 sv_vote_issue_autobalance_allowed        : 0        : , "sv"           : Can players call votes to enable or disable auto team balance?
 sv_vote_issue_autobalance_cooldown       : 300      : , "sv"           : Minimum time before another auto team balance vote can occur (in seconds).
 sv_vote_issue_changelevel_allowed        : 0        : , "sv"           : Can players call votes to change levels?
-sv_vote_issue_changelevel_allowed_mvm    : 1        : , "sv"           : Can players call votes to change levels in MvM?
+sv_vote_issue_changelevel_allowed_mvm    : 0        : , "sv"           : Can players call votes to change levels in MvM?
 sv_vote_issue_classlimits_allowed        : 0        : , "sv"           : Can players call votes to enable or disable per-class limits?
 sv_vote_issue_classlimits_allowed_mvm    : 0        : , "sv"           : Can players call votes in Mann-Vs-Machine to enable or disable per-class limits?
 sv_vote_issue_classlimits_cooldown       : 300      : , "sv"           : Minimum time before another classlimits vote can occur (in seconds).
 sv_vote_issue_classlimits_max            : 4        : , "sv"           : Maximum number of players (per-team) that can be any one class.
 sv_vote_issue_classlimits_max_mvm        : 2        : , "sv"           : Maximum number of players (per-team) that can be any one class.
-sv_vote_issue_kick_allowed               : 1        : , "sv"           : Can players call votes to kick players from the server?
+sv_vote_issue_kick_allowed               : 0        : , "sv"           : Can players call votes to kick players from the server?
 sv_vote_issue_kick_allowed_mvm           : 1        : , "sv"           : Can players call votes to kick players from the server in MvM?
 sv_vote_issue_kick_min_connect_time_mvm  : 300      : , "sv"           : How long a player must be connected before they can be kicked (in seconds).
 sv_vote_issue_kick_namelock_duration     : 120      : , "sv"           : How long to prevent kick targets from changing their name (in seconds).
 sv_vote_issue_kick_spectators_mvm        : 1        : , "sv"           : Allow players to kick spectators in MvM.
 sv_vote_issue_mvm_challenge_allowed      : 1        : , "sv"           : Can players call votes to set the challenge level?
-sv_vote_issue_nextlevel_allowed          : 0        : , "sv"           : Can players call votes to set the next level?
+sv_vote_issue_nextlevel_allowed          : 1        : , "sv"           : Can players call votes to set the next level?
 sv_vote_issue_nextlevel_allowextend      : 1        : , "sv"           : Allow players to extend the current map?
 sv_vote_issue_nextlevel_choicesmode      : 0        : , "sv"           : Present players with a list of lowest playtime maps to choose from?
 sv_vote_issue_nextlevel_prevent_change   : 1        : , "sv"           : Not allowed to vote for a nextlevel if one has already been set.
@@ -1300,9 +1300,9 @@ Test_RandomPlayerPosition                : cmd      :                  :
 Test_RemoveAllRandomEntities             : cmd      :                  : 
 Test_SpawnRandomEntities                 : cmd      :                  : 
 testscript_debug                         : 0        :                  : Debug test scripts.
-tf_allow_player_use                      : 1        : , "sv", "nf"     : Allow players to execute +use while playing.
+tf_allow_player_use                      : 0        : , "sv", "nf"     : Allow players to execute +use while playing.
 tf_allow_sliding_taunt                   : 0        : , "sv"           : 1 - Allow player to slide for a bit after taunting
-tf_allow_taunt_switch                    : 2        : , "sv", "rep"    : 0 - players are not allowed to switch weapons while taunting, 1 - players can switch weapons at the start of a taunt (old bug b
+tf_allow_taunt_switch                    : 0        : , "sv", "rep"    : 0 - players are not allowed to switch weapons while taunting, 1 - players can switch weapons at the start of a taunt (old bug b
 tf_always_loser                          : 0        : , "sv", "cheat", "rep" : Force loserstate to true.
 tf_archer_proxy_fire_rate                : 1        : , "sv", "cheat"  : 
 tf_arena_first_blood                     : 1        : , "sv", "nf", "rep" : Rewards the first player to get a kill each round.
@@ -1311,7 +1311,7 @@ tf_arena_override_cap_enable_time        : -1       : , "sv", "nf", "rep" : Over
 tf_arena_override_team_size              : 0        : , "sv", "rep"    : Overrides the maximum team size in arena mode. Set to zero to keep the default behavior of 1/3 maxplayers.
 tf_arena_preround_time                   : 10       : , "sv", "nf", "rep" : Length of the Pre-Round time
 tf_arena_round_time                      : 0        : , "sv", "nf", "rep" : 
-tf_arena_use_queue                       : 0        : , "sv", "nf", "rep" : Enables the spectator queue system for Arena.
+tf_arena_use_queue                       : 1        : , "sv", "nf", "rep" : Enables the spectator queue system for Arena.
 tf_avoidteammates_pushaway               : 1        : , "sv", "rep"    : Whether or not teammates push each other away when occupying the same space
 tf_base_boss_max_turn_rate               : 25       : , "sv", "cheat"  : 
 tf_base_boss_speed                       : 75       : , "sv", "cheat"  : 
@@ -1366,7 +1366,7 @@ tf_bot_health_search_far_range           : 2000     : , "sv", "cheat"  :
 tf_bot_health_search_near_range          : 1000     : , "sv", "cheat"  : 
 tf_bot_hitscan_range_limit               : 1800     : , "sv", "cheat"  : 
 tf_bot_join_after_player                 : 1        : , "sv"           : If nonzero, bots wait until a player joins before entering the game.
-tf_bot_keep_class_after_death            : 1        : , "sv"           : 
+tf_bot_keep_class_after_death            : 0        : , "sv"           : 
 tf_bot_kick                              : cmd      :                  : Remove a TFBot by name, or all bots ('all').
 tf_bot_kill                              : cmd      :                  : Kill a TFBot by name, or all bots ('all').
 tf_bot_max_grenade_launch_at_sentry_range : 1500     : , "sv", "cheat"  : 
@@ -1405,7 +1405,7 @@ tf_bot_prefix_name_with_difficulty       : 0        : , "sv"           : Append 
 tf_bot_pyro_always_reflect               : 0        : , "sv", "cheat"  : Pyro bots will always reflect projectiles fired at them. For tesing/debugging purposes.
 tf_bot_pyro_deflect_tolerance            : 0        : , "sv", "cheat"  : 
 tf_bot_pyro_shove_away_range             : 250      : , "sv", "cheat"  : If a Pyro bot's target is closer than this, compression blast them away
-tf_bot_quota                             : 4        : , "sv"           : Determines the total number of tf bots in the game.
+tf_bot_quota                             : 0        : , "sv"           : Determines the total number of tf bots in the game.
 tf_bot_quota_mode                        : 0        : , "sv"           : Determines the type of quota. Allowed values: 'normal', 'fill', and 'match'. If 'fill', the server will adjust bots to keep N p
 tf_bot_retreat_to_cover_range            : 1000     : , "sv", "cheat"  : 
 tf_bot_sniper_aim_error                  : 0        : , "sv", "cheat"  : 
@@ -1443,8 +1443,8 @@ tf_cart_spell_drop_rate                  : 4        : , "sv"           :
 tf_clamp_airducks                        : 1        : , "sv", "rep"    : 
 tf_classlimit                            : 0        : , "sv", "nf", "rep" : Limit on how many players can be any class (i.e. tf_class_limit 2 would limit 2 players per class). 
 tf_clear_attribute                       : cmd      :                  : Remove given attribute from all areas in the selected set.
-tf_ctf_bonus_time                        : 0        : , "sv", "nf"     : Length of team crit time for CTF capture.
-tf_damage_disablespread                  : 0        : , "sv", "nf", "rep" : Toggles the random damage spread applied to all player damage.
+tf_ctf_bonus_time                        : 10       : , "sv", "nf"     : Length of team crit time for CTF capture.
+tf_damage_disablespread                  : 1        : , "sv", "nf", "rep" : Toggles the random damage spread applied to all player damage.
 tf_damage_multiplier_blue                : 1        : , "sv", "cheat"  : All incoming damage to a blue player is multiplied by this value
 tf_damage_multiplier_red                 : 1        : , "sv", "cheat"  : All incoming damage to a red player is multiplied by this value
 tf_debug_damage                          : 0        : , "sv", "cheat"  : 
@@ -1623,8 +1623,8 @@ tf_nav_in_combat_range                   : 1000     : , "sv", "cheat"  :
 tf_nav_show_bomb_target_distance         : 0        : , "sv", "cheat"  : Display travel distances to bomb target (MvM mode)
 tf_nav_show_incursion_distance           : 0        : , "sv", "cheat"  : Display travel distances from current spawn room (1=red, 2=blue)
 tf_nav_show_turf_ownership               : 0        : , "sv", "cheat"  : Color nav area by smallest incursion distance
-tf_overtime_nag                          : 1        : , "sv", "nf"     : Announcer overtime nag.
-tf_player_drop_bonus_ducks               : 0        : , "sv", "rep"    : -1 Default (Holiday-based) 0 - Force off 1 - Force on
+tf_overtime_nag                          : 0        : , "sv", "nf"     : Announcer overtime nag.
+tf_player_drop_bonus_ducks               : -1       : , "sv", "rep"    : -1 Default (Holiday-based) 0 - Force off 1 - Force on
 tf_player_movement_restart_freeze        : 1        : , "sv", "rep"    : When set, prevent player movement during round restart
 tf_player_name_change_time               : 60       : , "sv", "nf"     : Seconds between name changes.
 tf_player_spell_drop_on_death_rate       : 0        : , "sv", "rep"    : 
@@ -1644,8 +1644,8 @@ tf_select_ambush_areas_close_range       : 300      : , "sv", "cheat"  :
 tf_select_ambush_areas_max_enemy_exposure_area : 500000   : , "sv", "cheat"  : 
 tf_select_ambush_areas_radius            : 750      : , "sv", "cheat"  : 
 tf_select_with_attribute                 : cmd      :                  : Selects areas with the given attribute.
-tf_server_identity_account_id            : 2803     : , "a", "sv"      : Server identity account id, used to authenticate with the TF2 Game Coordinator.
-tf_server_identity_disable_quickplay     : 1        : , "a", "sv", "nf" : Disable this server from being chosen by the quickplay matchmaking.
+tf_server_identity_account_id            : 0        : , "a", "sv"      : Server identity account id, used to authenticate with the TF2 Game Coordinator.
+tf_server_identity_disable_quickplay     : 0        : , "a", "sv", "nf" : Disable this server from being chosen by the quickplay matchmaking.
 tf_server_identity_token                 : 0        : , "a", "sv", "prot" : Server identity token, used to authenticate with the TF2 Game Coordinator.
 tf_server_lobby_debug                    : cmd      :                  : Prints server lobby object
 tf_show_actor_potential_visibility       : 0        : , "sv", "cheat"  : 
@@ -1696,7 +1696,7 @@ tf_tournament_classlimit_spy             : -1       : , "sv", "rep"    : Tournam
 tf_tournament_hide_domination_icons      : 0        : , "sv", "rep"    : Tournament mode server convar that forces clients to not display the domination icons above players dominating them.
 tf_training_client_message               : 0        : , "sv", "cheat", "rep" : A simple way for the training client to communicate with the server.
 tf_use_fixed_weaponspreads               : 0        : , "sv", "nf", "rep" : If set to 1, weapons that fire multiple pellets per shot will use a non-random pellet distribution.
-tf_weapon_criticals                      : 0        : , "sv", "nf", "rep" : Whether or not random crits are enabled
+tf_weapon_criticals                      : 1        : , "sv", "nf", "rep" : Whether or not random crits are enabled
 tf_weapon_criticals_bucket_bottom        : -250     : , "sv", "cheat", "rep" : 
 tf_weapon_criticals_bucket_cap           : 1000     : , "sv", "cheat", "rep" : 
 tf_weapon_criticals_bucket_default       : 300      : , "sv", "cheat", "rep" : 
