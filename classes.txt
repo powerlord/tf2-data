@@ -1,6 +1,7 @@
-// Dump of all classes for "tf" as at 03/07/2015
+// Dump of all classes for "tf" as at 19/08/2015
 //
 
+CBaseEntity - _ballplayertoucher
 CFireSmoke - _firesmoke
 CPlasma - _plasma
 CBaseEntity - ai_ally_speech_manager
@@ -139,6 +140,7 @@ CBaseEntity - filter_damage_type
 CBaseEntity - filter_enemy
 CBaseEntity - filter_multi
 CBaseEntity - filter_tf_bot_has_tag
+CBaseEntity - filter_tf_class
 CBaseEntity - filter_tf_condition
 CBaseEntity - filter_tf_damaged_by_weapon_in_slot
 CBaseEntity - filter_tf_player_can_cap
@@ -176,6 +178,9 @@ CBaseEntity - func_nav_prerequisite
 CBaseEntity - func_nobuild
 CBaseEntity - func_nogrenades
 CFuncOccluder - func_occluder
+CFuncPasstimeGoal - func_passtime_goal
+CBaseEntity - func_passtime_goalie_zone
+CBaseEntity - func_passtime_no_ball_zone
 CPhysBox - func_physbox
 CPhysBoxMultiplayer - func_physbox_multiplayer
 CBaseEntity - func_plat
@@ -256,6 +261,7 @@ CBaseEntity - info_null
 CBaseEntity - info_observer_point
 CInfoOverlayAccessor - info_overlay_accessor
 CParticleSystem - info_particle_system
+CBaseEntity - info_passtime_ball_spawn
 CBaseEntity - info_player_deathmatch
 CBaseEntity - info_player_start
 CBaseEntity - info_player_teamspawn
@@ -336,6 +342,8 @@ CObjectSapper - obj_attachment_sapper
 CObjectDispenser - obj_dispenser
 CObjectSentrygun - obj_sentrygun
 CObjectTeleporter - obj_teleporter
+CPasstimeBall - passtime_ball
+CTFPasstimeLogic - passtime_logic
 CBaseEntity - path_corner
 CBaseEntity - path_corner_crash
 CBaseEntity - path_track
@@ -555,6 +563,7 @@ CTFParachute - tf_weapon_parachute
 CTFParachute_Primary - tf_weapon_parachute_primary
 CTFParachute_Secondary - tf_weapon_parachute_secondary
 CTFParticleCannon - tf_weapon_particle_cannon
+CPasstimeGun - tf_weapon_passtime_gun
 CTFWeaponPDA_Engineer_Build - tf_weapon_pda_engineer_build
 CTFWeaponPDA_Engineer_Destroy - tf_weapon_pda_engineer_destroy
 CTFWeaponPDA_Spy - tf_weapon_pda_spy
@@ -606,6 +615,7 @@ CBaseEntity - trigger_autosave
 CBaseEntity - trigger_bot_tag
 CBaseEntity - trigger_brush
 CBaseEntity - trigger_capture_area
+CBaseEntity - trigger_catapult
 CBaseEntity - trigger_cdaudio
 CBaseEntity - trigger_changelevel
 CBaseEntity - trigger_gravity
@@ -615,6 +625,7 @@ CBaseEntity - trigger_impact
 CBaseEntity - trigger_look
 CBaseEntity - trigger_multiple
 CBaseEntity - trigger_once
+CBaseEntity - trigger_passtime_ball
 CBaseEntity - trigger_player_respawn_override
 CBaseEntity - trigger_playermovement
 CBaseEntity - trigger_proximity
