@@ -474,6 +474,16 @@ Rule PlayerMedicPyro
 	Response PlayerMedicPyro
 }
 
+Response PlayerAskForBallPyro
+{
+	scene "scenes/Player/Pyro/low/1489.vcd" 
+}
+Rule PlayerAskForBallPyro
+{
+	criteria ConceptPlayerAskForBall IsPyro
+	Response PlayerAskForBallPyro
+}
+
 Response PlayerMoveUpPyro
 {
 	scene "scenes/Player/Pyro/low/1492.vcd" 

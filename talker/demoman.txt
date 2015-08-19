@@ -899,6 +899,19 @@ Rule PlayerMedicDemoman
 	Response PlayerMedicDemoman
 }
 
+Response PlayerAskForBallDemoman
+{
+	scene "scenes/Player/Demoman/low/957.vcd" 
+	scene "scenes/Player/Demoman/low/958.vcd" 
+	scene "scenes/Player/Demoman/low/959.vcd" 
+}
+Rule PlayerAskForBallDemoman
+{
+	criteria ConceptPlayerAskForBall IsDemoman
+	Response PlayerAskForBallDemoman
+}
+
+
 Response PlayerMoveUpDemoman
 {
 	scene "scenes/Player/Demoman/low/960.vcd" 

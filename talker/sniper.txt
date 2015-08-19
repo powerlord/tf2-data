@@ -1526,6 +1526,17 @@ Rule PlayerMedicSniper
 	Response PlayerMedicSniper
 }
 
+Response PlayerAskForBallSniper
+{
+	scene "scenes/Player/Sniper/low/1678.vcd" 
+	scene "scenes/Player/Sniper/low/1679.vcd" 
+}
+Rule PlayerAskForBallSniper
+{
+	criteria ConceptPlayerAskForBall IsSniper
+	Response PlayerAskForBallSniper
+}
+
 Response PlayerMoveUpSniper
 {
 	scene "scenes/Player/Sniper/low/1681.vcd" 

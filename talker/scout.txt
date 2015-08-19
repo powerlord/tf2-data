@@ -1316,6 +1316,18 @@ Rule PlayerMedicScout
 	Response PlayerMedicScout
 }
 
+Response PlayerAskForBallScout
+{
+	scene "scenes/Player/Scout/low/438.vcd" 
+	scene "scenes/Player/Scout/low/439.vcd" 
+	scene "scenes/Player/Scout/low/440.vcd" 
+}
+Rule PlayerAskForBallScout
+{
+	criteria ConceptPlayerAskForBall IsScout
+	Response PlayerAskForBallScout
+}
+
 Response PlayerMoveUpScout
 {
 	scene "scenes/Player/Scout/low/441.vcd" 

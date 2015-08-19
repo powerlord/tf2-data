@@ -149,6 +149,7 @@ enumeration "NPCState"
 criterion "ConceptPlayerTaunt" "Concept" "TLK_PLAYER_TAUNT" "required"
 criterion "ConceptPlayerThanks" "Concept" "TLK_PLAYER_THANKS" "required"
 criterion "ConceptPlayerMedic" "Concept" "TLK_PLAYER_MEDIC" required
+criterion "ConceptPlayerAskForBall" "Concept" "TLK_PLAYER_ASK_FOR_BALL" required
 criterion "ConceptPlayerHelp" "Concept" "TLK_PLAYER_HELP" required
 criterion "ConceptPlayerGo" "Concept"  "TLK_PLAYER_GO" required
 criterion "ConceptPlayerMoveUp" "Concept" "TLK_PLAYER_MOVEUP" required

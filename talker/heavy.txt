@@ -992,6 +992,18 @@ Rule PlayerMedicHeavy
 	Response PlayerMedicHeavy
 }
 
+Response PlayerAskForBallHeavy
+{
+	scene "scenes/Player/Heavy/low/274.vcd" 
+	scene "scenes/Player/Heavy/low/275.vcd" 
+	scene "scenes/Player/Heavy/low/276.vcd" 
+}
+Rule PlayerAskForBallHeavy
+{
+	criteria ConceptPlayerAskForBall IsHeavy
+	Response PlayerAskForBallHeavy
+}
+
 Response PlayerMoveUpHeavy
 {
 	scene "scenes/Player/Heavy/low/277.vcd" 

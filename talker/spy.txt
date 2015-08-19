@@ -801,6 +801,18 @@ Rule PlayerMedicSpy
 	Response PlayerMedicSpy
 }
 
+Response PlayerAskForBallSpy
+{
+	scene "scenes/Player/Spy/low/779.vcd" 
+	scene "scenes/Player/Spy/low/780.vcd" 
+	scene "scenes/Player/Spy/low/781.vcd" 
+}
+Rule PlayerAskForBallSpy
+{
+	criteria ConceptPlayerAskForBall IsSpy
+	Response PlayerAskForBallSpy
+}
+
 Response PlayerMoveUpSpy
 {
 	scene "scenes/Player/Spy/low/782.vcd" 

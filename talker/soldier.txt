@@ -826,6 +826,18 @@ Rule PlayerMedicSoldier
 	Response PlayerMedicSoldier
 }
 
+Response PlayerAskForBallSoldier
+{
+	scene "scenes/Player/Soldier/low/1139.vcd" 
+	scene "scenes/Player/Soldier/low/1140.vcd" 
+	scene "scenes/Player/Soldier/low/1141.vcd" 
+}
+Rule PlayerAskForBallSoldier
+{
+	criteria ConceptPlayerAskForBall IsSoldier
+	Response PlayerAskForBallSoldier
+}
+
 Response PlayerMoveUpSoldier
 {
 	scene "scenes/Player/Soldier/low/1142.vcd" 

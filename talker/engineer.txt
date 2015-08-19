@@ -1031,6 +1031,18 @@ Rule PlayerMedicEngineer
 	Response PlayerMedicEngineer
 }
 
+Response PlayerAskForBallEngineer
+{
+	scene "scenes/Player/Engineer/low/109.vcd" 
+	scene "scenes/Player/Engineer/low/107.vcd" 
+	scene "scenes/Player/Engineer/low/108.vcd" 
+}
+Rule PlayerAskForBallEngineer
+{
+	criteria ConceptPlayerAskForBall IsEngineer
+	Response PlayerAskForBallEngineer
+}
+
 Response PlayerMoveUpEngineer
 {
 	scene "scenes/Player/Engineer/low/111.vcd" 
