@@ -159,6 +159,7 @@ cache_print_summary                      : cmd      :                  : cache_p
 callvote                                 : cmd      :                  : Start a vote on an issue.
 cast_hull                                : cmd      :                  : Tests hull collision detection
 cast_ray                                 : cmd      :                  : Tests collision detection
+catapult_physics_drag_boost              : 2        : , "sv", "rep"    : 
 cc_bot_selectweapon                      : cmd      :                  : Force a bot to select a weapon in a slot. Usage: bot_selectweapon <bot name> <weapon slot>
 cc_spawn_merasmus_at_level               : cmd      :                  : Force Merasmus to spawn at a specific difficulty level
 ch_createairboat                         : cmd      :                  : Spawn airboat in front of the player.
@@ -1180,6 +1181,7 @@ sv_maxroutable                           : 1260     :                  : Server 
 sv_maxupdaterate                         : 66       : , "rep"          : Maximum updates per second that the server will allow
 sv_maxuptimelimit                        : 0        :                  : If set, whenever a game ends, if the server uptime exceeds this number of hours, the server will exit.
 sv_maxusrcmdprocessticks                 : 24       : , "sv", "nf"     : Maximum number of client-issued usrcmd ticks that can be replayed in packet loss conditions, 0 to allow no restrictions
+sv_maxusrcmdprocessticks_holdaim         : 1        : , "sv", "cheat"  : Hold client aim for multiple server sim ticks when client-issued usrcmd contains multiple actions (0: off; 1: hold this server 
 sv_maxusrcmdprocessticks_warning         : -1       : , "sv"           : Print a warning when user commands get dropped due to insufficient usrcmd ticks allocated, number of seconds to throttle, negat
 sv_memlimit                              : 0        :                  : If set, whenever a game ends, if the total memory used by the server is greater than this # of megabytes, the server will exit.
 sv_mincmdrate                            : 10       : , "rep"          : This sets the minimum value for cl_cmdrate. 0 == unlimited.
@@ -1243,6 +1245,7 @@ sv_timeout                               : 65       :                  : After t
 sv_turbophysics                          : 1        : , "sv", "rep"    : Turns on turbo physics
 sv_unlockedchapters                      : 99       : , "a", "sv"      : 
 sv_use_steam_voice                       : 1        : , "rep"          : Enable/disable using Steam Voice instead of the old voice codec (if enabled, voice_inputfromfile will no longer function).
+sv_usercmd_custom_random_seed            : 1        : , "sv", "cheat"  : When enabled server will populate an additional random seed independent of the client
 sv_vehicle_autoaim_scale                 : 8        : , "sv"           : 
 sv_visiblemaxplayers                     : -1       :                  : Overrides the max players reported to prospective clients
 sv_voiceenable                           : 1        : , "a", "nf"      : 
@@ -1624,6 +1627,31 @@ tf_nav_show_bomb_target_distance         : 0        : , "sv", "cheat"  : Display
 tf_nav_show_incursion_distance           : 0        : , "sv", "cheat"  : Display travel distances from current spawn room (1=red, 2=blue)
 tf_nav_show_turf_ownership               : 0        : , "sv", "cheat"  : Color nav area by smallest incursion distance
 tf_overtime_nag                          : 0        : , "sv", "nf"     : Announcer overtime nag.
+tf_passtime_ball_carrier_regen_dmgtime   : 3        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_ball_carrier_regen_interval  : 1        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_ball_carrier_regen_maxpct    : 1        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_ball_carrier_regen_scale     : 0        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_ball_damping_scale           : 0        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_ball_drag_coefficient        : 0        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_ball_inertia_scale           : 1        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_ball_mass                    : 1        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_ball_radius                  : 7        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_ball_rotdamping_scale        : 1        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_ball_seek_range              : 96       : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_ball_seek_speed_factor       : 1        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_ball_takedamage              : 1        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_ball_takedamage_force        : 800      : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_flinch_boost                 : 0        : , "sv", "cheat", "nf", "rep" : Intensity of flinch on taking damage while carrying the ball. 0 to use TF defaults.
+tf_passtime_mode_homing_lock_sec         : 1        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_mode_homing_speed            : 1000     : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_mode_launch_charge_sec       : 0        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_mode_launch_speed_max        : 1000     : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_mode_launch_speed_min        : 800      : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_player_reticles_enemies      : 1        : , "sv", "cheat", "nf", "rep" : 0 = never, 1 = when carrying ball, 2 = always
+tf_passtime_player_reticles_friends      : 2        : , "sv", "cheat", "nf", "rep" : 0 = never, 1 = when carrying ball, 2 = always
+tf_passtime_score_crit_sec               : 5        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_speedboost_on_get_ball_time  : 2        : , "sv", "cheat", "nf", "rep" : 
+tf_passtime_steal_on_melee               : 1        : , "sv", "cheat", "nf", "rep" : 
 tf_player_drop_bonus_ducks               : -1       : , "sv", "rep"    : -1 Default (Holiday-based) 0 - Force off 1 - Force on
 tf_player_movement_restart_freeze        : 1        : , "sv", "rep"    : When set, prevent player movement during round restart
 tf_player_name_change_time               : 60       : , "sv", "nf"     : Seconds between name changes.
@@ -1705,6 +1733,7 @@ tf_weapon_criticals_melee                : 1        : , "sv", "nf", "rep" : Cont
 tf_weapon_criticals_nopred               : 1        : , "sv", "cheat", "rep" : 
 tf_weapon_minicrits_distance_falloff     : 0        : , "sv", "cheat"  : Mini-crit weapon damage will take distance into account.
 tf_wipe_attributes                       : cmd      :                  : Clear all TF-specific attributes of selected area.
+tf_workshop_map_status                   : cmd      :                  : Print information about workshop maps and their status
 tf_workshop_map_sync                     : cmd      :                  : Add a map to the workshop auto-sync list
 tf_workshop_refresh                      : cmd      :                  : tf_workshop_refresh
 think_limit                              : 0        : , "sv", "rep"    : Maximum think time in milliseconds, warning is printed if this is exceeded.
@@ -1833,4 +1862,4 @@ xbox_throttlebias                        : 100      : , "a", "sv"      :
 xbox_throttlespoof                       : 200      : , "a", "sv"      : 
 xc_crouch_debounce                       : 0        : , "sv"           : 
 --------------
-1832 total convars/concommands
+1861 total convars/concommands
