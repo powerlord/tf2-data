@@ -190,7 +190,7 @@ collision_shake_amp                      : 0        : , "sv"           :
 collision_shake_freq                     : 0        : , "sv"           : 
 collision_shake_time                     : 0        : , "sv"           : 
 collision_test                           : cmd      :                  : Tests collision system
-commentary                               : 0        : , "a", "sv"      : Desired commentary mode state.
+commentary                               : 0        : , "sv"           : Desired commentary mode state.
 commentary_available                     : 0        : , "sv"           : Automatically set by the game when a commentary file is available for the current map.
 commentary_cvarsnotchanging              : cmd      :                  : 
 commentary_finishnode                    : cmd      :                  : 
@@ -412,7 +412,7 @@ mat_dxlevel                              : 92       :                  :
 mat_enable_vrmode                        : cmd      :                  : Switches the material system to VR mode (after restart)
 mat_envmapsize                           : 128      :                  : 
 mat_envmaptgasize                        : 32       :                  : 
-mat_excludetextures                      : 0        :                  : 
+mat_excludetextures                      : 0        : , "cheat"        : 
 mat_fastnobump                           : 0        : , "cheat"        : 
 mat_fastspecular                         : 1        :                  : Enable/Disable specularity for visual testing.  Will not reload materials and will not affect perf.
 mat_fillrate                             : 0        : , "cheat"        : 
@@ -515,9 +515,9 @@ mod_load_mesh_async                      : 0        :                  :
 mod_load_showstall                       : 0        :                  : 1 - show hitches , 2 - show stalls
 mod_load_vcollide_async                  : 0        :                  : 
 mod_lock_mdls_on_load                    : 0        :                  : 
-mod_test_mesh_not_available              : 0        :                  : 
-mod_test_not_available                   : 0        :                  : 
-mod_test_verts_not_available             : 0        :                  : 
+mod_test_mesh_not_available              : 0        : , "cheat"        : 
+mod_test_not_available                   : 0        : , "cheat"        : 
+mod_test_verts_not_available             : 0        : , "cheat"        : 
 mod_touchalldata                         : 1        :                  : Touch model data during level startup
 mod_trace_load                           : 0        :                  : 
 motdfile                                 : 0        : , "sv"           : The MOTD file to load.
@@ -1262,6 +1262,8 @@ sv_vote_issue_classlimits_allowed_mvm    : 0        : , "sv"           : Can pla
 sv_vote_issue_classlimits_cooldown       : 300      : , "sv"           : Minimum time before another classlimits vote can occur (in seconds).
 sv_vote_issue_classlimits_max            : 4        : , "sv"           : Maximum number of players (per-team) that can be any one class.
 sv_vote_issue_classlimits_max_mvm        : 2        : , "sv"           : Maximum number of players (per-team) that can be any one class.
+sv_vote_issue_extendlevel_allowed        : 1        : , "sv"           : Can players call votes to set the next level?
+sv_vote_issue_extendlevel_quorum         : 0        : , "sv"           : What is the ratio of voters needed to reach quorum?
 sv_vote_issue_kick_allowed               : 0        : , "sv"           : Can players call votes to kick players from the server?
 sv_vote_issue_kick_allowed_mvm           : 1        : , "sv"           : Can players call votes to kick players from the server in MvM?
 sv_vote_issue_kick_min_connect_time_mvm  : 300      : , "sv"           : How long a player must be connected before they can be kicked (in seconds).
@@ -1475,7 +1477,7 @@ tf_eyeball_boss_lifetime                 : 120      : , "sv", "cheat"  :
 tf_eyeball_boss_lifetime_spell           : 8        : , "sv", "cheat"  : 
 tf_eyeball_boss_speed                    : 250      : , "sv", "cheat"  : 
 tf_eyeball_boss_vert_damping             : 1        : , "sv", "cheat"  : 
-tf_flag_caps_per_round                   : 3        : , "sv", "rep"    : Number of flag captures per round on CTF maps. Set to 0 to disable.
+tf_flag_caps_per_round                   : 3        : , "sv", "rep"    : Number of captures per round on CTF and PASS Time maps. Set to 0 to disable.
 tf_flag_return_on_touch                  : 0        : , "sv", "rep"    : If this is set, your flag must be at base in order to capture the enemy flag. Remote friendly flags return to your base instantly when you touch them
 tf_flag_return_time_credit_factor        : 1        : , "sv", "rep"    : Number of seconds the flag's return time will be credited for each second the flag is being carried.
 tf_flamethrower_boxsize                  : 12       : , "sv", "cheat"  : Size of flame damage entities.
@@ -1627,31 +1629,50 @@ tf_nav_show_bomb_target_distance         : 0        : , "sv", "cheat"  : Display
 tf_nav_show_incursion_distance           : 0        : , "sv", "cheat"  : Display travel distances from current spawn room (1=red, 2=blue)
 tf_nav_show_turf_ownership               : 0        : , "sv", "cheat"  : Color nav area by smallest incursion distance
 tf_overtime_nag                          : 0        : , "sv", "nf"     : Announcer overtime nag.
-tf_passtime_ball_carrier_regen_dmgtime   : 3        : , "sv", "nf", "rep" : 
-tf_passtime_ball_carrier_regen_interval  : 1        : , "sv", "nf", "rep" : 
-tf_passtime_ball_carrier_regen_maxpct    : 1        : , "sv", "nf", "rep" : 
-tf_passtime_ball_carrier_regen_scale     : 0        : , "sv", "nf", "rep" : 
+tf_passtime_ball_carrier_regen_dmgtime   : 3        : , "sv", "nf", "rep" : How long to stop regen when ball carrier takes damage
+tf_passtime_ball_carrier_regen_interval  : 1        : , "sv", "nf", "rep" : How many seconds between regen ticks
+tf_passtime_ball_carrier_regen_maxpct    : 1        : , "sv", "nf", "rep" : Fraction of max health that ball will regen up to
+tf_passtime_ball_carrier_regen_scale     : 0        : , "sv", "nf", "rep" : Fraction of missing health restored on each tick
 tf_passtime_ball_damping_scale           : 0        : , "sv", "nf", "rep" : 
 tf_passtime_ball_drag_coefficient        : 0        : , "sv", "nf", "rep" : 
 tf_passtime_ball_inertia_scale           : 1        : , "sv", "nf", "rep" : 
 tf_passtime_ball_mass                    : 1        : , "sv", "nf", "rep" : 
 tf_passtime_ball_radius                  : 7        : , "sv", "nf", "rep" : 
+tf_passtime_ball_reset_time              : 15       : , "sv", "nf", "rep" : How long the ball can be neutral before being automatically reset
 tf_passtime_ball_rotdamping_scale        : 1        : , "sv", "nf", "rep" : 
-tf_passtime_ball_seek_range              : 96       : , "sv", "nf", "rep" : 
+tf_passtime_ball_seek_range              : 96       : , "sv", "nf", "rep" : How close players have to be for the ball to be drawn to them
 tf_passtime_ball_seek_speed_factor       : 1        : , "sv", "nf", "rep" : 
-tf_passtime_ball_takedamage              : 1        : , "sv", "nf", "rep" : 
-tf_passtime_ball_takedamage_force        : 800      : , "sv", "nf", "rep" : 
+tf_passtime_ball_takedamage              : 1        : , "sv", "nf", "rep" : Enables shooting the ball
+tf_passtime_ball_takedamage_force        : 800      : , "sv", "nf", "rep" : Controls how much the ball responds to being shot
 tf_passtime_flinch_boost                 : 0        : , "sv", "nf", "rep" : Intensity of flinch on taking damage while carrying the ball. 0 to use TF defaults.
 tf_passtime_mode_homing_lock_sec         : 1        : , "sv", "nf", "rep" : 
 tf_passtime_mode_homing_speed            : 1000     : , "sv", "nf", "rep" : 
-tf_passtime_mode_launch_charge_sec       : 0        : , "sv", "nf", "rep" : 
-tf_passtime_mode_launch_speed_max        : 1000     : , "sv", "nf", "rep" : 
-tf_passtime_mode_launch_speed_min        : 800      : , "sv", "nf", "rep" : 
-tf_passtime_player_reticles_enemies      : 1        : , "sv", "nf", "rep" : 0 = never, 1 = when carrying ball, 2 = always
-tf_passtime_player_reticles_friends      : 2        : , "sv", "nf", "rep" : 0 = never, 1 = when carrying ball, 2 = always
-tf_passtime_score_crit_sec               : 5        : , "sv", "nf", "rep" : 
-tf_passtime_speedboost_on_get_ball_time  : 2        : , "sv", "nf", "rep" : 
-tf_passtime_steal_on_melee               : 1        : , "sv", "nf", "rep" : 
+tf_passtime_player_reticles_enemies      : 1        : , "sv", "nf", "rep" : Controls HUD reticles for enemies. 0 = never, 1 = when carrying ball, 2 = always.
+tf_passtime_player_reticles_friends      : 2        : , "sv", "nf", "rep" : Controls HUD reticles for teammates. 0 = never, 1 = when carrying ball, 2 = always.
+tf_passtime_score_crit_sec               : 5        : , "sv", "nf", "rep" : How long a scoring team's crits last.
+tf_passtime_speedboost_on_get_ball_time  : 2        : , "sv", "nf", "rep" : How many seconds of speed boost players get when they get the ball.
+tf_passtime_steal_on_melee               : 1        : , "sv", "nf", "rep" : Enables melee stealing.
+tf_passtime_teammate_steal_time          : 45       : , "sv", "nf", "rep" : How many seconds a player can hold the ball before teammates can steal it.
+tf_passtime_throwarc_demoman             : 0        : , "sv", "nf", "rep" : 
+tf_passtime_throwarc_engineer            : 0        : , "sv", "nf", "rep" : 
+tf_passtime_throwarc_heavy               : 0        : , "sv", "nf", "rep" : 
+tf_passtime_throwarc_medic               : 0        : , "sv", "nf", "rep" : 
+tf_passtime_throwarc_pyro                : 0        : , "sv", "nf", "rep" : 
+tf_passtime_throwarc_scout               : 0        : , "sv", "nf", "rep" : 
+tf_passtime_throwarc_sniper              : 0        : , "sv", "nf", "rep" : 
+tf_passtime_throwarc_soldier             : 0        : , "sv", "nf", "rep" : 
+tf_passtime_throwarc_spy                 : 0        : , "sv", "nf", "rep" : 
+tf_passtime_throwspeed_demoman           : 1000     : , "sv", "nf", "rep" : 
+tf_passtime_throwspeed_engineer          : 1000     : , "sv", "nf", "rep" : 
+tf_passtime_throwspeed_heavy             : 1000     : , "sv", "nf", "rep" : 
+tf_passtime_throwspeed_medic             : 1000     : , "sv", "nf", "rep" : 
+tf_passtime_throwspeed_pyro              : 1000     : , "sv", "nf", "rep" : 
+tf_passtime_throwspeed_scout             : 1000     : , "sv", "nf", "rep" : 
+tf_passtime_throwspeed_sniper            : 1000     : , "sv", "nf", "rep" : 
+tf_passtime_throwspeed_soldier           : 1000     : , "sv", "nf", "rep" : 
+tf_passtime_throwspeed_spy               : 1000     : , "sv", "nf", "rep" : 
+tf_passtime_throwspeed_velocity_scale    : 0        : , "sv", "nf", "rep" : How much player velocity to add when tossing (0=none 1=100% etc)
+tf_passtime_unstable                     : cmd      :                  : Controls passtime unstable testing features. Pass 1 to apply unstable mode, any other value to revert to normal
 tf_player_drop_bonus_ducks               : -1       : , "sv", "rep"    : -1 Default (Holiday-based) 0 - Force off 1 - Force on
 tf_player_movement_restart_freeze        : 1        : , "sv", "rep"    : When set, prevent player movement during round restart
 tf_player_name_change_time               : 60       : , "sv", "nf"     : Seconds between name changes.
@@ -1862,4 +1883,4 @@ xbox_throttlebias                        : 100      : , "a", "sv"      :
 xbox_throttlespoof                       : 200      : , "a", "sv"      : 
 xc_crouch_debounce                       : 0        : , "sv"           : 
 --------------
-1861 total convars/concommands
+1882 total convars/concommands

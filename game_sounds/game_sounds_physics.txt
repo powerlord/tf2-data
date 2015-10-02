@@ -132,13 +132,14 @@
 "Default.BulletImpact"
 {
 	"soundlevel"		"SNDLVL_75dB"
+	"volume"		"0.7"
 	"pitch"			"PITCH_NORM"
-	"volume"			"0.7"
 	"rndwave"
 	{
-		"wave"		"physics/plastic/plastic_box_impact_hard1.wav"
-		"wave"		"physics/plastic/plastic_box_impact_hard2.wav"
-		"wave"		"physics/plastic/plastic_box_impact_hard3.wav"
+		"wave"		"physics/concrete/concrete_impact_bullet1.wav"
+		"wave"		"physics/concrete/concrete_impact_bullet2.wav"
+		"wave"		"physics/concrete/concrete_impact_bullet3.wav"
+		"wave"		"physics/concrete/concrete_impact_bullet4.wav"
 	}
 }
 
@@ -570,6 +571,7 @@
 	{
 		"wave"		"player/footsteps/slosh2.wav"
 		"wave"		"player/footsteps/slosh4.wav"
+		"wave"		"player/footsteps/slosh6.wav"
 	}
 }
 
@@ -582,6 +584,7 @@
 	{
 		"wave"		"player/footsteps/slosh1.wav"
 		"wave"		"player/footsteps/slosh3.wav"
+		"wave"		"player/footsteps/slosh5.wav"
 	}
 }
 
@@ -596,6 +599,8 @@
 		"wave"	"player/footsteps/slosh3.wav"
 		"wave"	"player/footsteps/slosh2.wav"
 		"wave"	"player/footsteps/slosh4.wav"
+		"wave"	"player/footsteps/slosh5.wav"
+		"wave"	"player/footsteps/slosh6.wav"
 	}
 }
 

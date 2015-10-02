@@ -1,4 +1,4 @@
-// Dump of all classes for "tf" as at 19/08/2015
+// Dump of all classes for "tf" as at 02/10/2015
 //
 
 CBaseEntity - _ballplayertoucher
@@ -50,6 +50,7 @@ CBaseAnimating - entity_carrier
 CTFMedigunShield - entity_medigun_shield
 CTFReviveMarker - entity_revive_marker
 CBaseAnimating - entity_rocket
+CBaseAnimating - entity_saucer
 CBaseAnimating - entity_sign
 CBaseEntity - entity_spawn_manager
 CBaseEntity - entity_spawn_point
@@ -347,6 +348,7 @@ CTFPasstimeLogic - passtime_logic
 CBaseEntity - path_corner
 CBaseEntity - path_corner_crash
 CBaseEntity - path_track
+CPlayerDestructionDispenser - pd_dispenser
 CBaseEntity - phys_ballsocket
 CBoneFollower - phys_bone_follower
 CBaseEntity - phys_constraint
@@ -455,6 +457,7 @@ CTFPlayer - tf_bot
 CTFDroppedWeapon - tf_dropped_weapon
 CBaseEntity - tf_flame
 CTFGameRulesProxy - tf_gamerules
+CTFGenericBomb - tf_generic_bomb
 CTFHalloweenMinigame - tf_halloween_minigame
 CTFHalloweenMinigame_FallingPlatforms - tf_halloween_minigame_falling_platforms
 CHalloweenPickup - tf_halloween_pickup
@@ -468,6 +471,7 @@ CBaseEntity - tf_logic_mann_vs_machine
 CBaseEntity - tf_logic_medieval
 CTFMinigameLogic - tf_logic_minigames
 CBaseEntity - tf_logic_multiple_escort
+CTFPlayerDestructionLogic - tf_logic_player_destruction
 CTFRobotDestructionLogic - tf_logic_robot_destruction
 CBaseEntity - tf_logic_training_mode
 CMannVsMachineStats - tf_mann_vs_machine_stats
