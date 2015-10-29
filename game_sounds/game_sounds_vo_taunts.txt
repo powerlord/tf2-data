@@ -1851,9 +1851,9 @@
 	"soundlevel" 		"SNDLVL_75dB"
 	"rndwave"
 	{
-		"wave"		"player/taunt_hard_clap1.wav"                                                                                                                                                                                                                                                                                                                                                                                    
+		"wave"		"player/taunt_hard_clap1.wav"
 		"wave"      "player/taunt_hard_clap2.wav" 
-		"wave"      "player/taunt_hard_clap3.wav"                                     
+		"wave"      "player/taunt_hard_clap3.wav"
 	}
 }
 "eng_taunt_flip_random_flipFlipping"
@@ -2763,7 +2763,7 @@
 }
 "taunt_headbutt_sfx_hand_swoosh"
 {
-	"channel" 			"CHAN_VOICE"
+	"channel" 			"CHAN_VOICE2"
 	"volume" 			"VOL_NORM"
 	"pitch" 			"PITCH_NORM"
 	"soundlevel" 		"SNDLVL_95dB"

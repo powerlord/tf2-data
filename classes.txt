@@ -1,4 +1,4 @@
-// Dump of all classes for "tf" as at 06/10/2015
+// Dump of all classes for "tf" as at 29/10/2015
 //
 
 CBaseEntity - _ballplayertoucher
@@ -283,6 +283,7 @@ CCurrencyPack - item_currencypack_custom
 CCurrencyPack - item_currencypack_large
 CCurrencyPack - item_currencypack_medium
 CCurrencyPack - item_currencypack_small
+CBaseAnimating - item_healthammokit
 CBaseAnimating - item_healthkit_full
 CBaseAnimating - item_healthkit_medium
 CBaseAnimating - item_healthkit_small
@@ -458,6 +459,8 @@ CTFDroppedWeapon - tf_dropped_weapon
 CBaseEntity - tf_flame
 CTFGameRulesProxy - tf_gamerules
 CTFGenericBomb - tf_generic_bomb
+CHalloweenGiftPickup - tf_halloween_gift_pickup
+CBaseEntity - tf_halloween_gift_spawn_location
 CTFHalloweenMinigame - tf_halloween_minigame
 CTFHalloweenMinigame_FallingPlatforms - tf_halloween_minigame_falling_platforms
 CHalloweenPickup - tf_halloween_pickup
@@ -471,6 +474,7 @@ CBaseEntity - tf_logic_mann_vs_machine
 CBaseEntity - tf_logic_medieval
 CTFMinigameLogic - tf_logic_minigames
 CBaseEntity - tf_logic_multiple_escort
+CBaseEntity - tf_logic_on_holiday
 CTFPlayerDestructionLogic - tf_logic_player_destruction
 CTFRobotDestructionLogic - tf_logic_robot_destruction
 CBaseEntity - tf_logic_training_mode
@@ -624,11 +628,13 @@ CBaseEntity - trigger_cdaudio
 CBaseEntity - trigger_changelevel
 CBaseEntity - trigger_gravity
 CBaseEntity - trigger_hurt
+CBaseEntity - trigger_ignite
 CBaseEntity - trigger_ignite_arrows
 CBaseEntity - trigger_impact
 CBaseEntity - trigger_look
 CBaseEntity - trigger_multiple
 CBaseEntity - trigger_once
+CBaseEntity - trigger_particle
 CBaseEntity - trigger_passtime_ball
 CBaseEntity - trigger_player_respawn_override
 CBaseEntity - trigger_playermovement
@@ -636,6 +642,7 @@ CBaseEntity - trigger_proximity
 CBaseEntity - trigger_push
 CBaseEntity - trigger_rd_vault_trigger
 CBaseEntity - trigger_remove
+CBaseEntity - trigger_remove_tf_player_condition
 CBaseEntity - trigger_serverragdoll
 CBaseEntity - trigger_soundscape
 CBaseEntity - trigger_stun

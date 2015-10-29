@@ -412,6 +412,7 @@ mat_dxlevel                              : 92       :                  :
 mat_enable_vrmode                        : cmd      :                  : Switches the material system to VR mode (after restart)
 mat_envmapsize                           : 128      :                  : 
 mat_envmaptgasize                        : 32       :                  : 
+mat_evict_all                            : cmd      :                  : Evict all fine mipmaps from the gpu
 mat_excludetextures                      : 0        : , "cheat"        : 
 mat_fastnobump                           : 0        : , "cheat"        : 
 mat_fastspecular                         : 1        :                  : Enable/Disable specularity for visual testing.  Will not reload materials and will not affect perf.
@@ -966,7 +967,7 @@ r_overlayfademin                         : 1750     :                  :
 r_overlaywireframe                       : 0        :                  : 
 r_partition_level                        : -1       : , "cheat"        : Displays a particular level of the spatial partition system. Use -1 to disable it.
 r_printdecalinfo                         : cmd      :                  : 
-r_proplightingfromdisk                   : 1        :                  : 0=Off, 1=On, 2=Show Errors
+r_proplightingfromdisk                   : 1        : , "cheat"        : 0=Off, 1=On, 2=Show Errors
 r_proplightingpooling                    : -1       : , "cheat"        : 0 - off, 1 - static prop color meshes are allocated from a single shared vertex buffer (on hardware that supports stream offset)
 r_queued_decals                          : 0        :                  : Offloads a bit of decal rendering setup work to the material system queue when enabled.
 r_randomflex                             : 0        : , "cheat"        : 
@@ -1152,7 +1153,6 @@ sv_forcepreload                          : 0        : , "a"            : Force s
 sv_gravity                               : 800      : , "sv", "nf", "rep" : World gravity.
 sv_hudhint_sound                         : 1        : , "sv", "rep"    : 
 sv_lan                                   : 0        :                  : Server is a lan server ( no heartbeat, no authentication, no non-class C addresses )
-sv_loadondemand_default                  : 0        : , "a", "sv"      : The default value for whether items should be delay loaded (1) or loaded now (0).
 sv_log_onefile                           : 0        : , "a"            : Log server information to only one file.
 sv_logbans                               : 0        : , "a"            : Log server bans in the server logs.
 sv_logblocks                             : 0        :                  : If true when log when a query is blocked (can cause very large log files)
@@ -1492,9 +1492,9 @@ tf_grapplinghook_dampening               : 500      : , "sv", "cheat", "rep" :
 tf_grapplinghook_enable                  : 0        : , "sv", "rep"    : 
 tf_grapplinghook_fire_delay              : 0        : , "sv", "cheat", "rep" : 
 tf_grapplinghook_follow_distance         : 64       : , "sv", "cheat", "rep" : 
-tf_grapplinghook_jump_up_speed           : 450      : , "sv", "cheat", "rep" : 
+tf_grapplinghook_jump_up_speed           : 375      : , "sv", "cheat", "rep" : 
 tf_grapplinghook_los_force_detach_time   : 1        : , "sv", "cheat"  : 
-tf_grapplinghook_max_distance            : 4000     : , "sv", "cheat", "rep" : Valid distance for grappling hook to travel
+tf_grapplinghook_max_distance            : 2000     : , "sv", "cheat", "rep" : Valid distance for grappling hook to travel
 tf_grapplinghook_medic_latch_speed_scale : 0        : , "sv", "cheat", "rep" : 
 tf_grapplinghook_move_speed              : 750      : , "sv", "cheat", "rep" : 
 tf_grapplinghook_prevent_fall_damage     : 0        : , "sv", "cheat", "rep" : 
@@ -1517,6 +1517,7 @@ tf_halloween_eyeball_boss_spawn_interval : 180      : , "sv", "cheat"  : Average
 tf_halloween_eyeball_boss_spawn_interval_variation : 30       : , "sv", "cheat"  : Variation of spawn interval +/-
 tf_halloween_force_boss_spawn            : cmd      :                  : For testing.
 tf_halloween_giant_health_scale          : 10       : , "sv", "cheat"  : 
+tf_halloween_gift_lifetime               : 240      : , "sv", "cheat", "rep" : 
 tf_halloween_hhh_attack_kart_radius      : 300      : , "sv", "cheat"  : 
 tf_halloween_kart_air_turn_scale         : 1        : , "sv", "cheat", "rep" : 
 tf_halloween_kart_aircontrol             : 1        : , "sv", "cheat", "rep" : Multiplier for how much air control players have when in Kart Mode
@@ -1637,11 +1638,13 @@ tf_passtime_ball_damping_scale           : 0        : , "sv", "nf", "rep" :
 tf_passtime_ball_drag_coefficient        : 0        : , "sv", "nf", "rep" : 
 tf_passtime_ball_inertia_scale           : 1        : , "sv", "nf", "rep" : 
 tf_passtime_ball_mass                    : 1        : , "sv", "nf", "rep" : 
-tf_passtime_ball_radius                  : 7        : , "sv", "nf", "rep" : 
+tf_passtime_ball_model                   : 0        : , "sv", "nf", "rep" : Needs a model with collision info. Map change required.
 tf_passtime_ball_reset_time              : 15       : , "sv", "nf", "rep" : How long the ball can be neutral before being automatically reset
 tf_passtime_ball_rotdamping_scale        : 1        : , "sv", "nf", "rep" : 
-tf_passtime_ball_seek_range              : 96       : , "sv", "nf", "rep" : How close players have to be for the ball to be drawn to them
+tf_passtime_ball_seek_range              : 128      : , "sv", "nf", "rep" : How close players have to be for the ball to be drawn to them
 tf_passtime_ball_seek_speed_factor       : 1        : , "sv", "nf", "rep" : 
+tf_passtime_ball_sphere_collision        : 1        : , "sv", "nf", "rep" : Boolean value. If nonzero, override mdl collision with a perfect sphere collider.
+tf_passtime_ball_sphere_radius           : 7        : , "sv", "nf", "rep" : 
 tf_passtime_ball_takedamage              : 1        : , "sv", "nf", "rep" : Enables shooting the ball
 tf_passtime_ball_takedamage_force        : 800      : , "sv", "nf", "rep" : Controls how much the ball responds to being shot
 tf_passtime_flinch_boost                 : 0        : , "sv", "nf", "rep" : Intensity of flinch on taking damage while carrying the ball. 0 to use TF defaults.
@@ -1682,6 +1685,7 @@ tf_populator_active_buffer_range         : 3000     : , "sv", "cheat"  : Populat
 tf_populator_damage_multiplier           : 1        : , "sv", "cheat", "rep", "norecord" : 
 tf_populator_debug                       : 0        : , "sv", "cheat"  : 
 tf_populator_health_multiplier           : 1        : , "sv", "cheat", "rep", "norecord" : 
+tf_powerup_max_charge_time               : 45       : , "sv", "cheat"  : 
 tf_powerup_mode                          : 0        : , "sv", "nf"     : Enable/disable powerup mode. Not compatible with Mann Vs Machine mode
 tf_powerup_mode_imbalance_delta          : 18       : , "sv", "cheat"  : Powerup kill score lead one team must have before imbalance measures are initiated
 tf_rd_max_points_override                : 0        : , "sv"           : When changed, overrides the current max points
@@ -1883,4 +1887,4 @@ xbox_throttlebias                        : 100      : , "a", "sv"      :
 xbox_throttlespoof                       : 200      : , "a", "sv"      : 
 xc_crouch_debounce                       : 0        : , "sv"           : 
 --------------
-1882 total convars/concommands
+1886 total convars/concommands
