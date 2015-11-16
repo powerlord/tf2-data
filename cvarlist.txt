@@ -1501,6 +1501,7 @@ tf_grapplinghook_prevent_fall_damage     : 0        : , "sv", "cheat", "rep" :
 tf_grapplinghook_projectile_speed        : 1500     : , "sv", "cheat", "rep" : How fast does the grappliing hook projectile travel
 tf_grapplinghook_use_acceleration        : 0        : , "sv", "rep"    : Use full acceleration calculation for grappling hook movement
 tf_halloween_allow_ghost_hit_by_kart_delay : 0        : , "sv", "cheat"  : 
+tf_halloween_allow_truce_during_boss_event : 0        : , "sv", "nf"     : Determines if RED and BLU can damage each other while fighting Monoculus or Merasmus on non-Valve maps.
 tf_halloween_boss_spawn_interval         : 480      : , "sv", "cheat"  : Average interval between boss spawns, in seconds
 tf_halloween_boss_spawn_interval_variation : 60       : , "sv", "cheat"  : Variation of spawn interval +/-
 tf_halloween_bot_attack_range            : 200      : , "sv", "cheat"  : 
@@ -1687,7 +1688,7 @@ tf_populator_debug                       : 0        : , "sv", "cheat"  :
 tf_populator_health_multiplier           : 1        : , "sv", "cheat", "rep", "norecord" : 
 tf_powerup_max_charge_time               : 45       : , "sv", "cheat"  : 
 tf_powerup_mode                          : 0        : , "sv", "nf"     : Enable/disable powerup mode. Not compatible with Mann Vs Machine mode
-tf_powerup_mode_imbalance_delta          : 18       : , "sv", "cheat"  : Powerup kill score lead one team must have before imbalance measures are initiated
+tf_powerup_mode_imbalance_delta          : 24       : , "sv", "cheat"  : Powerup kill score lead one team must have before imbalance measures are initiated
 tf_rd_max_points_override                : 0        : , "sv"           : When changed, overrides the current max points
 tf_rd_return_max_time                    : 90       : , "sv"           : 
 tf_rd_return_min_time                    : 30       : , "sv"           : 
@@ -1887,4 +1888,4 @@ xbox_throttlebias                        : 100      : , "a", "sv"      :
 xbox_throttlespoof                       : 200      : , "a", "sv"      : 
 xc_crouch_debounce                       : 0        : , "sv"           : 
 --------------
-1886 total convars/concommands
+1887 total convars/concommands
