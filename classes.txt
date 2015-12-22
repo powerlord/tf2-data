@@ -1,4 +1,4 @@
-// Dump of all classes for "tf" as at 29/10/2015
+// Dump of all classes for "tf" as at 21/12/2015
 //
 
 CBaseEntity - _ballplayertoucher
@@ -542,6 +542,7 @@ CTFBottle - tf_weapon_bottle
 CTFBuffItem - tf_weapon_buff_item
 CTFWeaponBuilder - tf_weapon_builder
 CTFCannon - tf_weapon_cannon
+CTFChargedSMG - tf_weapon_charged_smg
 CTFCleaver - tf_weapon_cleaver
 CTFClub - tf_weapon_club
 CTFCompoundBow - tf_weapon_compound_bow
@@ -617,6 +618,7 @@ CBaseEntity - tf_zombie_spawner
 CBaseEntity - training_annotation
 CDynamicProp - training_prop_dynamic
 CBaseEntity - trigger
+CBaseEntity - trigger_add_or_remove_tf_player_attributes
 CBaseEntity - trigger_add_tf_player_condition
 CBaseEntity - trigger_apply_impulse
 CBaseEntity - trigger_autosave
