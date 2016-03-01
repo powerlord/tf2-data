@@ -1,4 +1,4 @@
-// Dump of all classes for "tf" as at 21/12/2015
+// Dump of all classes for "tf" as at 01/03/2016
 //
 
 CBaseEntity - _ballplayertoucher
@@ -466,6 +466,7 @@ CTFHalloweenMinigame_FallingPlatforms - tf_halloween_minigame_falling_platforms
 CHalloweenPickup - tf_halloween_pickup
 CBaseEntity - tf_logic_arena
 CBonusRoundLogic - tf_logic_bonusround
+CBaseEntity - tf_logic_competitive
 CBaseEntity - tf_logic_cp_timer
 CBaseEntity - tf_logic_holiday
 CBaseEntity - tf_logic_hybrid_ctf_cp
