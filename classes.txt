@@ -1,4 +1,4 @@
-// Dump of all classes for "tf" as at 01/03/2016
+// Dump of all classes for "tf" as at 2016/07/10
 //
 
 CBaseEntity - _ballplayertoucher
@@ -459,6 +459,7 @@ CTFDroppedWeapon - tf_dropped_weapon
 CBaseEntity - tf_flame
 CTFGameRulesProxy - tf_gamerules
 CTFGenericBomb - tf_generic_bomb
+CTFGlow - tf_glow
 CHalloweenGiftPickup - tf_halloween_gift_pickup
 CBaseEntity - tf_halloween_gift_spawn_location
 CTFHalloweenMinigame - tf_halloween_minigame
@@ -472,6 +473,7 @@ CBaseEntity - tf_logic_holiday
 CBaseEntity - tf_logic_hybrid_ctf_cp
 CBaseEntity - tf_logic_koth
 CBaseEntity - tf_logic_mann_vs_machine
+CBaseEntity - tf_logic_mannpower
 CBaseEntity - tf_logic_medieval
 CTFMinigameLogic - tf_logic_minigames
 CBaseEntity - tf_logic_multiple_escort
@@ -492,7 +494,7 @@ CTFProjectile_Arrow - tf_projectile_arrow
 CTFBall_Ornament - tf_projectile_ball_ornament
 CTFProjectile_Cleaver - tf_projectile_cleaver
 CTFProjectile_EnergyBall - tf_projectile_energy_ball
-CTFBaseProjectile - tf_projectile_energy_ring
+CTFProjectile_EnergyRing - tf_projectile_energy_ring
 CTFProjectile_Flare - tf_projectile_flare
 CTFProjectile_GrapplingHook - tf_projectile_grapplinghook
 CTFProjectile_HealingBolt - tf_projectile_healing_bolt
