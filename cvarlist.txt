@@ -214,6 +214,7 @@ changelevel2                             : cmd      :                  : Transit
 changelevel_next                         : cmd      :                  : Immediately changes to the next map in the map rotation for the server.
 cl_allowdownload                         : 1        : , "a"            : Client downloads customization files
 cl_allowupload                           : 1        : , "a"            : Client uploads customization files
+cl_always_flush_models                   : 0        :                  : If set, always flush models between map loads.  Useful on systems under memory pressure.
 cl_backspeed                             : 450      : , "sv", "cheat", "rep" : 
 cl_clock_correction                      : 1        : , "cheat"        : Enable/disable clock correction on the client.
 cl_clock_correction_adjustment_max_amount : 200      : , "cheat"        : Sets the maximum number of milliseconds per second it is allowed to correct the client clock. It will only correct this amount if the difference between the client and server clock is equal to or larger than cl_clock_correction_adjustment_max_offset.
@@ -358,6 +359,7 @@ dtwarning                                : 0        :                  : Print d
 dtwatchclass                             : 0        :                  : Watch all fields encoded with this table.
 dtwatchent                               : -1       :                  : Watch this entities data table encoding.
 dtwatchvar                               : 0        :                  : Watch the named variable.
+dump_all_caches                          : cmd      :                  : Dump the contents all subsribed SOCaches
 dump_entity_sizes                        : cmd      :                  : Print sizeof(entclass)
 dump_globals                             : cmd      :                  : Dump all global entities/states
 dump_panels                              : cmd      :                  : Dump Panel Tree
@@ -374,6 +376,7 @@ editdemo                                 : cmd      :                  : Edit a 
 enable_debug_overlays                    : 1        : , "sv", "cheat"  : Enable rendering of debug overlays
 endmovie                                 : cmd      :                  : Stop recording movie frames.
 engine_no_focus_sleep                    : 50       : , "a"            : 
+ensure_so_trackers_for_steamid           : cmd      :                  : Ensures a steamID has all the trackers it should have, with extra spew along the way
 ent_absbox                               : cmd      :                  : Displays the total bounding box for the given entity(s) in green.  Some entites will also display entity specific overlays.  Arguments:    {entity_name} / {class_name} / no argument picks what player is looking at 
 ent_attachments                          : cmd      :                  : Displays the attachment points on an entity.  Arguments:    {entity_name} / {class_name} / no argument picks what player is looking at 
 ent_autoaim                              : cmd      :                  : Displays the entity's autoaim radius.  Arguments:    {entity_name} / {class_name} / no argument picks what player is looking at
@@ -552,6 +555,7 @@ logaddress_del                           : cmd      :                  : Remove 
 logaddress_delall                        : cmd      :                  : Remove all udp addresses being logged to
 logaddress_list                          : cmd      :                  : List all addresses currently being used by logaddress.
 lservercfgfile                           : 0        : , "sv"           : 
+lzma_persistent_buffer                   : 0        :                  : If set, attempt to keep a persistent buffer for the LZMA decoder dictionary. This avoids re-allocating a ~16-64meg buffer for each operation, at the expensive of keeping extra memory around when it is not in-use.
 map                                      : cmd      :                  : Start playing on specified map.
 map_background                           : cmd      :                  : Runs a map as the background to the main menu.
 map_commentary                           : cmd      :                  : Start playing, with commentary, on a specified map.
@@ -621,7 +625,7 @@ mat_managedtextures                      : 1        : , "a"            : If set,
 mat_max_worldmesh_vertices               : 65536    :                  : 
 mat_measurefillrate                      : 0        : , "cheat"        : 
 mat_mipmaptextures                       : 1        :                  : 
-mat_monitorgamma                         : 2        :                  : monitor gamma (typically 2.2 for CRT and 1.7 for LCD)
+mat_monitorgamma                         : 2        : , "a"            : monitor gamma (typically 2.2 for CRT and 1.7 for LCD)
 mat_monitorgamma_tv_enabled              : 0        : , "a"            : 
 mat_monitorgamma_tv_exp                  : 2        :                  : 
 mat_monitorgamma_tv_range_max            : 255      :                  : 
@@ -674,6 +678,7 @@ mat_texture_list_content_path            : 0        : , "a"            : The con
 mat_texture_list_txlod                   : cmd      :                  : Adjust LOD of the last viewed texture +1 to inc resolution, -1 to dec resolution
 mat_texture_list_txlod_sync              : cmd      :                  : 'reset' - resets all run-time changes to LOD overrides, 'save' - saves all changes to material content files
 mat_texture_list_view                    : 1        : , "cheat", "numeric" : If this is nonzero, then the texture list panel will render thumbnails of currently-loaded textures.
+mat_texture_reload_frame_swap_workaround : 0        :                  : Workaround certain GL drivers holding unnecessary amounts of data when loading many materials by forcing synthetic frame swaps
 mat_texture_save_fonts                   : cmd      :                  : Save all font textures
 mat_texture_tracking                     : 0        :                  : 
 mat_tonemap_algorithm                    : 1        : , "cheat"        : 0 = Original Algorithm 1 = New Algorithm
@@ -721,6 +726,7 @@ mod_load_mesh_async                      : 0        :                  :
 mod_load_showstall                       : 0        :                  : 1 - show hitches , 2 - show stalls
 mod_load_vcollide_async                  : 0        :                  : 
 mod_lock_mdls_on_load                    : 0        :                  : 
+mod_offline_hdr_switch                   : 0        :                  : Re-order the HDR/LDR mode switch to do most of the material system reloading with the device offline. This reduces unnecessary device resource uploads and may drastically reduce load time and memory pressure on certain drivers, but may trigger bugs in some very old source engine pathways.
 mod_test_mesh_not_available              : 0        : , "cheat"        : 
 mod_test_not_available                   : 0        : , "cheat"        : 
 mod_test_verts_not_available             : 0        : , "cheat"        : 
@@ -733,7 +739,7 @@ movie_fixwave                            : cmd      :                  : Fixup c
 mp_allowNPCs                             : 1        : , "sv", "nf"     : 
 mp_allowspectators                       : 1        : , "sv", "rep"    : toggles whether the server allows spectator mode or not
 mp_autocrosshair                         : 1        : , "sv", "nf"     : 
-mp_autoteambalance                       : 1        : , "sv", "nf"     : 
+mp_autoteambalance                       : 1        : , "sv", "nf"     : Automatically balance the teams based on mp_teams_unbalance_limit. 0 = off, 1 = forcibly switch, 2 = ask volunteers
 mp_bonusroundtime                        : 15       : , "sv", "rep"    : Time after round win until round restarts
 mp_chattime                              : 10       : , "sv", "rep"    : amount of time players can chat after the game is over
 mp_clan_ready_signal                     : 0        : , "sv"           : Text that team leader from each team must speak for the match to begin
@@ -860,6 +866,7 @@ nav_generate_fixup_jump_areas            : 1        : , "sv", "cheat"  : Convert
 nav_generate_incremental                 : cmd      :                  : Generate a Navigation Mesh for the current map and save it to disk.
 nav_generate_incremental_range           : 2000     : , "sv", "cheat"  : 
 nav_generate_incremental_tolerance       : 0        : , "sv", "cheat"  : Z tolerance for adding new nav areas.
+nav_generate_jump_connections            : 1        : , "sv", "cheat"  : If disabled, don't generate jump connections from jump areas
 nav_jump                                 : cmd      :                  : Toggles the 'traverse this area by jumping' flag used by the AI system.
 nav_ladder_flip                          : cmd      :                  : Flips the selected ladder's direction.
 nav_load                                 : cmd      :                  : Loads the Navigation Mesh for the current map.
@@ -1287,17 +1294,6 @@ replay_enableeventbasedscreenshots       : 0        : , "a", "norecord", "cl" : 
 replay_fileserver_autocleanup            : 0        : , "sv", "cl"     : Automatically do fileserver cleanup in between rounds?  This is the same as explicitly calling replay_docleanup.
 replay_fileserver_host                   : 0        : , "rep", "norecord", "cl" : The hostname of the Web server hosting replays.  This can be an IP or a hostname, e.g. '1.2.3.4' or 'www.myserver.com'
 replay_fileserver_offload_aborttime      : 60       : , "sv", "cl"     : The time after which publishing will be aborted for a session block or session info file.
-replay_fileserver_offload_enable         : 0        : , "sv", "cl"     : If enabled, offload session blocks to a secondary machine using the replay_offload_* convars.
-replay_fileserver_offload_hostname       : 0        : , "sv", "cl"     : Hostname for FTP server where session blocks will be offloaded.
-replay_fileserver_offload_login          : 0        : , "sv", "cl"     : Login for session block offloading.
-replay_fileserver_offload_maxuploads     : 1        : , "sv", "cl"     : The maximum number of concurrent uploads allowed.
-replay_fileserver_offload_password       : 0        : , "sv", "prot", "cl" : Login for session block offloading.
-replay_fileserver_offload_port           : 21       : , "sv", "cl"     : Port number for FTP server where session blocks will be offloaded.
-replay_fileserver_offload_protocol       : 0        : , "sv", "cl"     : Must be 'ftp'
-replay_fileserver_offload_proxy_host     : 0        : , "sv", "cl"     : The hostname of the proxy server.
-replay_fileserver_offload_proxy_port     : 8080     : , "sv", "cl"     : The port of the proxy server.
-replay_fileserver_offload_remotepath     : 0        : , "sv", "cl"     : Remote path where blocks will be stored on the FTP server for session block offloading.
-replay_fileserver_offload_useproxy       : 0        : , "sv", "cl"     : If enabled, a proxy will be used for FTP connections.
 replay_fileserver_path                   : 0        : , "rep", "norecord", "cl" : If your replays are stored at 'http://123.123.123.123:4567/tf/replays', replay_fileserver_path should be set to '/tf/replays'
 replay_fileserver_port                   : 80       : , "rep", "norecord", "cl" : The port for the Web server hosting replays.  For example, if your replays are stored at 'http://123.123.123.123:4567/tf/replays', replay_fileserver_port should be 4567.
 replay_fileserver_protocol               : 0        : , "rep", "norecord", "cl" : Can be 'http' or 'https'
@@ -1316,7 +1312,6 @@ replay_postwinreminderduration           : 5        : , "norecord", "cl" : The n
 replay_printclientreplays                : cmd      :                  : Prints out all client replay info
 replay_printqueuedtakes                  : cmd      :                  : Print a list of takes queued for rendering.
 replay_printsessioninfo                  : cmd      :                  : Print session info
-replay_publish_simulate_delay_ftp        : 0        : , "norecord", "cl" : Simulate a delay (in seconds) when publishing replay data via FTP.
 replay_publish_simulate_delay_local_http : 0        : , "norecord", "cl" : Simulate a delay (in seconds) when publishing replay data via local HTTP.
 replay_publish_simulate_rename_fail      : 0        : , "norecord", "cl" : Simulate a rename failure during local HTTP publishing, which will force a manual copy & delete.
 replay_record                            : cmd      :                  : Starts Replay demo recording.
@@ -1583,6 +1578,7 @@ sv_parallel_sendsnapshot                 : 0        :                  :
 sv_password                              : 0        : , "nf", "prot", "norecord" : Server password for entry into multiplayer games
 sv_pausable                              : 0        : , "nf"           : Is the server pausable.
 sv_player_display_usercommand_errors     : 0        : , "sv", "cheat"  : 1 = Display warning when command values are out-of-range. 2 = Spew invalid ranges.
+sv_player_usercommand_timeout            : 3        : , "sv", "cheat"  : After this many seconds without a usercommand from a player, the server will RunNullCommand as if client sends an empty command.
 sv_playerperfhistorycount                : 60       : , "sv"           : Number of samples to maintain in player perf history
 sv_precacheinfo                          : cmd      :                  : Show precache info.
 sv_pure                                  : cmd      :                  : Show user data.
@@ -1607,6 +1603,7 @@ sv_setsteamaccount                       : cmd      :                  : token S
 sv_showladders                           : 0        : , "sv"           : Show bbox and dismount points for all ladders (must be set before level load.) 
 sv_showlagcompensation                   : 0        : , "sv", "cheat"  : Show lag compensated hitboxes whenever a player is lag compensated.
 sv_shutdown                              : cmd      :                  : Sets the server to shutdown next time it's empty
+sv_shutdown_cancel                       : cmd      :                  : Cancels pending sv_shutdown command
 sv_shutdown_timeout_minutes              : 360      : , "rep"          : If sv_shutdown is pending, wait at most N minutes for server to drain before forcing shutdown.
 sv_skyname                               : 0        : , "a", "sv", "rep" : Current name of the skybox texture
 sv_soundemitter_trace                    : 0        : , "sv", "rep"    : Show all EmitSound calls including their symbolic name and the actual wave file they resolved to 
@@ -1624,10 +1621,10 @@ sv_thinktimecheck                        : 0        : , "sv"           : Check f
 sv_timeout                               : 65       :                  : After this many seconds without a message from a client, the client is dropped
 sv_turbophysics                          : 1        : , "sv", "rep"    : Turns on turbo physics
 sv_unlockedchapters                      : 99       : , "a"            : Highest unlocked game chapter.
-sv_use_steam_voice                       : 1        : , "rep"          : Enable/disable using Steam Voice instead of the old voice codec (if enabled, voice_inputfromfile will no longer function).
 sv_usercmd_custom_random_seed            : 1        : , "sv", "cheat"  : When enabled server will populate an additional random seed independent of the client
 sv_vehicle_autoaim_scale                 : 8        : , "sv"           : 
 sv_visiblemaxplayers                     : -1       :                  : Overrides the max players reported to prospective clients
+sv_voicecodec                            : 0        :                  : Specifies which voice codec to use. Valid options are: vaudio_speex - Legacy Speex codec (lowest quality) vaudio_celt - Newer CELT codec (22kHz, 22kbps) vaudio_celt_high - Newer CELT codec, higher bitrate (44kHz, 44kbps) steam - Use Steam voice API
 sv_voiceenable                           : 1        : , "a", "nf"      : 
 sv_vote_allow_spectators                 : 0        : , "sv"           : Allow spectators to vote?
 sv_vote_creation_timer                   : 150      : , "sv"           : How long before a player can attempt to call another vote (in seconds).
@@ -1693,7 +1690,21 @@ texture_budget_panel_height              : 284      : , "a"            : height 
 texture_budget_panel_width               : 512      : , "a"            : width in pixels of the budget panel
 texture_budget_panel_x                   : 0        : , "a"            : number of pixels from the left side of the game screen to draw the budget panel
 texture_budget_panel_y                   : 450      : , "a"            : number of pixels from the top side of the game screen to draw the budget panel
+tf_airblast_cray                         : 1        : , "sv", "cheat"  : Use alternate cray airblast logic globally.
+tf_airblast_cray_debug                   : 0        : , "sv", "cheat"  : Enable debugging overlays & output for cray airblast.  Value is length of time to show debug overlays in seconds.
+tf_airblast_cray_ground_minz             : 100      : , "sv", "cheat"  : If set, cray airblast ensures the target has this minimum Z velocity after reflections and impulse have been applied. Set to 268.3281572999747 for exact old airblast Z behavior.
+tf_airblast_cray_ground_reflect          : 1        : , "sv", "cheat"  : If set, cray airblast reflects any airblast power directed into the ground off of it, to prevent ground-stuck and provide a bit more control over up-vs-forward vectoring
+tf_airblast_cray_lose_footing_duration   : 0        : , "sv", "cheat"  : How long the player should be unable to regain their footing after being airblast, separate from air-control stun.
+tf_airblast_cray_pitch_control           : 0        : , "sv", "cheat"  : If set, allow controlling the pitch of the airblast, in addition to the yaw.
+tf_airblast_cray_power                   : 600      : , "sv", "cheat"  : Amount of force cray airblast should apply unconditionally. Set to 0 to only perform player momentum reflection.
+tf_airblast_cray_power_relative          : 0        : , "sv", "cheat"  : If set, the blast power power also inherits from the blast's forward momentum.
+tf_airblast_cray_reflect_coeff           : 2        : , "sv", "cheat"  : The coefficient of reflective power cray airblast employs.  0   - No reflective powers  0-1 - Cancel out some/all incoming velocity  1-2 - Reflect some/all incoming velocity outwards  2+  - Reflect incoming velocity outwards and then some 
+tf_airblast_cray_reflect_cost_coeff      : 0        : , "sv", "cheat"  : What portion of power used for reflection is removed from the push effect. Note that reflecting incoming momentum requires 2x the momentum - to first neutralize and then reverse it.  Setting this to 1 means that a target running towards the blast at more than 50% blast-speed would have a net pushback half that of a stationary target, since half the power was used to negate their incoming momentum. A value of 0.5 would mean that running towards the blast would not be beneficial vs being still, while values 
+tf_airblast_cray_reflect_relative        : 0        : , "sv", "cheat"  : If set, the relative, rather than absolute, target velocity is considered for reflection.
+tf_airblast_cray_stun_amount             : 0        : , "sv", "cheat"  : Amount of control loss to apply if stun_duration is set.
+tf_airblast_cray_stun_duration           : 0        : , "sv", "cheat"  : If set, apply this duration of stun when initially hit by an airblast.  Does not apply to repeated airblasts.
 tf_allow_player_use                      : 0        : , "sv", "nf"     : Allow players to execute +use while playing.
+tf_allow_server_hibernation              : 1        : , "sv"           : Allow the server to hibernate when empty.
 tf_allow_sliding_taunt                   : 0        : , "sv"           : 1 - Allow player to slide for a bit after taunting
 tf_allow_taunt_switch                    : 0        : , "sv", "rep"    : 0 - players are not allowed to switch weapons while taunting, 1 - players can switch weapons at the start of a taunt (old bug behavior), 2 - players can switch weapons at any time during a taunt.
 tf_always_loser                          : 0        : , "sv", "cheat", "rep" : Force loserstate to true.
@@ -1705,11 +1716,15 @@ tf_arena_override_team_size              : 0        : , "sv", "rep"    : Overrid
 tf_arena_preround_time                   : 10       : , "sv", "nf", "rep" : Length of the Pre-Round time
 tf_arena_round_time                      : 0        : , "sv", "nf", "rep" : 
 tf_arena_use_queue                       : 1        : , "sv", "nf", "rep" : Enables the spectator queue system for Arena.
+tf_autobalance_detected_delay            : 30       : , "sv"           : 
+tf_autobalance_query_lifetime            : 30       : , "sv", "rep"    : 
+tf_autobalance_xp_bonus                  : 150      : , "sv", "rep"    : 
 tf_avoidteammates_pushaway               : 1        : , "sv", "rep"    : Whether or not teammates push each other away when occupying the same space
 tf_base_boss_max_turn_rate               : 25       : , "sv", "cheat"  : 
 tf_base_boss_speed                       : 75       : , "sv", "cheat"  : 
 tf_birthday                              : 0        : , "sv", "nf", "rep" : 
 tf_birthday_ball_chance                  : 100      : , "sv", "rep"    : Percent chance of a birthday beach ball spawning at each round start
+tf_bison_tick_time                       : 0        : , "sv", "cheat"  : 
 tf_bot_add                               : cmd      :                  : Add a bot.
 tf_bot_always_full_reload                : 0        : , "sv", "cheat"  : 
 tf_bot_ammo_search_range                 : 5000     : , "sv", "cheat"  : How far bots will search to find ammo around them
@@ -1817,6 +1832,7 @@ tf_bot_sniper_spot_min_range             : 1000     : , "sv", "cheat"  :
 tf_bot_sniper_spot_point_tolerance       : 750      : , "sv", "cheat"  : 
 tf_bot_sniper_spot_search_count          : 10       : , "sv", "cheat"  : Search this many times per behavior update frame
 tf_bot_sniper_target_linger_duration     : 2        : , "sv", "cheat"  : How long a Sniper bot will keep toward at a target it just lost sight of
+tf_bot_spawn_use_preset_roster           : 1        : , "sv", "cheat"  : Bot will choose class from a preset class table.
 tf_bot_spy_change_target_range_threshold : 300      : , "sv", "cheat"  : 
 tf_bot_spy_knife_range                   : 300      : , "sv", "cheat"  : If threat is closer than this, prefer our knife
 tf_bot_squad_escort_range                : 500      : , "sv", "cheat"  : 
@@ -1842,7 +1858,7 @@ tf_damage_disablespread                  : 1        : , "sv", "nf", "rep" : Togg
 tf_damage_multiplier_blue                : 1        : , "sv", "cheat"  : All incoming damage to a blue player is multiplied by this value
 tf_damage_multiplier_red                 : 1        : , "sv", "cheat"  : All incoming damage to a red player is multiplied by this value
 tf_debug_damage                          : 0        : , "sv", "cheat"  : 
-tf_debug_flamethrower                    : 0        : , "sv", "cheat"  : Visualize the flamethrower damage.
+tf_debug_flamethrower                    : 0        : , "sv", "cheat", "rep" : Visualize the flamethrower damage.
 tf_debug_placement_failure               : 0        : , "sv", "cheat"  : 
 tf_decoy_lifetime                        : 5        : , "sv", "cheat"  : The lifetime of a decoy, in seconds
 tf_demoman_charge_frametime_scaling      : 1        : , "sv", "cheat", "rep" : When enabled, scale yaw limiting based on client performance (frametime).
@@ -1866,10 +1882,19 @@ tf_eyeball_boss_lifetime                 : 120      : , "sv", "cheat"  :
 tf_eyeball_boss_lifetime_spell           : 8        : , "sv", "cheat"  : 
 tf_eyeball_boss_speed                    : 250      : , "sv", "cheat"  : 
 tf_eyeball_boss_vert_damping             : 1        : , "sv", "cheat"  : 
+tf_fireball_airblast_recharge_penalty    : 0        : , "sv", "cheat", "rep" : 
+tf_fireball_burn_duration                : 2        : , "sv", "cheat", "rep" : 
+tf_fireball_burning_bonus                : 3        : , "sv", "cheat", "rep" : 
+tf_fireball_damage                       : 25       : , "sv", "cheat", "rep" : 
+tf_fireball_distance                     : 500      : , "sv", "cheat", "rep" : 
+tf_fireball_draw_debug_radius            : 0        : , "sv", "cheat", "rep" : 
+tf_fireball_hit_recharge_boost           : 1        : , "sv", "cheat", "rep" : 
+tf_fireball_radius                       : 30       : , "sv", "cheat", "rep" : 
+tf_fireball_speed                        : 3000     : , "sv", "cheat", "rep" : 
 tf_flag_caps_per_round                   : 3        : , "sv", "rep"    : Number of captures per round on CTF and PASS Time maps. Set to 0 to disable.
 tf_flag_return_on_touch                  : 0        : , "sv", "rep"    : If this is set, your flag must be at base in order to capture the enemy flag. Remote friendly flags return to your base instantly when you touch them
 tf_flag_return_time_credit_factor        : 1        : , "sv", "rep"    : Number of seconds the flag's return time will be credited for each second the flag is being carried.
-tf_flamethrower_boxsize                  : 12       : , "sv", "cheat"  : Size of flame damage entities.
+tf_flamethrower_boxsize                  : 12       : , "sv", "cheat", "rep" : Size of flame damage entities.
 tf_forced_holiday                        : 0        : , "sv", "rep"    : Forced holiday,     Birthday = 1    Halloween = 2 
 tf_fortune_teller_fortune_duration       : 30       : , "sv", "cheat"  : Duration of the fortune time.
 tf_fortune_teller_interval_time          : 120      : , "sv", "cheat"  : Time until the next fortune teller event (in second).
@@ -1889,6 +1914,7 @@ tf_grapplinghook_move_speed              : 750      : , "sv", "cheat", "rep" :
 tf_grapplinghook_prevent_fall_damage     : 0        : , "sv", "cheat", "rep" : 
 tf_grapplinghook_projectile_speed        : 1500     : , "sv", "cheat", "rep" : How fast does the grappliing hook projectile travel
 tf_grapplinghook_use_acceleration        : 0        : , "sv", "rep"    : Use full acceleration calculation for grappling hook movement
+tf_gravetalk                             : 1        : , "sv", "nf"     : Allows living players to hear dead players using text/voice chat.
 tf_halloween_allow_ghost_hit_by_kart_delay : 0        : , "sv", "cheat"  : 
 tf_halloween_allow_truce_during_boss_event : 0        : , "sv", "nf"     : Determines if RED and BLU can damage each other while fighting Monoculus or Merasmus on non-Valve maps.
 tf_halloween_boss_spawn_interval         : 480      : , "sv", "cheat"  : Average interval between boss spawns, in seconds
@@ -1958,6 +1984,7 @@ tf_halloween_zombie_mob_spawn_count      : 20       : , "sv", "cheat"  : How man
 tf_halloween_zombie_mob_spawn_interval   : 180      : , "sv", "cheat"  : Average interval between zombie mob spawns, in seconds
 tf_highfive_debug                        : 0        : , "sv"           : Turns on some console spew for debugging high five issues.
 tf_item_based_forced_holiday             : 0        : , "sv", "rep"    : 
+tf_listrounds                            : cmd      :                  : List the rounds for the current map
 tf_mark                                  : cmd      :                  : Set attribute of selected area.
 tf_max_active_zombie                     : 30       : , "sv", "cheat"  : 
 tf_medieval                              : 0        : , "sv", "nf", "rep" : Enable Medieval Mode. 
@@ -1982,8 +2009,19 @@ tf_merasmus_speed                        : 600      : , "sv", "cheat"  :
 tf_merasmus_speed_recovery_rate          : 100      : , "sv", "cheat"  : Movement units/second
 tf_merasmus_stun_duration                : 2        : , "sv", "cheat"  : 
 tf_minigame_suddendeath_time             : -1       : , "sv", "cheat"  : Override Sudden Death Time.
+tf_mm_match_size_ladder_12v12            : 24       : , "sv", "rep"    : Number of players required to play a 12v12 ladder game.
+tf_mm_match_size_ladder_12v12_minimum    : 12       : , "sv", "rep"    : Specifies the minimum number of players needed to launch a 12v12 match. Set to -1 to disable.
+tf_mm_match_size_ladder_6v6              : 12       : , "sv", "rep"    : Number of players required to play a 6v6 ladder game.
+tf_mm_match_size_ladder_9v9              : 18       : , "sv", "rep"    : Number of players required to play a 9v9 ladder game.
+tf_mm_match_size_mvm                     : 6        : , "sv", "rep"    : How many players in an MvM matchmade group?
+tf_mm_next_map_result_hold_time          : 7        : , "sv"           : 
+tf_mm_next_map_vote_time                 : 30       : , "sv", "rep"    : 
 tf_mm_servermode                         : 0        : , "sv", "nf"     : Activates / deactivates Lobby-based hosting mode.    0 = not active    1 = Put in matchmaking pool (Lobby will control current map) 
 tf_mm_strict                             : 0        : , "sv", "nf"     :    0 = Show in server browser, and allow ad-hoc joins    1 = Hide from server browser and only allow joins coordinated through GC matchmaking    2 = Hide from server browser, but allow ad-hoc joins 
+tf_movement_aircurrent_aircontrol_mult   : 0        : , "sv", "cheat", "rep" : Multiplier on air control when player is in an air current (such as airblast)
+tf_movement_aircurrent_friction_mult     : 0        : , "sv", "cheat", "rep" : Friction multiplier when sliding against surfaces while trapped in an air current
+tf_movement_lost_footing_friction        : 0        : , "sv", "cheat", "rep" : Ground friction for players who have lost their footing
+tf_movement_lost_footing_restick         : 50       : , "sv", "cheat", "rep" : Early escape the lost footing condition if the player is moving slower than this across the ground
 tf_mvm_bot_allow_flag_carrier_to_fight   : 1        : , "sv", "cheat"  : 
 tf_mvm_bot_flag_carrier_health_regen     : 45       : , "sv", "cheat"  : 
 tf_mvm_bot_flag_carrier_interval_to_1st_upgrade : 5        : , "sv", "cheat"  : 
@@ -2082,6 +2120,7 @@ tf_player_movement_restart_freeze        : 1        : , "sv", "rep"    : When se
 tf_player_name_change_time               : 60       : , "sv", "nf"     : Seconds between name changes.
 tf_player_spell_drop_on_death_rate       : 0        : , "sv", "rep"    : 
 tf_playergib                             : 1        : , "sv", "nf"     : Allow player gibbing. 0: never, 1: normal, 2: always
+tf_playround                             : cmd      :                  : Play the selected round  Argument: {round name given by 'tf_listrounds' command}
 tf_populator_active_buffer_range         : 3000     : , "sv", "cheat"  : Populate the world this far ahead of lead raider, and this far behind last raider
 tf_populator_damage_multiplier           : 1        : , "sv", "cheat", "rep", "norecord" : 
 tf_populator_debug                       : 0        : , "sv", "cheat"  : 
@@ -2090,6 +2129,7 @@ tf_powerup_max_charge_time               : 30       : , "sv", "cheat"  :
 tf_powerup_mode                          : 0        : , "sv", "nf"     : Enable/disable powerup mode. Not compatible with Mann Vs Machine mode
 tf_powerup_mode_imbalance_delta          : 24       : , "sv", "cheat"  : Powerup kill score lead one team must have before imbalance measures are initiated
 tf_preround_push_from_damage_enable      : 0        : , "sv"           : If enabled, this will allow players using certain type of damage to move during pre-round freeze time.
+tf_quests_spew_trackers                  : cmd      :                  : Spews all currently active quest trackers
 tf_rd_max_points_override                : 0        : , "sv"           : When changed, overrides the current max points
 tf_rd_return_max_time                    : 90       : , "sv"           : 
 tf_rd_return_min_time                    : 30       : , "sv"           : 
@@ -2124,6 +2164,7 @@ tf_show_sniper_areas                     : 0        : , "sv", "cheat"  :
 tf_show_sniper_areas_safety_range        : 1000     : , "sv", "cheat"  : 
 tf_show_train_path                       : 0        : , "sv", "cheat"  : 
 tf_skillrating_update_interval           : 180      : , "a", "sv"      : How often to update the GC and OGS.
+tf_so_tracker_spew_type_toggle           : cmd      :                  : 
 tf_soccer_ball_min_speed                 : 30       : , "sv", "cheat"  : 
 tf_soccer_ball_multiplier                : 4        : , "sv", "cheat"  : 
 tf_soccer_ball_up_max                    : 350      : , "sv", "cheat"  : 
@@ -2133,7 +2174,6 @@ tf_spec_xray                             : 1        : , "sv", "nf", "rep" : Allo
 tf_spells_enabled                        : 0        : , "sv", "nf", "rep" : Enable to Allow Halloween Spells to be dropped and used by players
 tf_stats_nogameplaycheck                 : 0        : , "sv"           : Disable normal check for valid gameplay, send stats regardless.
 tf_tauntcam_fov_override                 : 0        : , "sv", "cheat"  : 
-tf_teamtalk                              : 1        : , "sv", "nf"     : Teammates can always chat with each other while alive or dead.
 tf_test_spellindex                       : -1       : , "sv", "cheat", "rep" : Set to index to always get a specific spell
 tf_test_teleport_home_fx                 : 0        : , "sv", "cheat"  : 
 tf_testrr                                : cmd      :                  : Force the player under your crosshair to speak a response rule concept. Format is tf_testrr <concept>, or tf_testrr <player name> <concept>
@@ -2257,6 +2297,7 @@ violence_agibs                           : 1        :                  : Show al
 violence_hblood                          : 1        :                  : Draw human blood
 violence_hgibs                           : 1        :                  : Show human gib entities
 voice_avggain                            : 0        :                  : 
+voice_buffer_ms                          : 100      :                  : How many milliseconds of voice to buffer to avoid dropouts due to jitter and frame time differences.
 voice_debugfeedback                      : 0        :                  : 
 voice_debugfeedbackfrom                  : 0        :                  : 
 voice_enable                             : 1        : , "a"            : 
@@ -2354,4 +2395,4 @@ xc_crouch_debounce                       : 0        : , "sv"           :
 xload                                    : cmd      :                  : Load a saved game from a 360 storage device.
 xsave                                    : cmd      :                  : Saves current game to a 360 storage device.
 --------------
-2353 total convars/concommands
+2394 total convars/concommands

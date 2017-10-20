@@ -382,6 +382,7 @@ criterion "WeaponIsBat" "playerweapon" "tf_weapon_bat" "required"
 criterion "WeaponIsWoodBat" "playerweapon" "tf_weapon_bat_wood" "required"
 criterion "WeaponIsSniperrifle" "playerweapon" "tf_weapon_sniperrifle" "required"
 criterion "WeaponIsSMG" "playerweapon" "tf_weapon_smg" "required"
+criterion "WeaponIsChargedSMG" "playerweapon" "tf_weapon_charged_smg" "required"
 criterion "WeaponIsSMGScout" "playerweapon" "tf_weapon_smg_scout" "required"
 criterion "WeaponIsClub" "playerweapon" "tf_weapon_club" "required"
 criterion "WeaponIsRevolver" "playerweapon" "tf_weapon_revolver" "required"
@@ -501,6 +502,9 @@ criterion "WeaponIsScotsmansSkullcutter" "item_name" "The Scotsman's Skullcutter
 criterion "WeaponIsClassicSniperrifle" "playerweapon" "tf_weapon_sniperrifle_classic" "required"
 criterion "WeaponIsRocketLauncherAirStrike" "playerweapon" "tf_weapon_rocketlauncher_airstrike" "required"
 criterion "WeaponIsMutatedMilk" "item_name" "Mutated Milk" "required" weight 10
+criterion "WeaponIsDragonsFury" "item_name" "The Dragon's Fury" "required" weight 10
+criterion "WeaponIsGasCan" "item_name" "The Gas Passer" "required" weight 10
+criterion "WeaponIsSlap" "item_name" "The Hot Hand" "required" weight 10
 
 //Custom healed concept and critical hit
 criterion "IsBeingHealed" "beinghealed" "1" "required"

@@ -467,7 +467,7 @@ WaveSchedule
 			Skill Easy
 			ClassIcon heavy_gru
 			WeaponRestrictions MeleeOnly
-			Item "Gloves of Running Urgently"
+			Item "Gloves of Running Urgently MvM"
 		}
 
 		T_TFBot_Heavyweapons_Gnome

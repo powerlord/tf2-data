@@ -25241,7 +25241,7 @@
 
 "Halloween.HeadlessBossSpawn"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"1.000"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_150dB"
@@ -25249,9 +25249,39 @@
 	"wave"		")ui/halloween_boss_summoned_fx.wav"
 }
 
+"Halloween.MerasmusBossSpawn"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+
+	"wave"		")ui/halloween_boss_summoned.wav"
+}
+
+"Halloween.MonoculusBossSpawn"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_150dB"
+
+	"wave"		")ui/halloween_boss_summoned_monoculus.wav"
+}
+
+"Halloween.MonoculusBossDeath"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.000"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"		"ui/halloween_boss_defeated_monoculus.wav"
+}
+
 "Halloween.HeadlessBossSpawnRumble"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"1.000"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_100dB"
@@ -25342,7 +25372,7 @@
 
 "Halloween.HeadlessBossDeath"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"1.000"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_95dB"
@@ -25466,7 +25496,7 @@
 
 "Halloween.EyeballBossEscapeSoon"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"1.000"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_150dB"
@@ -25476,7 +25506,7 @@
 
 "Halloween.EyeballBossEscapeImminent"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"1.000"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_150dB"
@@ -25486,7 +25516,7 @@
 
 "Halloween.EyeballBossEscaped"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"1.000"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_150dB"
@@ -25496,7 +25526,7 @@
 
 "Halloween.EyeballBossTeleport"
 {
-	"channel"		"CHAN_VOICE"
+	"channel"		"CHAN_STATIC"
 	"volume"		"1.000"
 	"pitch"			"PITCH_NORM"
 	"soundlevel"	"SNDLVL_150dB"
@@ -31224,7 +31254,6 @@
 	{
 		"wave"	"vo/mvm_tank_alerts03.mp3"
 		"wave"	"vo/mvm_tank_alerts04.mp3"
-		"wave"	"vo/mvm_tank_alerts05.mp3"
 	}
 }
 "Announcer.MVM_Tank_Alert_Multiple"

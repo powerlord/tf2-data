@@ -1,4 +1,4 @@
-// Dump of all classes for "tf" as at 2016/07/10
+// Dump of all classes for "tf" as at 2017/10/20
 //
 
 CBaseEntity - _ballplayertoucher
@@ -47,6 +47,7 @@ CDynamicProp - dynamic_prop
 CBaseAnimating - entity_bird
 CBaseEntity - entity_blocker
 CBaseAnimating - entity_carrier
+CBaseAnimating - entity_croc
 CTFMedigunShield - entity_medigun_shield
 CTFReviveMarker - entity_revive_marker
 CBaseAnimating - entity_rocket
@@ -157,6 +158,7 @@ CCaptureZone - func_capturezone
 CBaseEntity - func_changeclass
 CBaseEntity - func_clip_vphysics
 CFuncConveyor - func_conveyor
+CBaseEntity - func_croc
 CBaseDoor - func_door
 CBaseDoor - func_door_rotating
 CFunc_Dust - func_dustcloud
@@ -457,7 +459,9 @@ CBonusDuckPickup - tf_bonus_duck_pickup
 CTFPlayer - tf_bot
 CTFDroppedWeapon - tf_dropped_weapon
 CBaseEntity - tf_flame
+CTFFlameManager - tf_flame_manager
 CTFGameRulesProxy - tf_gamerules
+CTFGasManager - tf_gas_manager
 CTFGenericBomb - tf_generic_bomb
 CTFGlow - tf_glow
 CHalloweenGiftPickup - tf_halloween_gift_pickup
@@ -492,6 +496,7 @@ CBaseEntity - tf_point_weapon_mimic
 CTFPowerupBottle - tf_powerup_bottle
 CTFProjectile_Arrow - tf_projectile_arrow
 CTFBall_Ornament - tf_projectile_ball_ornament
+CTFProjectile_BallOfFire - tf_projectile_balloffire
 CTFProjectile_Cleaver - tf_projectile_cleaver
 CTFProjectile_EnergyBall - tf_projectile_energy_ball
 CTFProjectile_EnergyRing - tf_projectile_energy_ring
@@ -499,6 +504,7 @@ CTFProjectile_Flare - tf_projectile_flare
 CTFProjectile_GrapplingHook - tf_projectile_grapplinghook
 CTFProjectile_HealingBolt - tf_projectile_healing_bolt
 CTFProjectile_Jar - tf_projectile_jar
+CTFProjectile_JarGas - tf_projectile_jar_gas
 CTFProjectile_JarMilk - tf_projectile_jar_milk
 CTFProjectile_SpellLightningOrb - tf_projectile_lightningorb
 CTFGrenadePipebombProjectile - tf_projectile_pipe
@@ -542,6 +548,7 @@ CTFBat_Giftwrap - tf_weapon_bat_giftwrap
 CTFBat_Wood - tf_weapon_bat_wood
 CTFBonesaw - tf_weapon_bonesaw
 CTFBottle - tf_weapon_bottle
+CTFBreakableSign - tf_weapon_breakable_sign
 CTFBuffItem - tf_weapon_buff_item
 CTFWeaponBuilder - tf_weapon_builder
 CTFCannon - tf_weapon_cannon
@@ -562,6 +569,7 @@ CTFPistol_ScoutPrimary - tf_weapon_handgun_scout_primary
 CTFPistol_ScoutSecondary - tf_weapon_handgun_scout_secondary
 CTFWeaponInvis - tf_weapon_invis
 CTFJar - tf_weapon_jar
+CTFJarGas - tf_weapon_jar_gas
 CTFJarMilk - tf_weapon_jar_milk
 CTFKatana - tf_weapon_katana
 CTFKnife - tf_weapon_knife
@@ -589,6 +597,8 @@ CTFRobotArm - tf_weapon_robot_arm
 CTFRocketLauncher - tf_weapon_rocketlauncher
 CTFRocketLauncher_AirStrike - tf_weapon_rocketlauncher_airstrike
 CTFRocketLauncher_DirectHit - tf_weapon_rocketlauncher_directhit
+CTFWeaponFlameBall - tf_weapon_rocketlauncher_fireball
+CTFRocketPack - tf_weapon_rocketpack
 CTFWeaponSapper - tf_weapon_sapper
 CTFScatterGun - tf_weapon_scattergun
 CTFShotgun_Revenge - tf_weapon_sentry_revenge
@@ -598,6 +608,7 @@ CTFShotgun - tf_weapon_shotgun_primary
 CTFShotgun_Pyro - tf_weapon_shotgun_pyro
 CTFShotgun_Soldier - tf_weapon_shotgun_soldier
 CTFShovel - tf_weapon_shovel
+CTFSlap - tf_weapon_slap
 CTFSMG - tf_weapon_smg
 CTFSniperRifle - tf_weapon_sniperrifle
 CTFSniperRifleClassic - tf_weapon_sniperrifle_classic
@@ -612,8 +623,10 @@ CTFWeaponBaseGrenadeProj - tf_weaponbase_grenade_proj
 CTFWeaponBaseMelee - tf_weaponbase_melee
 CTFWeaponBaseMerasmusGrenade - tf_weaponbase_merasmus_grenade
 CTFWearable - tf_wearable
+CTFWearableCampaignItem - tf_wearable_campaign_item
 CTFWearableDemoShield - tf_wearable_demoshield
 CTFWearableLevelableItem - tf_wearable_levelable_item
+CTFWearableRazorback - tf_wearable_razorback
 CTFWearableRobotArm - tf_wearable_robot_arm
 CTFWearableVM - tf_wearable_vm
 CZombie - tf_zombie
