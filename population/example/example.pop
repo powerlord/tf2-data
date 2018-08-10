@@ -68,8 +68,8 @@ ExamplePopulation
 	StartingCurrency				100		// Players start with 100 bucks
 	RespawnWaveTime					12		// Override default respawn time as if it was being set with entity i/o
 	CanBotsAttackWhileInSpawnRoom	no		// Default if omitted is "yes".  Set to "no" to prevent bots from attacking while invulnerable in their spawn rooms
-	AddSentryBusterWhenDamageDealtExceeds 3000 // Default is ommited is 3000 points of damage inflicted by your sentry gun. Set this to override the threshold at which a Sentry Buster will be dispatched.
-	AddSentryBusterWhenKillCountExceeds 15	// Default is ommited is 15 kills inflicted by your sentry gun. Set this to override the threshold at which a Sentry Buster will be dispatched.
+	AddSentryBusterWhenDamageDealtExceeds 3000 // Default if omitted is 3000 points of damage inflicted by your sentry gun. Set this to override the threshold at which a Sentry Buster will be dispatched.
+	AddSentryBusterWhenKillCountExceeds 15	// Default if omitted is 15 kills inflicted by your sentry gun. Set this to override the threshold at which a Sentry Buster will be dispatched.
 	Advanced	1							// Flags this experienced as difficult.  Things like achievements look for this.
 	
 	Templates
